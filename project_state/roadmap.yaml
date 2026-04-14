@@ -1,0 +1,46 @@
+project: workflow1
+status: bootstrap
+phases:
+  - id: bootstrap
+    name: Repository bootstrap
+    status: in_progress
+    goals:
+      - Create reusable folder structure.
+      - Add Codex project instructions.
+      - Add starter skills and lightweight Python stubs.
+  - id: validation
+    name: Data intake and validation
+    status: pending
+    goals:
+      - Inventory available data sources.
+      - Profile schemas and file-level metadata.
+      - Define validation checks before downstream analysis.
+  - id: cleaning
+    name: Cleaning and matching
+    status: pending
+    goals:
+      - Define cleaning rules.
+      - Normalize keys and formats.
+      - Document matching assumptions and unresolved records.
+  - id: eda
+    name: Exploratory data analysis
+    status: pending
+    goals:
+      - Produce descriptive summaries.
+      - Identify missingness, outliers, and distributions.
+      - Generate initial visual diagnostics.
+  - id: modeling
+    name: Modeling and evaluation
+    status: pending
+    goals:
+      - Frame the ML or statistical problem.
+      - Select baseline methods and metrics.
+      - Compare candidate methods against baselines.
+  - id: reporting
+    name: Reporting and workflow updates
+    status: pending
+    goals:
+      - Export figures, tables, and report drafts.
+      - Record decisions and next steps.
+      - Update reusable workflow instructions when patterns stabilize.
+next_recommended_phase: validation

@@ -1,0 +1,28 @@
+# Workflow Updater
+
+## When To Use
+
+Use this skill after a workflow step creates durable outputs, decisions, or lessons that should guide future work.
+
+## Inputs
+
+- Completed task summary.
+- Output file paths.
+- Decisions and assumptions.
+- Known blockers or next steps.
+
+## Outputs
+
+- Updated project state files.
+- Optional updates to `AGENTS.md` when workflow rules change.
+- Changelog entry.
+- Decision log entry, if applicable.
+
+## Recommended Workflow
+
+1. Identify which project state files need updates.
+2. Append dated changelog entries for durable changes.
+3. Append decision log entries for important choices.
+4. Keep `current_focus.md` aligned to the active objective.
+5. Keep `next_step.md` focused on one recommended next action.
+6. Update `roadmap.yaml` only when phase status or task ordering changes.
