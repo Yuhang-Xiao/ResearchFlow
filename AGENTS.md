@@ -12,7 +12,7 @@ Do not assume a domain, dataset, model type, or final report format until the us
 2. Confirm the task scope from the user request and local project state.
 3. Route the task to the relevant skill or pipeline area.
 4. Inspect file names, schemas, and metadata before reading full datasets.
-5. Perform the smallest useful workflow step.
+5. Perform the next useful workflow step under the goal-driven autonomous execution policy.
 6. Validate outputs before using them downstream.
 7. Save generated outputs under the appropriate `data`, `reports`, or `experiments` folder.
 8. Update project state files when decisions, outputs, or next steps change.
@@ -24,6 +24,73 @@ intake -> schema profiling -> cleaning/matching -> validation -> EDA
 -> ML problem framing -> method selection -> baseline modeling
 -> evaluation/comparison -> visualization -> reporting -> workflow update
 ```
+
+## Language Policy
+
+- Adapt automatically to the language used in the raw data.
+- If raw data, column names, sheet names, or metadata are mainly in Chinese, use Chinese-first mode when reading and interpreting them.
+- Unless the user explicitly specifies otherwise, use Chinese as the default interaction language.
+- Write default repository outputs in Chinese, including schema inventories, validation proposals, validation reports, cleaning logs, data dictionaries, variable maps, and technical analysis summaries.
+- Keep original source field names unchanged, especially Chinese column names.
+- Algorithm names, model names, parameter names, code terms, and evaluation metrics may remain in English when appropriate.
+- When needed, provide bilingual terminology, but keep the main document language Chinese by default.
+- If the user explicitly specifies a language for a deliverable, follow the user's instruction for that deliverable.
+- If no explicit language is specified, default to Chinese while preserving source field names and allowing appropriate technical terms to remain in English.
+
+## Language Priority Rule
+
+Language instructions are resolved in this order:
+
+```text
+user explicit instruction > task-specific requirement > default repository language policy
+```
+
+## Language Implementation Guidance
+
+- When generating mixed-language outputs, keep terminology consistent across files and responses.
+- Do not translate column names blindly if that may break code, joins, mappings, or traceability to source data.
+- When needed, provide bilingual field mapping or terminology, but preserve original source field names.
+
+## Goal-Driven Autonomous Research Execution Policy
+
+When the user provides raw data plus a research goal, scientific objective, or modeling purpose, Codex should autonomously continue the downstream research workflow without waiting for approval at every major stage. Codex should use any optional constraints or preferences supplied by the user to shape the workflow and record assumptions explicitly.
+
+Default workflow:
+
+```text
+schema profiling -> raw validation -> cleaning/matching -> cleaned dataset creation
+-> EDA -> ML/statistical problem framing -> method selection -> baseline model
+-> comparison/tuning -> model revision if needed -> output generation -> workflow update
+```
+
+Codex should use the raw dataset and the stated research goal together to decide:
+
+- The data cleaning strategy.
+- Which variables are likely identifiers, dates, targets, metadata, or candidate features.
+- Whether the task is classification, regression, time series, clustering, anomaly detection, optimization, or another research workflow.
+- Which baseline and advanced methods are appropriate.
+
+Codex should automatically perform:
+
+- Data cleaning and preprocessing.
+- Cleaned dataset creation.
+- Technical data summaries.
+- Formal EDA.
+- Model framing.
+- Model selection.
+- Baseline modeling.
+- Tuning and comparison.
+- Model revision if initial performance is poor.
+- Reportable technical outputs.
+
+Codex should pause only when:
+
+- The research goal is too ambiguous to operationalize.
+- A required file is missing.
+- An action is destructive or irreversible in a risky way.
+- The task conflicts with repository rules.
+
+Otherwise, Codex should proceed autonomously and explicitly record assumptions, data decisions, method choices, outputs, and workflow updates.
 
 ## Data Handling Rules
 
@@ -41,8 +108,8 @@ intake -> schema profiling -> cleaning/matching -> validation -> EDA
 
 ## Modeling Rules
 
-- Frame the scientific or operational question before choosing a model.
-- Identify the prediction target, unit of analysis, temporal structure, leakage risks, and evaluation metric before training.
+- Use the research goal and validated schema to frame the ML or statistical problem automatically when the objective is clear enough.
+- Identify the prediction target, unit of analysis, temporal structure, leakage risks, and evaluation metric before training, and record assumptions when the user has not specified them.
 - Start with transparent baselines before advanced methods.
 - Separate model input construction from model training.
 - Use reproducible splits when possible and record random seeds.

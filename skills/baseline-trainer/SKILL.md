@@ -2,7 +2,7 @@
 
 ## When To Use
 
-Use this skill after the ML problem has been framed, model input data exists, and evaluation metrics and data splits are defined.
+Use this skill after the ML problem has been framed, model input data exists, and evaluation metrics and data splits are defined or can be reasonably inferred from the research objective.
 
 ## Inputs
 
@@ -24,6 +24,8 @@ Use this skill after the ML problem has been framed, model input data exists, an
 1. Confirm that target, features, splits, and metrics are defined.
 2. Check for leakage and invalid rows before training.
 3. Train the simplest credible baseline first.
-4. Evaluate on the agreed split.
-5. Save experiment outputs under `experiments/baselines`.
-6. Record results and next recommendations in project state.
+4. Evaluate on the selected split.
+5. Compare against simple heuristics where useful.
+6. Save experiment outputs under `experiments/baselines`.
+7. Continue to tuning, comparison, or model revision if baseline performance is poor and the objective is clear.
+8. Record results, assumptions, and next recommendations in project state.

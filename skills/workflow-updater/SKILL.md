@@ -2,13 +2,13 @@
 
 ## When To Use
 
-Use this skill after a workflow step creates durable outputs, decisions, or lessons that should guide future work.
+Use this skill after a workflow step creates durable outputs, decisions, assumptions, or lessons that should guide future work. In goal-driven autonomous mode, update project state after each completed stage so the workflow can continue coherently.
 
 ## Inputs
 
 - Completed task summary.
 - Output file paths.
-- Decisions and assumptions.
+- Decisions and assumptions, including autonomous cleaning/modeling choices.
 - Known blockers or next steps.
 
 ## Outputs
@@ -22,7 +22,7 @@ Use this skill after a workflow step creates durable outputs, decisions, or less
 
 1. Identify which project state files need updates.
 2. Append dated changelog entries for durable changes.
-3. Append decision log entries for important choices.
+3. Append decision log entries for important choices and autonomous assumptions.
 4. Keep `current_focus.md` aligned to the active objective.
 5. Keep `next_step.md` focused on one recommended next action.
 6. Update `roadmap.yaml` only when phase status or task ordering changes.
