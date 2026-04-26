@@ -1,0 +1,14 @@
+[
+  {
+    "command": "D:\\anaconda3\\python.exe -m workflow1 --stage list-runs",
+    "returncode": 0,
+    "stdout": "{'config_path': '.codex\\\\config.toml', 'config_loaded': True, 'stage': 'list-runs', 'status': 'ok', 'details': {'status': 'ok', 'runs': [{'path': 'outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座', 'has_readme': True, 'has_manifest': True}, {'path': 'outputs/工作包/20260424_2048_BetaBinomial信念更新', 'has_readme': True, 'has_manifest': True}, {'path': 'outputs/工作包/20260424_2049_PEANUT上游查验与浓度修复', 'has_readme': True, 'has_manifest': True}, {'path': 'outputs/工作包/20260424_2132_MOE_EDI外部参数匹配', 'has_readme': True, 'has_manifest': True}, {'path': 'outputs/工作包/20260424_2244_全工作目录整理与规范化', 'has_readme': True, 'has_manifest': True}, {'path': 'outputs/工作包/20260424_2356_工作流任务包机制重构', 'has_readme': True, 'has_manifest': True}, {'path': 'outputs/工作包/20260424_2357_工作流任务包机制重构', 'has_readme': True, 'has_manifest': True}], 'count': 7}}",
+    "stderr": "INFO:workflow1:Loaded config: True\nINFO:workflow1:Routing stage: list-runs"
+  },
+  {
+    "command": "D:\\anaconda3\\python.exe -m workflow1 --stage finish-run",
+    "returncode": 0,
+    "stdout": "{'config_path': '.codex\\\\config.toml', 'config_loaded': True, 'stage': 'finish-run', 'status': 'ok', 'details': {'status': 'ok', 'missing': [], 'next_step': 'Update outputs/_index/run_manifest.csv and run whole workspace organization check.'}}",
+    "stderr": "INFO:workflow1:Loaded config: True\nINFO:workflow1:Routing stage: finish-run"
+  }
+]

@@ -1,0 +1,27 @@
+intents:
+  优化当前工作流: workflow_self_improvement
+  让 Codex 自己寻找可升级的 skill: github_skill_scout
+  搜索 GitHub 改进 workflow: github_skill_scout
+  检查当前工作流缺什么: periodic_workflow_review
+  执行工作流自我升级: workflow_self_improvement
+  列出需要我确认的外部插件: external_plugin_approval
+  更新自动科研能力: safe_workflow_upgrade
+  解释当前任务的所有输出: artifact_output_explanation
+  解释所有图表和表格: figure_table_explanation_and_chart_repair
+  为当前代码生成方法说明: code_method_explanation
+  为当前模型生成详细方法说明: model_setting_documentation
+  为当前模型结果生成详细解读: model_result_interpretation
+  补充模型文献依据并写入 Zotero: literature_grounded_modeling_zotero_sidecar
+  生成论文 Results 部分并导出 Word: paper_results_docx_export
+  生成论文 Method 部分并导出 Word: paper_method_docx_export
+  检查图表是否为空并修复: empty_chart_audit_and_repair
+  核验所有输出并生成解释索引: artifact_output_explanation
+  搜索并创建缺失的解释类 skill: explanation_skill_scout
+  生成高水平期刊风格论文 section: paper_section_quality_and_word_export
+  生成 artifact-to-evidence map: artifact_output_explanation
+  为每个输出目录生成本地解释: local_directory_explanation
+  为关键 artifact 生成同名解释文件: same_name_artifact_explanation
+  为 DQN 代码生成深度解释: dqn_code_deep_explanation
+  生成 DQN 代码到模型设置映射: dqn_code_to_model_setting_map
+  生成 DQN 代码到输出文件映射: dqn_code_to_outputs_map
+  检查解释是否只存在于总索引而没有就地解释: central_index_only_explanation_audit

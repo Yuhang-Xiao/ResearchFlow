@@ -1,0 +1,30 @@
+# Skills Inventory
+
+| skill_dir | skill_name | has_skill_md | has_name_and_description | counterpart_exists |
+| --- | --- | --- | --- | --- |
+| .agents/skills/artifact-organizer | artifact-organizer | True | True | True |
+| .agents/skills/concentration-cleaning-auditor | concentration-cleaning-auditor | True | True | True |
+| .agents/skills/error-recovery-and-auto-repair | error-recovery-and-auto-repair | True | True | True |
+| .agents/skills/goal-driven-research-orchestrator | goal-driven-research-orchestrator | True | True | True |
+| .agents/skills/project-memory-updater | project-memory-updater | True | True | True |
+| .agents/skills/skill-scout-and-upgrader | skill-scout-and-upgrader | True | True | True |
+| .agents/skills/upstream-output-auditor | upstream-output-auditor | True | True | True |
+| .agents/skills/whole-workspace-organizer | whole-workspace-organizer | True | True | True |
+| skills/artifact-organizer | artifact-organizer | True | True | True |
+| skills/autonomous-research-orchestrator | autonomous-research-orchestrator | True | False | False |
+| skills/baseline-trainer | baseline-trainer | True | False | False |
+| skills/concentration-cleaning-auditor | concentration-cleaning-auditor | True | True | True |
+| skills/data-cleaning-matching | data-cleaning-matching | True | False | False |
+| skills/data-schema-profiler | data-schema-profiler | True | False | False |
+| skills/eda-generator | eda-generator | True | False | False |
+| skills/error-recovery-and-auto-repair | error-recovery-and-auto-repair | True | True | True |
+| skills/goal-driven-research-orchestrator | goal-driven-research-orchestrator | True | True | True |
+| skills/method-selector | method-selector | True | False | False |
+| skills/ml-problem-framer | ml-problem-framer | True | False | False |
+| skills/project-memory-updater | project-memory-updater | True | True | True |
+| skills/reference-document-reader | reference-document-reader | True | False | False |
+| skills/skill-scout-and-upgrader | skill-scout-and-upgrader | True | True | True |
+| skills/task-router | task-router | True | False | False |
+| skills/upstream-output-auditor | upstream-output-auditor | True | True | True |
+| skills/whole-workspace-organizer | whole-workspace-organizer | True | True | True |
+| skills/workflow-updater | workflow-updater | True | False | False |

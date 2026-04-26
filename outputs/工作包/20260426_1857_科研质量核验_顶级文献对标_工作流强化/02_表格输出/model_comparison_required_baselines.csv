@@ -1,0 +1,6 @@
+﻿task_family,required_baselines,notes
+RL/DQN,random; historical; heuristic; risk-ranking; Q-learning,same budget/capacity/constraints
+supervised_classification,majority; logistic; decision tree,same split and leakage-safe features
+regression,mean/median; linear regression; tree,include uncertainty
+time_series,naive; seasonal naive,temporal split only
+causal_inference,balance; robustness; placebo,do not rely on prediction metric only

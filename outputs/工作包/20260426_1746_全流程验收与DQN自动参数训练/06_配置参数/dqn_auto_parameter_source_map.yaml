@@ -1,0 +1,28 @@
+user_document: references\notes\物流与供应链管理前言-研究计划-肖宇航.docx
+local_summaries:
+- references/processed_summaries/dqn_model_spec_summary.md
+- project_state/dqn_model_spec_from_document.yaml
+- project_state/dqn_parameter_confirmation_table.csv
+previous_run_package: outputs\工作包\20260426_1616_DQN文献增强建模方案与参数确认
+zotero_root_read_only: D:\桌面\codex\zotero
+web_sources:
+- source: Nature 2015 Mnih et al.
+  url: https://www.nature.com/articles/nature14236
+  use: 'DQN method basis: Q-network, replay, target network, epsilon-greedy convention'
+- source: JMLR 2015 Garcia and Fernandez
+  url: https://jmlr.org/beta/papers/v16/garcia15a.html
+  use: 'safe RL framing: constraints and safety during learning/deployment'
+- source: EFSA 2020 aflatoxins risk assessment
+  url: https://www.efsa.europa.eu/en/efsajournal/pub/6040
+  use: AFB1 exposure/MOE risk assessment background
+- source: EFSA aflatoxins topic page
+  url: https://www.efsa.europa.eu/en/topics/topic/aflatoxins-food
+  use: aflatoxins in peanuts and MOE/regulatory risk context
+data_distribution:
+  monthly_total_p50: 3918.5
+  monthly_total_p75: 4567.25
+  monthly_total_p90: 5901.7
+  experimental_monthly_budget: 4567
+  global_capacity_p75: 46
+experimental_note: All synthesized parameters require user confirmation before formal
+  DQN.

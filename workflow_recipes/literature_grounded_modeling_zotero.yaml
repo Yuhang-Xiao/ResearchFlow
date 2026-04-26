@@ -1,0 +1,22 @@
+name: literature_grounded_modeling_zotero
+version: 2026-04-26
+language: zh
+purpose: >
+  为模型组件补充文献依据，并生成 Zotero 安全侧车文件。该 recipe 不直接写 Zotero SQLite。
+required_outputs:
+  - literature_candidate_pool.csv
+  - core_literature_selected.csv
+  - model_component_literature_map.csv
+  - literature_notes_clean.md
+  - core_literature.bib
+  - core_literature.ris
+  - zotero_writeback_or_import_plan.csv
+  - zotero_writeback_log.csv
+quality_gates:
+  - read_status is one of full-text, local_deepread, abstract-level, metadata-only, not accessible
+  - garbled notes cannot support formal claims
+  - no Zotero SQLite write without user confirmation
+approval_required:
+  - Zotero database write
+  - Zotero MCP or plugin installation
+  - API key use

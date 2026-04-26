@@ -1,0 +1,24 @@
+name: paper_section_quality_workflow
+description: Generate paper sections only after benchmark, evidence map, citation verification, claim guard, and Reviewer 2 audit.
+required_skills:
+  - top-journal-benchmark-scout
+  - paper-section-quality-reviewer
+  - citation-and-reference-verifier
+  - result-claim-guard
+  - reviewer2-style-auditor
+  - word-exporter-docx
+quality_gates:
+  - benchmark_read_status_recorded
+  - section_outline_exists
+  - evidence_map_exists
+  - citation_evidence_table_exists
+  - citation_verification_passed_or_limited
+  - result_claim_guard_passed
+  - reviewer2_audit_completed
+  - docx_or_markdown_fallback_exported
+outputs:
+  - section_outline.md
+  - section_evidence_map.csv
+  - citation_evidence_table.csv
+  - paper_section.docx
+  - reviewer2_revision_checklist.md

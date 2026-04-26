@@ -1,0 +1,28 @@
+name: output_explanation_workflow
+version: 2026-04-26
+language: zh
+purpose: >
+  为当前任务或最近任务包中的图、表、模型输出、代码、报告、DOCX 和文献文件生成可解释索引，
+  并建立 artifact-to-evidence map。
+required_inputs:
+  - outputs/_index/run_index.md
+  - outputs/_index/latest_canonical_outputs.yaml
+  - latest run package
+  - project_state/
+required_outputs:
+  - artifact_explanation_index.md
+  - figure_explanations.md
+  - table_explanations.md
+  - model_output_explanations.md
+  - code_explanations.md
+  - result_interpretation_guide.md
+  - artifact_to_evidence_map.csv
+quality_gates:
+  - every artifact has purpose, source, method, reading guide, limitation, and paper-use status
+  - blank/all-zero/no-difference charts are explained or repaired
+  - all experimental outputs are labeled experimental_not_formal
+  - missing or unreadable outputs are recorded as unable_to_verify
+approval_required:
+  - formal conclusion sign-off
+  - Zotero database write
+  - external plugin or MCP installation

@@ -1,0 +1,129 @@
+TY  - JOUR
+ID  - Mnih2015DQN
+TI  - Human-level control through deep reinforcement learning
+AU  - Mnih et al.
+PY  - 2015
+JO  - Nature
+DO  - 10.1038/nature14236
+UR  - https://www.nature.com/articles/nature14236
+ER  - 
+
+TY  - JOUR
+ID  - VanHasselt2016DoubleDQN
+TI  - Deep Reinforcement Learning with Double Q-learning
+AU  - van Hasselt, Guez, Silver
+PY  - 2016
+JO  - AAAI / arXiv
+DO  - 
+UR  - https://arxiv.org/abs/1509.06461
+ER  - 
+
+TY  - JOUR
+ID  - Wang2016DuelingDQN
+TI  - Dueling Network Architectures for Deep Reinforcement Learning
+AU  - Wang et al.
+PY  - 2016
+JO  - ICML / arXiv
+DO  - 
+UR  - https://arxiv.org/abs/1511.06581
+ER  - 
+
+TY  - JOUR
+ID  - Lin1992ExperienceReplay
+TI  - Self-improving reactive agents based on reinforcement learning, planning and teaching
+AU  - Lin
+PY  - 1992
+JO  - Machine Learning
+DO  - 10.1007/BF00992699
+UR  - https://doi.org/10.1007/BF00992699
+ER  - 
+
+TY  - JOUR
+ID  - Achiam2017CPO
+TI  - Constrained Policy Optimization
+AU  - Achiam et al.
+PY  - 2017
+JO  - ICML / arXiv
+DO  - 
+UR  - https://arxiv.org/abs/1705.10528
+ER  - 
+
+TY  - JOUR
+ID  - Altman1999CMDP
+TI  - Constrained Markov Decision Processes
+AU  - Altman
+PY  - 1999
+JO  - Chapman and Hall/CRC
+DO  - 10.1201/9781315140223
+UR  - https://doi.org/10.1201/9781315140223
+ER  - 
+
+TY  - JOUR
+ID  - Kaelbling1998POMDP
+TI  - Planning and acting in partially observable stochastic domains
+AU  - Kaelbling, Littman, Cassandra
+PY  - 1998
+JO  - Artificial Intelligence
+DO  - 10.1016/S0004-3702(98)00023-X
+UR  - https://doi.org/10.1016/S0004-3702(98)00023-X
+ER  - 
+
+TY  - JOUR
+ID  - Wang2020RiskBasedSampling
+TI  - A risk-based sampling strategy to optimize inspection of food and feed products
+AU  - Wang et al.
+PY  - 2020
+JO  - Food Control / PMC
+DO  - 
+UR  - https://pmc.ncbi.nlm.nih.gov/articles/PMC7821187/
+ER  - 
+
+TY  - JOUR
+ID  - VanAsselt2021RiskBasedInspections
+TI  - Risk-based inspections of food business operators
+AU  - van Asselt et al.
+PY  - 2021
+JO  - Food Control
+DO  - 10.1016/j.foodcont.2021.108462
+UR  - https://pubmed.ncbi.nlm.nih.gov/34796503/
+ER  - 
+
+TY  - JOUR
+ID  - EFSA_MOE
+TI  - Margin of exposure
+AU  - European Food Safety Authority
+PY  - n.d.
+JO  - EFSA topic page
+DO  - 
+UR  - https://www.efsa.europa.eu/en/topics/topic/margin-exposure
+ER  - 
+
+TY  - JOUR
+ID  - JECFA2018Aflatoxins
+TI  - Safety evaluation of certain contaminants in food: aflatoxins
+AU  - JECFA / WHO
+PY  - 2018
+JO  - WHO Food Additives Series
+DO  - 
+UR  - https://iris.who.int/handle/10665/276868
+ER  - 
+
+TY  - JOUR
+ID  - Mitchell2019ModelCards
+TI  - Model Cards for Model Reporting
+AU  - Mitchell et al.
+PY  - 2019
+JO  - FAT* / arXiv
+DO  - 
+UR  - https://arxiv.org/abs/1810.03993
+ER  - 
+
+TY  - JOUR
+ID  - Gebru2021Datasheets
+TI  - Datasheets for Datasets
+AU  - Gebru et al.
+PY  - 2021
+JO  - Communications of the ACM
+DO  - 10.1145/3458723
+UR  - https://doi.org/10.1145/3458723
+ER  -

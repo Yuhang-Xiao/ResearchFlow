@@ -1,0 +1,37 @@
+{
+  "prototype_scope": "sandbox_only_not_formal_policy",
+  "algorithm": "Fitted Q iteration with sklearn MLPRegressor as a lightweight DQN-style function approximator; torch is not installed.",
+  "action_space": {
+    "0": {
+      "name": "维持/不加码",
+      "inspection_units": 0,
+      "cost": 0.0,
+      "risk_reduction": 0.0,
+      "info_gain": 0.0
+    },
+    "1": {
+      "name": "常规加密抽检",
+      "inspection_units": 1,
+      "cost": 0.25,
+      "risk_reduction": 0.08,
+      "info_gain": 0.08
+    },
+    "2": {
+      "name": "重点专项抽检",
+      "inspection_units": 2,
+      "cost": 0.7,
+      "risk_reduction": 0.16,
+      "info_gain": 0.16
+    }
+  },
+  "reward": "10 * action_risk_reduction_on_risk_proxy + 1.5 * uncertainty_reduction - temporary_low_action_cost - 2 * constraint_proxy",
+  "discount_gamma": 0.85,
+  "fqi_iterations": 12,
+  "formal_blockers": [
+    "正式动作空间未确认：省份-环节抽检批次数、复检、召回/处置触发档位尚未参数化。",
+    "缺少正式预算、单次抽检成本、检测产能上限和区域最低覆盖约束。",
+    "缺少处置/召回损失、信息价值权重、约束违约惩罚权重。",
+    "BMDL 与消费量高分位等毒理/暴露参数仍有 prototype 或待复核字段。",
+    "当前历史数据没有真实干预动作与动作后状态转移，无法做因果意义上的 off-policy DQN 评估。"
+  ]
+}

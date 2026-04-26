@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="450.0" y="34" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial" font-size="22" font-weight="700" fill="#222">年份—抽检批次</text>
+<line x1="70" y1="430" x2="860" y2="430" stroke="#333"/>
+<rect x="245.5" y="70.0" width="44" height="360.0" fill="#4C78A8"/>
+<text transform="translate(267.5,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">2023</text>
+<text x="267.5" y="65.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">48053</text>
+<rect x="640.5" y="81.61217821988225" width="44" height="348.38782178011775" fill="#4C78A8"/>
+<text transform="translate(662.5,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">2024</text>
+<text x="662.5" y="76.61217821988225" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">46503</text>
+<text x="20" y="250.0" transform="rotate(-90 20,250.0)" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial" font-size="13" fill="#333">抽检总批次数</text>
+</svg>

@@ -1,0 +1,21 @@
+﻿文件路径,文件类型,文件说明,是否关键输出,是否 canonical 副本,是否下游依赖,生成时间
+outputs/工作包/20260424_2244_全工作目录整理与规范化/00_输入说明/inputs.md,报告/文档,报告/文档,False,False,False,2026-04-24T23:57:49
+outputs/工作包/20260424_2244_全工作目录整理与规范化/02_表格输出/archive_manifest.csv,表格,索引/清单,True,False,False,2026-04-24T22:44:05
+outputs/工作包/20260424_2244_全工作目录整理与规范化/02_表格输出/organization_actions.csv,表格,任务产物,True,False,False,2026-04-24T22:44:05
+outputs/工作包/20260424_2244_全工作目录整理与规范化/02_表格输出/output_manifest.csv,表格,索引/清单,True,False,False,2026-04-24T22:44:05
+outputs/工作包/20260424_2244_全工作目录整理与规范化/02_表格输出/raw_data_inventory.csv,表格,索引/清单,True,False,False,2026-04-24T22:44:05
+outputs/工作包/20260424_2244_全工作目录整理与规范化/02_表格输出/reference_inventory.csv,表格,索引/清单,True,False,False,2026-04-24T22:44:05
+outputs/工作包/20260424_2244_全工作目录整理与规范化/02_表格输出/skills_inventory.csv,表格,索引/清单,True,False,False,2026-04-24T22:44:05
+outputs/工作包/20260424_2244_全工作目录整理与规范化/02_表格输出/workspace_inventory.csv,表格,索引/清单,True,False,False,2026-04-24T22:44:05
+outputs/工作包/20260424_2244_全工作目录整理与规范化/04_报告输出/README.md,报告/文档,报告/文档,True,False,False,2026-04-24T22:44:05
+outputs/工作包/20260424_2244_全工作目录整理与规范化/04_报告输出/output_index.md,报告/文档,索引/清单,True,False,False,2026-04-24T22:44:05
+outputs/工作包/20260424_2244_全工作目录整理与规范化/04_报告输出/output_index_20260424_235655.md,报告/文档,索引/清单,True,False,False,2026-04-24T23:56:55
+outputs/工作包/20260424_2244_全工作目录整理与规范化/04_报告输出/project_whole_workspace_organization_report.md,报告/文档,报告/文档,True,False,False,2026-04-24T22:44:05
+outputs/工作包/20260424_2244_全工作目录整理与规范化/04_报告输出/skills_inventory.md,报告/文档,索引/清单,True,False,False,2026-04-24T22:44:05
+outputs/工作包/20260424_2244_全工作目录整理与规范化/04_报告输出/source_code_inventory.md,报告/文档,索引/清单,True,False,False,2026-04-24T22:44:05
+outputs/工作包/20260424_2244_全工作目录整理与规范化/04_报告输出/workspace_inventory.md,报告/文档,索引/清单,True,False,False,2026-04-24T22:44:05
+outputs/工作包/20260424_2244_全工作目录整理与规范化/04_报告输出/workspace_structure.md,报告/文档,报告/文档,True,False,False,2026-04-24T22:44:05
+outputs/工作包/20260424_2244_全工作目录整理与规范化/06_配置参数/latest_outputs.yaml,配置/索引,任务产物,True,False,False,2026-04-24T22:44:05
+outputs/工作包/20260424_2244_全工作目录整理与规范化/06_配置参数/latest_outputs_20260424_235655.yaml,配置/索引,任务产物,True,False,False,2026-04-24T23:56:55
+outputs/工作包/20260424_2244_全工作目录整理与规范化/07_日志与错误/source_check_log.json,配置/索引,日志/错误/修复记录,True,False,False,2026-04-24T22:44:05
+outputs/工作包/20260424_2244_全工作目录整理与规范化/README.md,报告/文档,报告/文档,False,False,False,2026-04-24T23:57:49

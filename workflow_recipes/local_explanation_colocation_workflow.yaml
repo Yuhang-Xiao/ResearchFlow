@@ -1,0 +1,23 @@
+name: local_explanation_colocation_workflow
+version: 2026-04-26
+language: zh
+purpose: >
+  确保输出解释贴着结果走。每个结果目录必须有本地 README/local explanation，
+  关键 artifact 必须尽量有同名 .explanation.md；10_输出解释与索引 只做导航。
+required_outputs:
+  - local_explanation_coverage_matrix.csv
+  - missing_local_explanations.csv
+  - 02_表格输出/README_表格解释.md
+  - 03_图表输出/README_图表解释.md
+  - 04_报告输出/README_报告解释.md
+  - 05_模型与实验/README_模型输出解释.md
+  - 06_配置参数/README_参数配置解释.md
+  - 08_代码快照/README_代码解释.md
+  - 09_论文输出/README_论文输出解释.md
+  - key_artifact.explanation.md
+quality_gates:
+  - central explanation index is navigation only
+  - every output directory has a local explanation
+  - key artifacts have same-name explanations
+  - experimental/formal status is stated locally
+  - missing local explanations are listed, not hidden

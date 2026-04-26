@@ -1,0 +1,50 @@
+﻿script_or_function,kind,model_setting_component,function_logic,paper_method_or_results_relation,experimental_boundary,line_start,line_end
+rel,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,54,58
+safe_read_text,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,61,62
+write_text,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,65,67
+append_text,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,70,73
+write_csv,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,76,89
+write_df,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,92,97
+sha256_file,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,100,107
+make_run_package,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,110,168
+read_csv_rows,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,171,173
+is_relative_to,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,176,181
+is_cache_or_temp,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,184,195
+is_protected_path,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,198,208
+run_deletion,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,211,321
+run_command,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,324,333
+environment_audit,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,336,378
+load_previous_config,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,381,386
+audit_upstream,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,389,425
+first_existing,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,428,432
+optional_col,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,435,439
+num_series,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,442,445
+robust_norm,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,448,457
+build_mapping,function,state,将 canonical state feature 表中的中英文字段映射到统一内部字段。,Method: state construction,experimental_not_formal; formal parameters require user confirmation,460,483
+prepare_model_data,function,state,读取状态特征，生成 state matrix、risk_score、uncertainty、month/group key 等 DQN 输入。,Method: state feature engineering,experimental_not_formal; formal parameters require user confirmation,486,539
+build_capacity,function,constraint,从上一轮配置和数据构建 local/stage/global capacity。,Method: constraints,experimental_not_formal; formal parameters require user confirmation,542,562
+capacity_for_row,function,constraint,为单个状态单元计算可用容量上限。,Method: constraints,experimental_not_formal; formal parameters require user confirmation,565,572
+build_valid_actions,function,action/constraint,基于 ACTION_VALUES 与容量生成 action mask。,Method: action space and constraints,experimental_not_formal; formal parameters require user confirmation,575,582
+build_reward_matrix,function,reward,计算 risk reward、information gain、sampling cost、opportunity penalty、constraint penalty，并进行 tanh rescaling。,Method: reward,experimental_not_formal; formal parameters require user confirmation,585,608
+QNet,class,training,DQN Q-network，输入 state vector，输出每个动作的 Q value。,Method: DQN architecture,experimental_not_formal; formal parameters require user confirmation,611,617
+choose_valid_argmax,function,action/evaluation,在 action mask 下选择最大 Q 的合法动作。,Method: action selection,experimental_not_formal; formal parameters require user confirmation,620,623
+evaluate_policy,function,evaluation,在统一预算/容量约束下评价策略，导出 reward、constraint、action 分布等指标。,Results: policy comparison,experimental_not_formal; formal parameters require user confirmation,626,697
+train_dqn,function,training,执行 DQN 训练：epsilon-greedy、target network、mini-batch update、early stopping/logging。,Method: training,experimental_not_formal; formal parameters require user confirmation,700,817
+train_qlearning,function,baseline,构建聚合状态 Q-learning baseline。,Method: baselines,experimental_not_formal; formal parameters require user confirmation,820,865
+build_baseline_actions,function,baseline,生成 uniform、historical、risk-ranking、random、threshold 等 heuristic baseline。,Method: baselines,experimental_not_formal; formal parameters require user confirmation,868,895
+setup_fonts,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,898,904
+save_plot,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,907,913
+placeholder_plot,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,916,922
+chart_is_nonblank,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,925,928
+generate_charts,function,outputs,生成 PNG 图表并执行非空检查。,Results: figures,experimental_not_formal; formal parameters require user confirmation,931,1075
+build_action_space_report,function,action,输出动作空间可行性分析。,Method: action feasibility,experimental_not_formal; formal parameters require user confirmation,1078,1121
+build_revised_config,function,configuration,写出 DQN 修正版 experimental config。,Method: configuration,experimental_not_formal; formal parameters require user confirmation,1124,1226
+model_outputs,function,outputs,组织 DQN/Q-learning/baseline 训练、评价和表格输出。,Results: tables/model outputs,experimental_not_formal; formal parameters require user confirmation,1229,1386
+create_reports,function,outputs,生成训练报告、审计报告、质量门控报告。,Results/Appendix,experimental_not_formal; formal parameters require user confirmation,1389,1454
+create_results_draft,function,paper,生成 experimental Results draft 和 DOCX。,Results,experimental_not_formal; formal parameters require user confirmation,1457,1560
+sync_outputs,function,outputs,同步必要结果到 experiments/reports canonical 位置。,Reproducibility,experimental_not_formal; formal parameters require user confirmation,1563,1595
+update_manifest,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,1598,1626
+check_deleted_index_links,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,1629,1640
+update_indexes_and_state,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,1643,1792
+copy_code_snapshot,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,1795,1797
+main,function,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility,experimental_not_formal; formal parameters require user confirmation,1800,1829

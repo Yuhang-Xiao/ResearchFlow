@@ -1,9 +1,7 @@
-"""Raw data intake pipeline stubs."""
+"""Raw data intake pipeline."""
 
-from workflow1.pipelines.runner import PipelineResult, run_placeholder_pipeline
+from workflow1.pipelines.runner import PipelineResult
+from workflow1.pipelines.intake.runner import run
 
 
-def run() -> PipelineResult:
-    """Run the intake pipeline placeholder."""
-
-    return run_placeholder_pipeline("intake")
+__all__ = ["PipelineResult", "run"]

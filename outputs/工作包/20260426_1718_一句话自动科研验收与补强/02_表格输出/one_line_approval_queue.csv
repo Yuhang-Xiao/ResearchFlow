@@ -1,0 +1,5 @@
+﻿"item","reason","status"
+"Zotero MCP","需要安装 MCP/服务配置，可能访问或写入 Zotero 数据库","waiting_user_confirmation"
+"正式 DQN 训练","需要确认参数表与训练许可","blocked_until_confirmed"
+"外部 AutoML/科研 agent","可能需要安装依赖或运行第三方代码","waiting_user_confirmation"
+"PDF OCR/全文增强依赖","可能需要额外依赖或外部工具","waiting_user_confirmation"

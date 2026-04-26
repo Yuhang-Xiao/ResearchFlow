@@ -1,0 +1,39 @@
+name: one_line_research_dry_run
+description: Route one-line research commands into dry-run plans without real data processing or model execution.
+trigger_phrases:
+  - 启动当前数据的自动科研流程
+  - 启动 PEANUT 食品安全风险监管全流程
+  - 根据当前研究目标自动选择模型并运行 prototype
+  - 只做数据清洗和标签工程
+  - 做监督学习模型比较
+  - 读取文献并更新方法
+  - 按照已确认参数运行正式 DQN
+  - 生成论文结果部分
+  - 优化当前工作流
+required_inputs:
+  - AGENTS.md
+  - START_HERE.md
+  - project_state/
+  - workflow_recipes/
+  - workflow_improvement/
+  - skills/
+  - .agents/skills/
+dry_run_guards:
+  - do_not_process_real_data
+  - do_not_clean_or_reclean_data
+  - do_not_train_models
+  - do_not_run_dqn
+  - do_not_write_zotero_database
+outputs:
+  - structured intent
+  - mode
+  - required skills
+  - planned stages
+  - quality gates
+  - approval required items
+  - block reason when execution is not allowed
+quality_gates:
+  - raw data remains read-only
+  - formal parameters require confirmation
+  - outputs must route to run package
+  - project_state must be updated after durable tasks

@@ -1,0 +1,3 @@
+﻿item,risk_type,benefit,approval_status
+Zotero Better BibTeX plugin install,external plugin,可能帮助 BibTeX/RIS 同步,需要用户确认
+Model Card Toolkit install,external dependency,可生成标准 model card,本轮不安装；需要用户确认

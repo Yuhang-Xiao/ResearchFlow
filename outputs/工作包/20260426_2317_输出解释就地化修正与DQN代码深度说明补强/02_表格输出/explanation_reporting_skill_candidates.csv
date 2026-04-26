@@ -1,0 +1,6 @@
+﻿candidate,capability,url,safe_adaptation,risk_status
+Model Cards for Model Reporting,model card/reporting,https://arxiv.org/abs/1810.03993,可安全吸收结构：用途、限制、适用范围、评价指标,no install
+Datasheets for Datasets,data/artifact documentation,https://doi.org/10.1145/3458723,可转化为 artifact/data explanation checklist,no install
+TensorFlow Model Card Toolkit,model card toolkit,https://github.com/tensorflow/model-card-toolkit,仅借鉴 README/字段，不安装运行,approval if install
+Zotero Better BibTeX,Zotero export,https://github.com/retorquere/zotero-better-bibtex,可建议用户手动导入/导出；不自动安装插件,approval required
+Open-source reproducibility checklists,reproducibility,local research_quality skills,转化为本地 reproducibility-auditor 输出要求,safe local

@@ -1,0 +1,8 @@
+﻿model_component,project_setting,literature_keys,evidence_status
+state design,Beta-Binomial belief states; MOE/EDI risk features,Kaelbling1998POMDP; EFSA_MOE,partly supported; current feature engineering still experimental
+action space,"coarse increments [0,1,3,5,10]; high-dimensional binary not trained",Wang2020RiskBasedSampling; VanAsselt2021RiskBasedInspections,regulatory allocation rationale supported; exact increments experimental assumption
+reward design,risk reward + information gain - cost - constraint penalty,Wang2020RiskBasedSampling; Achiam2017CPO; Altman1999CMDP,component logic supported; weights experimental assumption
+constraint,"monthly budget, capacity, action mask",Achiam2017CPO; Altman1999CMDP; risk-based inspection literature,formal parameter confirmation required
+DQN training,"experience replay, target network, epsilon-greedy",Mnih2015DQN; Lin1992ExperienceReplay,method support; current code/config still experimental
+baselines,"Q-learning, uniform, historical, risk-ranking, random, threshold/greedy",Model comparison and RL baseline norms; Mnih2015DQN,baseline fairness passed locally; formal external validation absent
+reporting,model/output/code/figure explanations and evidence map,Mitchell2019ModelCards; Gebru2021Datasheets,"workflow design support, not DQN performance evidence"

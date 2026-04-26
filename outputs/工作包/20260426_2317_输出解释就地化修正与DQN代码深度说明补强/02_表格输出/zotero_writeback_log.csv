@@ -1,0 +1,14 @@
+﻿key,title,writeback_status,sidecar_generated,notes_encoding
+Mnih2015DQN,Human-level control through deep reinforcement learning,not_written_to_zotero_sqlite,yes,utf-8
+VanHasselt2016DoubleDQN,Deep Reinforcement Learning with Double Q-learning,not_written_to_zotero_sqlite,yes,utf-8
+Wang2016DuelingDQN,Dueling Network Architectures for Deep Reinforcement Learning,not_written_to_zotero_sqlite,yes,utf-8
+Lin1992ExperienceReplay,"Self-improving reactive agents based on reinforcement learning, planning and teaching",not_written_to_zotero_sqlite,yes,utf-8
+Achiam2017CPO,Constrained Policy Optimization,not_written_to_zotero_sqlite,yes,utf-8
+Altman1999CMDP,Constrained Markov Decision Processes,not_written_to_zotero_sqlite,yes,utf-8
+Kaelbling1998POMDP,Planning and acting in partially observable stochastic domains,not_written_to_zotero_sqlite,yes,utf-8
+Wang2020RiskBasedSampling,A risk-based sampling strategy to optimize inspection of food and feed products,not_written_to_zotero_sqlite,yes,utf-8
+VanAsselt2021RiskBasedInspections,Risk-based inspections of food business operators,not_written_to_zotero_sqlite,yes,utf-8
+EFSA_MOE,Margin of exposure,not_written_to_zotero_sqlite,yes,utf-8
+JECFA2018Aflatoxins,Safety evaluation of certain contaminants in food: aflatoxins,not_written_to_zotero_sqlite,yes,utf-8
+Mitchell2019ModelCards,Model Cards for Model Reporting,not_written_to_zotero_sqlite,yes,utf-8
+Gebru2021Datasheets,Datasheets for Datasets,not_written_to_zotero_sqlite,yes,utf-8

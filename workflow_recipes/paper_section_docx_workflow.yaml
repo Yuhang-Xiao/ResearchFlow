@@ -1,0 +1,27 @@
+name: paper_section_docx_workflow
+version: 2026-04-26
+language: zh
+purpose: >
+  生成高水平期刊风格论文 section，并导出 DOCX。每个 section 必须带 evidence table、
+  图表引用、文献依据、质量核验和 experimental/formal 状态标记。
+sections:
+  - Introduction
+  - Literature Review
+  - Method
+  - Results
+  - Discussion
+  - Conclusion
+  - Appendix
+  - Integrated draft
+required_outputs:
+  - section_draft.md
+  - section_evidence_table.csv
+  - figure_table_reference_map.csv
+  - citation_support_table.csv
+  - section_quality_audit.md
+  - section_draft.docx
+quality_gates:
+  - all numeric claims come from CSV/evidence table
+  - citations have verified metadata status
+  - DOCX render is checked
+  - experimental results are not written as formal conclusions

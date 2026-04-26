@@ -1,0 +1,8 @@
+﻿policy,same_state_set,same_budget,same_action_constraints,same_capacity_constraints,same_evaluation_metrics,fairness_status,experimental_label
+Q-learning,True,4567,True,True,True,pass,DQN修正版 experimental run / revised DQN experimental run; not formal policy conclusion
+DQN修正版,True,4567,True,True,True,pass,DQN修正版 experimental run / revised DQN experimental run; not formal policy conclusion
+threshold/greedy uncertainty,True,4567,True,True,True,pass,DQN修正版 experimental run / revised DQN experimental run; not formal policy conclusion
+risk-ranking top-k,True,4567,True,True,True,pass,DQN修正版 experimental run / revised DQN experimental run; not formal policy conclusion
+uniform allocation,True,4567,True,True,True,pass,DQN修正版 experimental run / revised DQN experimental run; not formal policy conclusion
+historical allocation,True,4567,True,True,True,pass,DQN修正版 experimental run / revised DQN experimental run; not formal policy conclusion
+random policy,True,4567,True,True,True,pass,DQN修正版 experimental run / revised DQN experimental run; not formal policy conclusion

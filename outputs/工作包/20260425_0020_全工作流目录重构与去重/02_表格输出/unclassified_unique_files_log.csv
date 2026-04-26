@@ -1,0 +1,2 @@
+﻿文件原路径,移动后路径,文件类型,为什么无法归类,后续建议
+data/03_primary/FINAL_SiChuan_2023_ALL_DATA__category_cleaned.csv,outputs/_待复核/20260425_未归类唯一文件/FINAL_SiChuan_2023_ALL_DATA__category_cleaned.csv,表格/历史清洗数据,非当前 PEANUT canonical 主表，且无法可靠判断对应任务；唯一文件需保护,人工确认是否归入历史任务包、references 或 data/99_archive

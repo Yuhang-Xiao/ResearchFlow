@@ -1,0 +1,43 @@
+capabilities:
+  - one-line command router
+  - data cleaning
+  - label engineering
+  - schema validation
+  - feature engineering
+  - literature search
+  - Zotero integration
+  - PDF full-text reading
+  - Chinese note encoding repair
+  - model family selection
+  - AutoML
+  - supervised learning
+  - time series
+  - causal inference
+  - Bayesian modeling
+  - Monte Carlo simulation
+  - optimization
+  - RL/DQN
+  - experiment tracking
+  - hyperparameter tuning
+  - visualization
+  - academic writing
+  - paper result writer
+  - quality gates
+  - auto-repair
+  - run package organization
+  - project memory
+  - conversation handoff
+  - workflow self-improvement
+
+research_quality:
+  - data_generation_validation
+  - derived_data_lineage
+  - table_chart_qa
+  - model_comparison
+  - baseline_fairness
+  - reward_convergence_constraint_audit
+  - citation_verification
+  - top_journal_benchmark
+  - result_claim_guard
+  - reviewer2_audit
+  - reproducibility_audit

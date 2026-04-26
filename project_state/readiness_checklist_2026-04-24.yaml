@@ -1,0 +1,102 @@
+audit_date: "2026-04-24"
+scope: "workflow/system readiness audit only; no dataset analysis, cleaning, modeling, tuning, or visualization execution"
+overall_readiness: "PARTIALLY READY"
+fresh_automated_research_run_ready: false
+checks:
+  instructions_control_layer:
+    readiness: "READY"
+    agents_md_present: true
+    agents_md_readable: true
+    agents_md_aligned_with_goal_driven_mode: true
+    codex_config_present: true
+  skills_layer:
+    readiness: "PARTIALLY READY"
+    skill_md_files_present: true
+    skills_found:
+      - "autonomous-research-orchestrator"
+      - "baseline-trainer"
+      - "data-cleaning-matching"
+      - "data-schema-profiler"
+      - "eda-generator"
+      - "method-selector"
+      - "ml-problem-framer"
+      - "task-router"
+      - "workflow-updater"
+    metadata_issue: "SKILL.md files are human-readable but lack consistent machine-readable name/description metadata fields"
+    missing_skills:
+      - "label-engineering"
+      - "data-validation"
+      - "tuning-comparison"
+      - "visualization-reporter"
+  source_pipeline_layer:
+    readiness: "NOT READY"
+    compileall_src_passed: true
+    workflow1_importable_from_repo_root_without_install: false
+    main_issue: "Most pipeline modules return not_implemented placeholders"
+    dataset_specific_code_present: true
+    missing_capabilities:
+      - "generic intake/profiling runner"
+      - "generic raw validation"
+      - "generic cleaning engine and cleaning log"
+      - "feature and label engineering"
+      - "model input builder"
+      - "baseline training/evaluation"
+      - "tuning and comparison"
+      - "visualization export"
+      - "end-to-end CLI or orchestrator runner"
+  project_state_layer:
+    readiness: "PARTIALLY READY"
+    required_files_present:
+      current_focus_md: true
+      next_step_md: true
+      changelog_md: true
+      decision_log_md: true
+      roadmap_yaml: true
+    coherence_issues:
+      - "current_focus.md and prior next_step.md still referenced the previous FINAL_SiChuan category reconstruction task"
+      - "roadmap.yaml remains at bootstrap/in_progress"
+      - "some state/report text contains mojibake Chinese field names"
+  environment_portability:
+    readiness: "PARTIALLY READY"
+    python_version_checked: "Python 3.13.9"
+    core_packages_found:
+      pandas: true
+      numpy: true
+      sklearn: true
+      matplotlib: true
+      seaborn: true
+      openpyxl: true
+      yaml: true
+    dependency_manifest_present: false
+    project_install_manifest_present: false
+    rg_available_for_audit: false
+workflow_completeness:
+  automated_data_cleaning: "PARTIALLY READY"
+  automated_modeling: "NOT READY"
+  automated_visualization: "NOT READY"
+  iterative_scientific_workflow_execution: "PARTIALLY READY"
+priority_repair_plan:
+  critical_blockers:
+    - "Add pyproject.toml or requirements.txt with Python version and core dependencies"
+    - "Make src/workflow1 installable or provide a supported runner command"
+    - "Reset project state away from the previous Sichuan category task before a fresh run"
+    - "Separate task-specific category reconstruction code from generic cleaning pipeline"
+    - "Implement minimum viable generic pipeline stages for intake, validation, cleaning, EDA, modeling, evaluation, and visualization"
+  recommended_improvements:
+    - "Add machine-readable metadata to all SKILL.md files"
+    - "Add label-engineering, data-validation, tuning-comparison, and visualization-reporter skills"
+    - "Add an end-to-end orchestrator runner"
+    - "Add report templates and lightweight tests"
+    - "Repair or quarantine mojibake historical outputs"
+  nice_to_have:
+    - "Add Makefile/justfile or PowerShell command wrappers"
+    - "Add synthetic fixtures for pipeline smoke tests"
+    - "Add experiment run registry format"
+    - "Add visualization theme and Chinese font preflight"
+first_repair_step: "Create a reproducible Python project/dependency manifest and minimal runnable workflow entrypoint, then reset project_state to the migrated generic workflow readiness state."
+deliverables:
+  report: "reports/readiness_audit_2026-04-24.md"
+  checklist: "project_state/readiness_checklist_2026-04-24.yaml"
+  updated_files:
+    - "project_state/next_step.md"
+    - "project_state/changelog.md"

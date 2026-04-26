@@ -1,0 +1,20 @@
+score_fields:
+  relevance_to_workflow1: 0-5
+  supports_codex_or_agent_skills: 0-5
+  academic_research_fit: 0-5
+  data_science_fit: 0-5
+  literature_zotero_fit: 0-5
+  modeling_fit: 0-5
+  experiment_loop_fit: 0-5
+  visualization_reporting_fit: 0-5
+  maintenance_activity: 0-5
+  stars_or_adoption: 0-5
+  documentation_quality: 0-5
+  license_clarity: 0-5
+  security_risk: 0-5
+  dependency_risk: 0-5
+  windows_compatibility: 0-5
+  can_adapt_as_local_skill: 0-5
+  needs_user_approval: boolean
+  recommendation: [ADAPT_AS_LOCAL_SKILL, ADD_TO_RECIPE_OR_REGISTRY, ADD_LIGHTWEIGHT_STUB, APPROVAL_REQUIRED_PLUGIN, REFERENCE_ONLY, REJECT]
+rule: "Prefer local adaptation of structure over code copying. High dependency/security/API/database risk requires approval."

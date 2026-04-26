@@ -1,0 +1,6 @@
+﻿rule,scope,severity
+lineage_required,derived_data,high
+row_column_key_summary_required,every_output_table,high
+chart_data_source_required,figures,high
+report_numbers_match_tables,reports,high
+repair_or_issue_log_required,auto_repair,medium

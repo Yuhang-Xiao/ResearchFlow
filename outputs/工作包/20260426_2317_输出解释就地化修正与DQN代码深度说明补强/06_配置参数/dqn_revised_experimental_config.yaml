@@ -1,0 +1,198 @@
+experiment:
+  id: peanut_dqn_revised_20260426_2056
+  tag: revised_reward_png_multimodel_experimental
+  label: DQN修正版 experimental run / revised DQN experimental run; not formal policy
+    conclusion
+  prototype_vs_formal: experimental_not_formal
+  created_at: '2026-04-26T20:56:13'
+paths:
+  run_package: D:\桌面\codex\workflow1\outputs\工作包\20260426_2056_推荐缓存删除与DQN修正版训练
+  state_features: data/04_feature/peanut_belief_mdp_state_features_with_moe_edi.csv
+action_space:
+  increments:
+  - 0
+  - 1
+  - 3
+  - 5
+  - 10
+  actual_training_choice: coarse_discrete_action_space_with_action_mask
+  high_dimensional_binary_action: not trained in this run; requires factorized/hierarchical/combinatorial
+    method
+constraints:
+  monthly_budget: 4567
+  budget_p50: 3918.5
+  budget_p75: 4567.25
+  budget_p90: 5901.7
+  local_capacity:
+    上海|流通: 10
+    上海|生产: 7
+    上海|餐饮: 3
+    不详|其他: 6
+    不详|流通: 1378
+    不详|生产: 16
+    不详|餐饮: 264
+    云南|流通: 13
+    云南|生产: 4
+    云南|餐饮: 83
+    内蒙古|流通: 12
+    内蒙古|生产: 1
+    内蒙古|餐饮: 30
+    北京|流通: 4
+    北京|生产: 3
+    北京|餐饮: 14
+    台湾|流通: 2
+    吉林|流通: 43
+    吉林|生产: 5
+    吉林|餐饮: 30
+    四川|流通: 60
+    四川|生产: 13
+    四川|餐饮: 69
+    天津|流通: 36
+    天津|生产: 3
+    天津|餐饮: 3
+    宁夏|流通: 1
+    宁夏|生产: 1
+    宁夏|餐饮: 10
+    安徽|其他: 1
+    安徽|流通: 234
+    安徽|生产: 23
+    安徽|餐饮: 24
+    山东|流通: 448
+    山东|生产: 53
+    山东|餐饮: 94
+    山西|流通: 7
+    山西|生产: 3
+    山西|餐饮: 36
+    广东|流通: 404
+    广东|生产: 296
+    广东|餐饮: 86
+    广西|其他: 1
+    广西|流通: 165
+    广西|生产: 861
+    广西|餐饮: 29
+    新疆|流通: 5
+    新疆|生产: 3
+    新疆|餐饮: 31
+    未知|流通: 2
+    江苏|流通: 205
+    江苏|生产: 19
+    江苏|餐饮: 68
+    江西|流通: 62
+    江西|生产: 19
+    江西|餐饮: 23
+    河北|流通: 156
+    河北|生产: 17
+    河北|餐饮: 37
+    河南|流通: 221
+    河南|生产: 22
+    河南|餐饮: 101
+    浙江|流通: 75
+    浙江|生产: 15
+    浙江|餐饮: 29
+    海南|流通: 1
+    海南|生产: 20
+    海南|餐饮: 3
+    湖北|流通: 73
+    湖北|生产: 18
+    湖北|餐饮: 68
+    湖南|流通: 41
+    湖南|生产: 46
+    湖南|餐饮: 11
+    甘肃|流通: 3
+    甘肃|生产: 1
+    甘肃|餐饮: 6
+    福建|流通: 131
+    福建|生产: 19
+    福建|餐饮: 42
+    西藏|流通: 1
+    西藏|餐饮: 20
+    贵州|流通: 21
+    贵州|生产: 7
+    贵州|餐饮: 45
+    辽宁|流通: 117
+    辽宁|生产: 17
+    辽宁|餐饮: 57
+    进口|流通: 2
+    进口|餐饮: 1
+    重庆|流通: 45
+    重庆|生产: 15
+    重庆|餐饮: 75
+    陕西|流通: 19
+    陕西|生产: 2
+    陕西|餐饮: 30
+    青海|流通: 5
+    青海|生产: 1
+    青海|餐饮: 11
+    香港|流通: 1
+    黑龙江|流通: 31
+    黑龙江|生产: 7
+    黑龙江|餐饮: 67
+  stage_capacity:
+    其他: 2
+    流通: 92
+    生产: 16
+    餐饮: 33
+  global_capacity: 46
+  action_mask: action <= local/stage/global capacity and monthly remaining budget
+reward:
+  decomposition:
+  - risk_reward
+  - information_gain
+  - sampling_cost
+  - opportunity_penalty
+  - constraint_penalty
+  reward_rescaling: raw reward divided by robust P90 absolute valid reward then tanh
+  risk_reward_weight: 2.4
+  info_gain_weight: 0.85
+  cost_weight: 0.18
+  missed_high_risk_penalty: 0.18
+  constraint_penalty_weight: 5.0
+  sampling_cost: cost_weight * action / max_action
+  risk_reward: normalized risk_score * log1p(action)/log1p(max_action)
+  information_gain: normalized uncertainty * sqrt(action/max_action)
+training:
+  episodes: 300
+  updates_per_episode: 18
+  learning_rate: 0.001
+  gamma: 0.9
+  batch_size: 256
+  epsilon_start: 1.0
+  epsilon_min: 0.05
+  epsilon_decay: 0.986
+  target_update_frequency: 10
+  early_stopping: true
+  early_stopping_min_episodes: 220
+  early_stopping_patience: 60
+  early_stopping_min_delta: 0.01
+  moving_average_reward_window: 20
+  random_seed: 42
+  device_required: cuda
+  gpu_required: NVIDIA GeForce RTX 4060 Ti
+baselines:
+- DQN修正版
+- Q-learning
+- uniform allocation
+- historical allocation
+- risk-ranking top-k
+- random policy
+- threshold/greedy uncertainty
+baseline_fairness_settings:
+  same_state_set: true
+  same_budget: true
+  same_action_constraints: true
+  same_capacity_constraints: true
+  same_evaluation_metrics: true
+outputs:
+  chart_format: PNG
+  chinese_font: Microsoft YaHei
+  loss_curve: true
+  reward_curve: true
+  moving_average_reward: true
+  epsilon_curve: true
+  constraint_violation: true
+  action_distribution: true
+  reward_component_summary: true
+  convergence_diagnosis: true
+  policy_collapse_check: true
+  reward_hacking_check: true
+previous_config_source: outputs/工作包/20260426_1746_全流程验收与DQN自动参数训练/06_配置参数/dqn_auto_synthesized_config.yaml

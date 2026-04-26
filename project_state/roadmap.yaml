@@ -1,46 +1,55 @@
 project: workflow1
-status: bootstrap
+status: experimental_dqn_completed_not_formal
 phases:
-  - id: bootstrap
-    name: Repository bootstrap
-    status: in_progress
-    goals:
-      - Create reusable folder structure.
-      - Add Codex project instructions.
-      - Add starter skills and lightweight Python stubs.
-  - id: validation
-    name: Data intake and validation
-    status: pending
-    goals:
-      - Inventory available data sources.
-      - Profile schemas and file-level metadata.
-      - Define validation checks before downstream analysis.
-  - id: cleaning
-    name: Cleaning and matching
-    status: pending
-    goals:
-      - Define cleaning rules.
-      - Normalize keys and formats.
-      - Document matching assumptions and unresolved records.
-  - id: eda
-    name: Exploratory data analysis
-    status: pending
-    goals:
-      - Produce descriptive summaries.
-      - Identify missingness, outliers, and distributions.
-      - Generate initial visual diagnostics.
-  - id: modeling
-    name: Modeling and evaluation
-    status: pending
-    goals:
-      - Frame the ML or statistical problem.
-      - Select baseline methods and metrics.
-      - Compare candidate methods against baselines.
-  - id: reporting
-    name: Reporting and workflow updates
-    status: pending
-    goals:
-      - Export figures, tables, and report drafts.
-      - Record decisions and next steps.
-      - Update reusable workflow instructions when patterns stabilize.
-next_recommended_phase: validation
+- id: migration_repair
+  name: Migrated repository repair
+  status: completed
+  goals:
+  - Add reproducible Python project metadata.
+  - Make the src package importable through standard installation.
+  - Add a lightweight runnable workflow entrypoint.
+  - Add a reference-document layer for future workflow guidance.
+  - Reset project state away from prior dataset-specific work.
+- id: preparation
+  name: Minimum data preparation runners
+  status: completed
+  goals:
+  - Implement intake for `.csv` and `.xlsx` schema inventory.
+  - Implement validation summary for raw table quality signals.
+  - Implement non-destructive cleaning plan generation.
+  - Keep raw data immutable.
+- id: one_line_launch
+  name: One-line launch and project memory framework
+  status: completed
+  goals:
+  - Add START_HERE and reusable one-line launch prompts.
+  - Add project memory, lessons learned, run protocol, and conversation handoff.
+  - Add repo-scoped skills under `.agents/skills`.
+  - Add launch, continue, memory-update, and skill-scout lightweight commands.
+  - Record skill scout findings.
+- id: cleaning
+  name: Cleaning and matching execution
+  status: completed
+  goals:
+  - Implement actual cleaning only after a dataset and research goal are provided.
+  - Define cleaning rules from user goal, dataset evidence, validation findings, and
+    relevant references.
+  - Write derived outputs to `data/02_intermediate` or `data/03_primary`.
+- id: modeling
+  name: Modeling, simulation, and evaluation
+  status: experimental_completed
+  goals:
+  - Frame the ML or statistical problem.
+  - Evaluate MOE/EDI, Beta-Binomial, POMDP, and DQN feasibility when relevant.
+  - Select baseline methods and metrics before advanced methods.
+  - Compare candidate methods against baselines.
+  - Completed self-synthesized experimental PEANUT DQN run; formal DQN still requires
+    user-confirmed parameters.
+- id: visualization_reporting
+  name: Visualization, reporting, and memory updates
+  status: completed
+  goals:
+  - Export figures, tables, and report drafts.
+  - Record decisions, reference guidance, lessons, and next steps.
+  - Update conversation handoff after complex tasks.
+next_recommended_phase: formal_dqn_parameter_confirmation

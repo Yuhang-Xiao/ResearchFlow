@@ -1,0 +1,5 @@
+﻿candidate,url,category,useful_for,score_1_5,adoption_mode,risk_or_condition
+markrussinovich/refchecker,https://github.com/markrussinovich/refchecker,academic reference validation,reference verification workflow,4,approval_queue_for_api,LLM/provider/API use requires approval
+amazon-science/RefChecker,https://github.com/amazon-science/RefChecker,claim/reference hallucination checker,claim-triplet evidence checking,4,concept_adapt,heavy model dependencies not installed
+Zotero MCP servers,https://github.com/swairshah/zotero-mcp-server,Zotero MCP,library read/search workflow,3,approval_queue,MCP/database/API risks
+OpenAlex/CrossRef/Semantic Scholar,https://api.crossref.org/,citation metadata APIs,deterministic DOI metadata checks,5,safe_plan,"API/network use only, no keys by default"

@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-04-25T11:36:02",
+  "seed": 20260425,
+  "input_rows": {
+    "cleaned_dataset": 94556,
+    "concentration_table": 1978,
+    "count_panel": 1710,
+    "beta_binomial_states": 1710,
+    "belief_mdp_features_with_moe_edi": 1710,
+    "edi_moe_risk_table": 766
+  },
+  "audit_pass": 10,
+  "audit_warn": 0,
+  "audit_fail": 0,
+  "prototype_ran": true,
+  "formal_dqn_ready": false,
+  "policy_rows": 1710,
+  "action_counts": {
+    "常规加密抽检": 1322,
+    "重点专项抽检": 200,
+    "维持/不加码": 188
+  },
+  "outputs": {
+    "audit": "D:\\桌面\\codex\\workflow1\\outputs\\工作包\\20260425_1132_DQN初步运行\\02_表格输出\\peanut_dqn_upstream_audit_findings.csv",
+    "policy": "D:\\桌面\\codex\\workflow1\\outputs\\工作包\\20260425_1132_DQN初步运行\\01_数据输出\\peanut_dqn_prototype_policy.csv",
+    "top_priority": "D:\\桌面\\codex\\workflow1\\outputs\\工作包\\20260425_1132_DQN初步运行\\02_表格输出\\peanut_dqn_top_priority_states.csv",
+    "action_summary": "D:\\桌面\\codex\\workflow1\\outputs\\工作包\\20260425_1132_DQN初步运行\\02_表格输出\\peanut_dqn_action_summary.csv"
+  }
+}

@@ -17,6 +17,7 @@ Use this skill after a workflow step creates durable outputs, decisions, assumpt
 - Optional updates to `AGENTS.md` when workflow rules change.
 - Changelog entry.
 - Decision log entry, if applicable.
+- References to generated intake, validation, or cleaning-plan artifacts when those stages run.
 
 ## Recommended Workflow
 
@@ -26,3 +27,4 @@ Use this skill after a workflow step creates durable outputs, decisions, assumpt
 4. Keep `current_focus.md` aligned to the active objective.
 5. Keep `next_step.md` focused on one recommended next action.
 6. Update `roadmap.yaml` only when phase status or task ordering changes.
+7. When `intake`, `validation`, or `cleaning-plan` outputs are generated, record paths and confirm whether the stage was non-destructive.

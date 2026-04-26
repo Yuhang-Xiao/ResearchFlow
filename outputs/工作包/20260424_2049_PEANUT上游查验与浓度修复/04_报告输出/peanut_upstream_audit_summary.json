@@ -1,0 +1,12 @@
+{
+  "clean_rows": 94556,
+  "raw_rows": 94714,
+  "afb1_records": 1978,
+  "afb1_concentration_rows": 1978,
+  "afb1_concentration_available": 766,
+  "afb1_limit_available": 754,
+  "afb1_exceedance": 805,
+  "panel_rows": 1710,
+  "panel_afb1_concentration_available_total": 766,
+  "belief_rebuilt": true
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "command": "D:\\anaconda3\\python.exe -c import workflow1; print(workflow1.__version__)",
+    "returncode": 0,
+    "stdout": "0.1.0",
+    "stderr": ""
+  },
+  {
+    "command": "D:\\anaconda3\\python.exe -m workflow1 --stage launch",
+    "returncode": 0,
+    "stdout": "{'config_path': '.codex\\\\config.toml', 'config_loaded': True, 'stage': 'launch', 'status': 'ok', 'details': {'message': 'One-line launch context prepared. No heavy data processing was started.', 'memory_files': ('project_state/project_memory.md', 'project_state/run_protocol.md', 'project_state/current_focus.md', 'project_state/next_step.md', 'project_state/decision_log.md', 'project_state/lessons_learned.md', 'project_state/conversation_handoff.md'), 'raw_files': ('data\\\\01_raw\\\\Concentration_and_Consumption pEANUT.xlsx', 'data\\\\01_raw\\\\FINAL_SiChuan_2023_ALL_DATA.xlsx', 'data\\\\01_raw\\\\PEANUT2023-20241.xlsx', 'data\\\\01_raw\\\\PEANUTwithProb0627.xlsx', 'data\\\\01_raw\\\\population_long_clean.xlsx', 'data\\\\01_raw\\\\raw_data_inventory.csv'), 'reference_files': ('references\\\\README.md', 'references\\\\data_cleaning\\\\README.md', 'references\\\\literature\\\\README.md', 'references\\\\modeling\\\\README.md', 'references\\\\notes\\\\README.md', 'references\\\\notes\\\\物流与供应链管理前言-研究计划-肖宇航.docx', 'references\\\\notes\\\\食品安全风险监测与优化_Codex科研工作流总结.docx', 'references\\\\processed_summaries\\\\README.md', 'references\\\\processed_summaries\\\\peanut_research_plan_summary.md', 'references\\\\reference_inventory.csv', 'references\\\\standards\\\\README.md', 'references\\\\visualization\\\\README.md'), 'next_step': '# Next Step\\n\\n不要运行 DQN。下一步先补齐或确认最小 belief-MDP / DQN prototype 所需动作空间、预算、产能、抽检成本、处置/召回损失、信息价值权重和约束参数；每次任务结束后执行全工作目录整理检查。', 'notes': ('This launcher only prepares context and recommendations.', 'Use intake/validation/cleaning-plan before actual cleaning.')}}",
+    "stderr": "INFO:workflow1:Loaded config: True\nINFO:workflow1:Routing stage: launch"
+  }
+]

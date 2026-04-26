@@ -1,0 +1,28 @@
+name: model_documentation_workflow
+version: 2026-04-26
+language: zh
+purpose: >
+  为任意模型生成详细方法说明，覆盖输入特征/状态、目标/动作、reward、参数、训练流程、
+  baseline、评价指标、文献依据、局限性和论文使用边界。
+model_families:
+  - DQN
+  - Q-learning
+  - RL / constrained RL / POMDP / belief-MDP
+  - XGBoost
+  - Random Forest
+  - LightGBM
+  - Logistic Regression
+  - Time Series
+  - Bayesian model
+  - Monte Carlo
+  - Optimization
+required_outputs:
+  - model_setting_detail_report.md
+  - model_output_explanations.md
+  - model_component_literature_map.csv
+  - model_limitations_and_formal_status.md
+quality_gates:
+  - settings come from local config/code/data outputs or are marked experimental_assumption
+  - at least one baseline is documented
+  - evaluation metrics are interpreted, not only listed
+  - formal use requires confirmed parameters and external validation where applicable

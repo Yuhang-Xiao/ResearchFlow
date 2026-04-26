@@ -1,0 +1,20 @@
+name: literature_citation_zotero_quality
+description: Expand literature and prepare safe Zotero sidecar notes without modifying Zotero databases.
+required_skills:
+  - literature-coverage-auditor
+  - citation-and-reference-verifier
+  - zotero-writeback-and-note-validator
+quality_gates:
+  - local_zotero_read_only
+  - garbled_notes_flagged
+  - doi_title_author_year_venue_checked
+  - sidecar_notes_generated
+  - direct_database_write_blocked_without_approval
+approval_required:
+  - Zotero database write
+  - Zotero MCP installation
+  - API key
+outputs:
+  - citation_verification_tool_candidates.csv
+  - zotero_writeback_safe_plan.csv
+  - sidecar_notes

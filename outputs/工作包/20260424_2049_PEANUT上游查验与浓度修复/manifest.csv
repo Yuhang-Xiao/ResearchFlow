@@ -1,0 +1,14 @@
+﻿文件路径,文件类型,文件说明,是否关键输出,是否 canonical 副本,是否下游依赖,生成时间
+outputs/工作包/20260424_2049_PEANUT上游查验与浓度修复/00_输入说明/inputs.md,报告/文档,报告/文档,False,False,False,2026-04-24T23:57:49
+outputs/工作包/20260424_2049_PEANUT上游查验与浓度修复/01_数据输出/peanut_concentration_clean_table.csv,表格,浓度/计数面板输出,True,True,True,2026-04-24T20:48:43
+outputs/工作包/20260424_2049_PEANUT上游查验与浓度修复/01_数据输出/peanut_concentration_distribution_summary.csv,表格,浓度/计数面板输出,True,True,True,2026-04-24T20:48:43
+outputs/工作包/20260424_2049_PEANUT上游查验与浓度修复/01_数据输出/peanut_count_panel.csv,表格,浓度/计数面板输出,True,True,True,2026-04-24T20:48:43
+outputs/工作包/20260424_2049_PEANUT上游查验与浓度修复/01_数据输出/peanut_count_panel.xlsx,表格,浓度/计数面板输出,True,False,False,2026-04-24T20:48:43
+outputs/工作包/20260424_2049_PEANUT上游查验与浓度修复/04_报告输出/peanut_concentration_audit_findings.csv,表格,浓度/计数面板输出,True,False,False,2026-04-24T20:49:34
+outputs/工作包/20260424_2049_PEANUT上游查验与浓度修复/04_报告输出/peanut_concentration_cleaning_report.md,报告/文档,浓度/计数面板输出,True,False,False,2026-04-24T20:48:45
+outputs/工作包/20260424_2049_PEANUT上游查验与浓度修复/04_报告输出/peanut_count_panel_report.md,报告/文档,浓度/计数面板输出,True,False,False,2026-04-24T20:48:45
+outputs/工作包/20260424_2049_PEANUT上游查验与浓度修复/04_报告输出/peanut_upstream_audit_summary.json,配置/索引,任务产物,True,False,False,2026-04-24T20:48:45
+outputs/工作包/20260424_2049_PEANUT上游查验与浓度修复/04_报告输出/peanut_upstream_verification_report.md,报告/文档,报告/文档,True,False,False,2026-04-24T20:49:34
+outputs/工作包/20260424_2049_PEANUT上游查验与浓度修复/07_日志与错误/peanut_cleaning_issue_log.csv,表格,日志/错误/修复记录,True,False,False,2026-04-24T20:48:43
+outputs/工作包/20260424_2049_PEANUT上游查验与浓度修复/07_日志与错误/peanut_upstream_repair_log.md,报告/文档,日志/错误/修复记录,True,False,False,2026-04-24T20:49:34
+outputs/工作包/20260424_2049_PEANUT上游查验与浓度修复/README.md,报告/文档,报告/文档,False,False,False,2026-04-24T23:57:49

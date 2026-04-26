@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="450.0" y="34" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial" font-size="22" font-weight="700" fill="#222">省份风险排序（Top 20，不合格率%）</text>
+<line x1="150" y1="430" x2="860" y2="430" stroke="#333"/>
+<text x="142" y="81.34" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial" font-size="13" fill="#333">海南</text>
+<rect x="150" y="73.15" width="710.0" height="11.700000000000001" fill="#E45756"/>
+<text x="865.0" y="81.34" font-family="Arial" font-size="12" fill="#333">10.34</text>
+<text x="142" y="99.34" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial" font-size="13" fill="#333">甘肃</text>
+<rect x="150" y="91.15" width="536.1979166666667" height="11.700000000000001" fill="#E45756"/>
+<text x="691.1979166666667" y="99.34" font-family="Arial" font-size="12" fill="#333">7.81</text>
+<text x="142" y="117.34" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial" font-size="13" fill="#333">广西</text>
+<rect x="150" y="109.15" width="262.8663868485484" height="11.700000000000001" fill="#E45756"/>
+<text x="417.8663868485484" y="117.34" font-family="Arial" font-size="12" fill="#333">3.83</text>
+<text x="142" y="135.34" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial" font-size="13" fill="#333">贵州</text>
+<rect x="150" y="127.15" width="244.8067940552017" height="11.700000000000001" fill="#E45756"/>
+<text x="399.8067940552017" y="135.34" font-family="Arial" font-size="12" fill="#333">3.57</text>
+<text x="142" y="153.34" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial" font-size="13" fill="#333">青海</text>
+<rect x="150" y="145.15" width="223.80434782608694" height="11.700000000000001" fill="#E45756"/>
+<text x="378.80434782608694" y="153.34" font-family="Arial" font-size="12" fill="#333">3.26</text>
+<text x="142" y="171.34" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial" font-size="13" fill="#333">北京</text>
+<rect x="150" y="163.15" width="197.50599520383696" height="11.700000000000001" fill="#E45756"/>
+<text x="352.50599520383696" y="171.34" font-family="Arial" font-size="12" fill="#333">2.88</text>
+<text x="142" y="189.34" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial" font-size="13" fill="#333">山西</text>
+<rect x="150" y="181.15" width="191.35687732342006" height="11.700000000000001" fill="#E45756"/>
+<text x="346.35687732342006" y="189.34" font-family="Arial" font-size="12" fill="#333">2.79</text>
+<text x="142" y="207.34" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial" font-size="13" fill="#333">不详</text>
+<rect x="150" y="199.15" width="178.6581979730668" height="11.700000000000001" fill="#E45756"/>
+<text x="333.65819797306676" y="207.34" font-family="Arial" font-size="12" fill="#333">2.60</text>
+<text x="142" y="225.34" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial" font-size="13" fill="#333">陕西</text>
+<rect x="150" y="217.15" width="153.08550185873605" height="11.700000000000001" fill="#E45756"/>
+<text x="308.08550185873605" y="225.34" font-family="Arial" font-size="12" fill="#333">2.23</text>
+<text x="142" y="243.34" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial" font-size="13" fill="#333">新疆</text>
+<rect x="150" y="235.15" width="145.6410256410256" height="11.700000000000001" fill="#E45756"/>
+<text x="300.64102564102564" y="243.34" font-family="Arial" font-size="12" fill="#333">2.12</text>
+<text x="142" y="261.34000000000003" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial" font-size="13" fill="#333">河南</text>
+<rect x="150" y="253.15" width="132.78831562974202" height="11.700000000000001" fill="#E45756"/>
+<text x="287.788315629742" y="261.34000000000003" font-family="Arial" font-size="12" fill="#333">1.93</text>
+<text x="142" y="279.34" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial" font-size="13" fill="#333">西藏</text>
+<rect x="150" y="271.15" width="120.4093567251462" height="11.700000000000001" fill="#E45756"/>
+<text x="275.4093567251462" y="279.34" font-family="Arial" font-size="12" fill="#333">1.75</text>
+<text x="142" y="297.34" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial" font-size="13" fill="#333">重庆</text>
+<rect x="150" y="289.15" width="104.22677803087824" height="11.700000000000001" fill="#E45756"/>
+<text x="259.2267780308782" y="297.34" font-family="Arial" font-size="12" fill="#333">1.52</text>
+<text x="142" y="315.34" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial" font-size="13" fill="#333">四川</text>
+<rect x="150" y="307.15" width="103.92691298203108" height="11.700000000000001" fill="#E45756"/>
+<text x="258.92691298203107" y="315.34" font-family="Arial" font-size="12" fill="#333">1.51</text>
+<text x="142" y="333.34" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial" font-size="13" fill="#333">江苏</text>
+<rect x="150" y="325.15" width="94.22478491671242" height="11.700000000000001" fill="#E45756"/>
+<text x="249.22478491671242" y="333.34" font-family="Arial" font-size="12" fill="#333">1.37</text>
+<text x="142" y="351.34" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial" font-size="13" fill="#333">湖北</text>
+<rect x="150" y="343.15" width="92.74774774774775" height="11.700000000000001" fill="#E45756"/>
+<text x="247.74774774774775" y="351.34" font-family="Arial" font-size="12" fill="#333">1.35</text>
+<text x="142" y="369.34" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial" font-size="13" fill="#333">浙江</text>
+<rect x="150" y="361.15" width="92.43546576879909" height="11.700000000000001" fill="#E45756"/>
+<text x="247.43546576879908" y="369.34" font-family="Arial" font-size="12" fill="#333">1.35</text>
+<text x="142" y="387.34" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial" font-size="13" fill="#333">云南</text>
+<rect x="150" y="379.15" width="88.62266857962697" height="11.700000000000001" fill="#E45756"/>
+<text x="243.62266857962697" y="387.34" font-family="Arial" font-size="12" fill="#333">1.29</text>
+<text x="142" y="405.34" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial" font-size="13" fill="#333">广东</text>
+<rect x="150" y="397.15" width="81.47573191654213" height="11.700000000000001" fill="#E45756"/>
+<text x="236.47573191654214" y="405.34" font-family="Arial" font-size="12" fill="#333">1.19</text>
+<text x="142" y="423.34" text-anchor="end" font-family="Microsoft YaHei, SimHei, Arial" font-size="13" fill="#333">内蒙古</text>
+<rect x="150" y="415.15" width="75.00910746812386" height="11.700000000000001" fill="#E45756"/>
+<text x="230.00910746812386" y="423.34" font-family="Arial" font-size="12" fill="#333">1.09</text>
+</svg>

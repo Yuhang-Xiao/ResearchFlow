@@ -1,0 +1,15 @@
+name: model_result_interpretation_workflow
+version: 2026-04-26
+language: zh
+purpose: >
+  将模型输出、图、表和质量门控转化为可读结果解读，明确指标含义、方向、稳定性、
+  reward hacking/未收敛/约束风险和 experimental/formal 边界。
+required_outputs:
+  - model_result_interpretation_report.md
+  - model_output_explanations.md
+  - result_interpretation_guide.md
+  - result_claim_guard_findings.csv
+quality_gates:
+  - no CSV-only result without interpretation
+  - every claim maps to source table/figure/model artifact
+  - limitations and non-formal status are explicit

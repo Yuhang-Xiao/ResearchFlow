@@ -1,0 +1,5 @@
+﻿id,status,priority
+quality_gate_after_each_task,active,high
+citation_verification_api_stub,active,high
+zotero_mcp_review,approval_required,medium
+deepchecks_pandera_evidently_optional_integrations,approval_required,medium

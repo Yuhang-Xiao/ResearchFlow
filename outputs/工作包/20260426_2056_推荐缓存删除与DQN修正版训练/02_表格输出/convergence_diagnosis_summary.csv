@@ -1,0 +1,7 @@
+﻿metric,value,status
+episodes_completed,281.0,pass
+reward_moving_average_delta,-13.598567406024529,warning
+loss_change_first_to_last,-0.07160812781916724,warning
+final_epsilon,0.05,pass
+dqn_rank,2.0,pass
+max_action_share,0.24269005847953215,pass

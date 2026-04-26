@@ -1,0 +1,15 @@
+﻿gate,status,evidence
+upstream_data_complete,pass,upstream_data_validation_summary.csv
+policy_covers_all_states,pass,dqn_revised_policy.csv
+reward_decomposition_present,pass,reward_component_summary.csv
+convergence_diagnosis_present,pass,convergence_diagnosis_summary.csv
+policy_collapse_check,pass,action_distribution
+reward_hacking_check,pass,reward components and constraints audited
+constraint_violation_check,pass,constraint_violation_summary.csv
+dqn_vs_baseline_checked,pass,multi_model_policy_comparison.csv
+qlearning_baseline_checked,pass,qlearning_policy.csv
+heuristic_fairness_checked,pass,baseline_fairness_check.csv
+png_charts_nonblank,pass,chart_quality_audit.csv
+excel_exports,pass,dqn_revised_policy.xlsx; qlearning_policy.xlsx
+experimental_label_present,pass,DQN修正版 experimental run / revised DQN experimental run; not formal policy conclusion
+formal_policy_claim_absent,pass,reports mark experimental only

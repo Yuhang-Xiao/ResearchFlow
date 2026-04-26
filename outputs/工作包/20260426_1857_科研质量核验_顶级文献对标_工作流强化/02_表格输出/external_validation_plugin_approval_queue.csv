@@ -1,0 +1,10 @@
+﻿candidate,url,category,useful_for,score_1_5,adoption_mode,risk_or_condition
+Deepchecks,https://github.com/deepchecks/deepchecks,data/model validation and drift,validation suite ideas,5,approval_queue_for_install,dependency install needed
+Great Expectations,https://docs.greatexpectations.io/,data quality expectations,expectation suite and data docs idea,5,approval_queue_for_install,dependency setup needed
+Pandera,https://pandera.readthedocs.io/,DataFrame schema validation,schema/check contracts,5,approval_queue_for_install,dependency install optional
+Evidently,https://github.com/evidentlyai/evidently,drift and monitoring,data/model drift metrics,4,approval_queue_for_install,dependency/server optional
+MLflow,https://mlflow.org/docs/latest/ml/tracking/,experiment tracking,run tracking and model registry schema,5,approval_queue_for_install,tracking server requires approval
+DVC,https://dvc.org/doc,data/model versioning,reproducible data lineage,4,approval_queue_for_install,data remote setup requires approval
+Optuna,https://github.com/optuna/optuna,hyperparameter optimization,trial ledger and pruning concepts,4,approval_queue_for_install,dependency install needed
+markrussinovich/refchecker,https://github.com/markrussinovich/refchecker,academic reference validation,reference verification workflow,4,approval_queue_for_api,LLM/provider/API use requires approval
+Zotero MCP servers,https://github.com/swairshah/zotero-mcp-server,Zotero MCP,library read/search workflow,3,approval_queue,MCP/database/API risks

@@ -1,0 +1,5 @@
+﻿claim_id,claim,evidence_file,metric,value,status
+R1,DQN 修正版完成 experimental training 并覆盖全部状态。,01_数据输出/dqn_revised_policy.csv; 05_模型与实验/dqn_revised_training_log.csv,state_coverage,1710.0,experimental_supported
+R2,多模型对比已纳入 DQN、Q-learning 和多种 baseline。,02_表格输出/multi_model_policy_comparison.csv,model_count,7.0,experimental_supported
+R3,最佳 experimental 策略按 total reward 排序得到。,02_表格输出/multi_model_policy_comparison.csv,best_policy_total_reward,471.52909489394915,experimental_supported
+R4,PNG 图表通过非空和中文字体审计。,02_表格输出/chart_quality_audit.csv,passed_chart_count,9.0,experimental_supported

@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="450.0" y="34" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial" font-size="22" font-weight="700" fill="#222">AFB1 浓度分布</text>
+<line x1="70" y1="430" x2="860" y2="430" stroke="#333"/>
+<rect x="75.12037037037037" y="70.0" width="19.01851851851852" height="360.0" fill="#9D755D"/>
+<text transform="translate(84.62962962962962,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">0.0</text>
+<text x="84.62962962962962" y="65.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">762</text>
+<rect x="104.37962962962963" y="429.0551181102362" width="19.01851851851852" height="0.9448818897637795" fill="#9D755D"/>
+<text transform="translate(113.88888888888889,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">19703.7</text>
+<text x="113.88888888888889" y="424.0551181102362" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">2</text>
+<rect x="133.6388888888889" y="430.0" width="19.01851851851852" height="0.0" fill="#9D755D"/>
+<text transform="translate(143.14814814814818,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">39407.4</text>
+<text x="143.14814814814818" y="425.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">0</text>
+<rect x="162.89814814814815" y="430.0" width="19.01851851851852" height="0.0" fill="#9D755D"/>
+<text transform="translate(172.40740740740742,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">59111.1</text>
+<text x="172.40740740740742" y="425.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">0</text>
+<rect x="192.15740740740742" y="430.0" width="19.01851851851852" height="0.0" fill="#9D755D"/>
+<text transform="translate(201.66666666666669,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">78814.8</text>
+<text x="201.66666666666669" y="425.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">0</text>
+<rect x="221.41666666666669" y="430.0" width="19.01851851851852" height="0.0" fill="#9D755D"/>
+<text transform="translate(230.92592592592595,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">98518.5</text>
+<text x="230.92592592592595" y="425.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">0</text>
+<rect x="250.67592592592592" y="430.0" width="19.01851851851852" height="0.0" fill="#9D755D"/>
+<text transform="translate(260.18518518518516,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">118222.2</text>
+<text x="260.18518518518516" y="425.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">0</text>
+<rect x="279.93518518518516" y="430.0" width="19.01851851851852" height="0.0" fill="#9D755D"/>
+<text transform="translate(289.4444444444444,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">137925.9</text>
+<text x="289.4444444444444" y="425.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">0</text>
+<rect x="309.19444444444446" y="430.0" width="19.01851851851852" height="0.0" fill="#9D755D"/>
+<text transform="translate(318.7037037037037,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">157629.6</text>
+<text x="318.7037037037037" y="425.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">0</text>
+<rect x="338.4537037037037" y="430.0" width="19.01851851851852" height="0.0" fill="#9D755D"/>
+<text transform="translate(347.96296296296293,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">177333.4</text>
+<text x="347.96296296296293" y="425.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">0</text>
+<rect x="367.712962962963" y="430.0" width="19.01851851851852" height="0.0" fill="#9D755D"/>
+<text transform="translate(377.22222222222223,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">197037.1</text>
+<text x="377.22222222222223" y="425.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">0</text>
+<rect x="396.97222222222223" y="430.0" width="19.01851851851852" height="0.0" fill="#9D755D"/>
+<text transform="translate(406.48148148148147,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">216740.8</text>
+<text x="406.48148148148147" y="425.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">0</text>
+<rect x="426.23148148148147" y="430.0" width="19.01851851851852" height="0.0" fill="#9D755D"/>
+<text transform="translate(435.7407407407407,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">236444.5</text>
+<text x="435.7407407407407" y="425.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">0</text>
+<rect x="455.49074074074076" y="430.0" width="19.01851851851852" height="0.0" fill="#9D755D"/>
+<text transform="translate(465.0,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">256148.2</text>
+<text x="465.0" y="425.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">0</text>
+<rect x="484.75" y="430.0" width="19.01851851851852" height="0.0" fill="#9D755D"/>
+<text transform="translate(494.25925925925924,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">275851.9</text>
+<text x="494.25925925925924" y="425.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">0</text>
+<rect x="514.0092592592592" y="430.0" width="19.01851851851852" height="0.0" fill="#9D755D"/>
+<text transform="translate(523.5185185185185,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">295555.6</text>
+<text x="523.5185185185185" y="425.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">0</text>
+<rect x="543.2685185185185" y="429.5275590551181" width="19.01851851851852" height="0.47244094488188976" fill="#9D755D"/>
+<text transform="translate(552.7777777777777,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">315259.3</text>
+<text x="552.7777777777777" y="424.5275590551181" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">1</text>
+<rect x="572.5277777777777" y="430.0" width="19.01851851851852" height="0.0" fill="#9D755D"/>
+<text transform="translate(582.037037037037,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">334963.0</text>
+<text x="582.037037037037" y="425.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">0</text>
+<rect x="601.787037037037" y="430.0" width="19.01851851851852" height="0.0" fill="#9D755D"/>
+<text transform="translate(611.2962962962962,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">354666.7</text>
+<text x="611.2962962962962" y="425.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">0</text>
+<rect x="631.0462962962963" y="430.0" width="19.01851851851852" height="0.0" fill="#9D755D"/>
+<text transform="translate(640.5555555555555,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">374370.4</text>
+<text x="640.5555555555555" y="425.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">0</text>
+<rect x="660.3055555555555" y="430.0" width="19.01851851851852" height="0.0" fill="#9D755D"/>
+<text transform="translate(669.8148148148148,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">394074.1</text>
+<text x="669.8148148148148" y="425.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">0</text>
+<rect x="689.5648148148148" y="430.0" width="19.01851851851852" height="0.0" fill="#9D755D"/>
+<text transform="translate(699.074074074074,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">413777.8</text>
+<text x="699.074074074074" y="425.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">0</text>
+<rect x="718.824074074074" y="430.0" width="19.01851851851852" height="0.0" fill="#9D755D"/>
+<text transform="translate(728.3333333333333,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">433481.5</text>
+<text x="728.3333333333333" y="425.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">0</text>
+<rect x="748.0833333333333" y="430.0" width="19.01851851851852" height="0.0" fill="#9D755D"/>
+<text transform="translate(757.5925925925925,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">453185.2</text>
+<text x="757.5925925925925" y="425.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">0</text>
+<rect x="777.3425925925925" y="430.0" width="19.01851851851852" height="0.0" fill="#9D755D"/>
+<text transform="translate(786.8518518518517,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">472888.9</text>
+<text x="786.8518518518517" y="425.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">0</text>
+<rect x="806.6018518518518" y="430.0" width="19.01851851851852" height="0.0" fill="#9D755D"/>
+<text transform="translate(816.1111111111111,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">492592.6</text>
+<text x="816.1111111111111" y="425.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">0</text>
+<rect x="835.8611111111111" y="429.5275590551181" width="19.01851851851852" height="0.47244094488188976" fill="#9D755D"/>
+<text transform="translate(845.3703703703703,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">512296.3</text>
+<text x="845.3703703703703" y="424.5275590551181" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">1</text>
+<text x="20" y="250.0" transform="rotate(-90 20,250.0)" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial" font-size="13" fill="#333">记录数</text>
+</svg>

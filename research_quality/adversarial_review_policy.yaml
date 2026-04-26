@@ -1,0 +1,31 @@
+name: adversarial_review_policy
+title: Adversarial Review Policy
+version: 1
+created_at: "2026-04-26 19:12:22"
+scope: workflow1 scientific research quality assurance
+default_language: zh-CN
+principles:
+  - data_first: every result must be traceable to validated data, model output, figure/table, or literature evidence
+  - prototype_guard: prototype and experimental results must not be written as formal policy conclusions
+  - benchmark_first: major methods, figures, tables, and paper sections must be checked against top-journal exemplars
+  - safe_adaptation: external tools may inspire local rules, but installation, services, APIs, MCP, and database writes require approval
+required_checks:
+  - id: adversarial_review_policy_01
+    check: 对方法、数据、论断、图表、引用执行 adversarial/reviewer2 风格质疑
+    severity: high
+    required: true
+  - id: adversarial_review_policy_02
+    check: 记录 major/minor issues、修订建议和是否阻断论文写入
+    severity: high
+    required: true
+stop_conditions:
+  - missing required input or lineage
+  - unresolved core data validation error
+  - formal DQN/RL parameters not confirmed by user
+  - citation cannot be verified but is needed for a formal claim
+  - result claim is stronger than available evidence
+outputs:
+  - quality_gate_table
+  - issue_log
+  - repair_log
+  - approval_queue_entry_when_needed

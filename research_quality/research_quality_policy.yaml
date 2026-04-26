@@ -1,0 +1,47 @@
+name: research_quality_policy
+title: Research Quality Policy
+version: 1
+created_at: "2026-04-26 19:12:22"
+scope: workflow1 scientific research quality assurance
+default_language: zh-CN
+principles:
+  - data_first: every result must be traceable to validated data, model output, figure/table, or literature evidence
+  - prototype_guard: prototype and experimental results must not be written as formal policy conclusions
+  - benchmark_first: major methods, figures, tables, and paper sections must be checked against top-journal exemplars
+  - safe_adaptation: external tools may inspire local rules, but installation, services, APIs, MCP, and database writes require approval
+required_checks:
+  - id: research_quality_policy_01
+    check: 输入数据、派生数据、表格、图表、模型输出和论文论断必须具有 lineage 或 evidence map
+    severity: high
+    required: true
+  - id: research_quality_policy_02
+    check: 报告中的数字必须能回查到 CSV/XLSX/模型日志，不允许手工漂移
+    severity: high
+    required: true
+  - id: research_quality_policy_03
+    check: 正式结论必须通过 result claim guard；experimental/prototype 必须显式标注
+    severity: high
+    required: true
+  - id: research_quality_policy_04
+    check: 引用必须核验 DOI、题名、作者、年份、期刊或 URL 元数据
+    severity: high
+    required: true
+  - id: research_quality_policy_05
+    check: 高风险外部插件、MCP、API key、大型依赖、Zotero 数据库写入必须进入 approval queue
+    severity: high
+    required: true
+  - id: research_quality_policy_06
+    check: 每次科研任务结束后必须执行质量核验和自我改进复盘
+    severity: high
+    required: true
+stop_conditions:
+  - missing required input or lineage
+  - unresolved core data validation error
+  - formal DQN/RL parameters not confirmed by user
+  - citation cannot be verified but is needed for a formal claim
+  - result claim is stronger than available evidence
+outputs:
+  - quality_gate_table
+  - issue_log
+  - repair_log
+  - approval_queue_entry_when_needed

@@ -1,0 +1,19 @@
+name: dqn_code_deep_explanation_workflow
+version: 2026-04-26
+language: zh
+purpose: >
+  为 DQN 相关代码生成深度说明，包括函数级逻辑、输入输出、state/action/reward/
+  constraint/training/evaluation/baseline 映射，以及 Method/Results 对应关系。
+required_outputs:
+  - README_DQN代码总览.md
+  - dqn_code_deep_explanation.md
+  - dqn_code_to_model_setting_map.csv
+  - dqn_code_to_outputs_map.csv
+  - dqn_code_method_notes.md
+  - dqn_code_reproducibility_notes.md
+quality_gates:
+  - code explanation covers model logic, not only script names
+  - code-to-method mapping covers state/action/reward/constraint/training/baseline/evaluation
+  - code-to-output mapping covers tables/figures/reports/config/model/DOCX
+  - core code logic is not changed just to add explanation
+  - formal TODOs are explicit

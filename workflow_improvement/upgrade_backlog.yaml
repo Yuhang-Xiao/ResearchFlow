@@ -1,0 +1,44 @@
+legacy_unparsed_backlog_text: "backlog:\n  - id: self_improvement_cli\n    title:\
+  \ Keep CLI dry-run stages working after recipe changes.\n    status: active\n  -\
+  \ id: zotero_mcp_review\n    title: Evaluate Zotero MCP options, but require approval\
+  \ before installation or database writes.\n    status: approval_required\n  - id:\
+  \ pdf_fulltext_reader\n    title: Strengthen PDF full-text reading and OCR workflow.\n\
+  \    status: candidate_review\n\n- id: research_quality_gate_after_each_task\n \
+  \ title: Run research quality gates and workflow improvement review after every\
+  \ durable scientific task.\n  status: active\n  priority: high\n- id: optional_validation_tool_integrations\n\
+  \  title: Evaluate Deepchecks, Great Expectations, Pandera, Evidently, MLflow, DVC,\
+  \ Optuna, RefChecker, and Zotero MCP before any installation.\n  status: approval_required\n\
+  \  priority: medium\n"
+items:
+- id: formal_dqn_parameter_confirmation_and_sensitivity
+  status: pending_user_confirmation
+  reason: Current DQN is experimental; formal use requires parameter confirmation
+    and sensitivity analysis.
+- id: paper_section_full_pipeline
+  status: ready
+  reason: Results section upgraded; Method/Introduction/Literature Review/Discussion
+    can reuse new explanation/evidence workflow.
+- id: formal_dqn_parameter_confirmation_and_sensitivity
+  status: pending_user_confirmation
+  reason: Current DQN is experimental; formal use requires parameter confirmation
+    and sensitivity analysis.
+- id: paper_section_full_pipeline
+  status: ready
+  reason: Results section upgraded; Method/Introduction/Literature Review/Discussion
+    can reuse new explanation/evidence workflow.
+- id: formal_dqn_parameter_confirmation_and_sensitivity
+  status: pending_user_confirmation
+  reason: Current DQN is experimental; formal use requires parameter confirmation
+    and sensitivity analysis.
+- id: paper_section_full_pipeline
+  status: ready
+  reason: Results section upgraded; Method/Introduction/Literature Review/Discussion
+    can reuse new explanation/evidence workflow.
+- id: formal_dqn_parameter_confirmation_and_sensitivity
+  status: pending_user_confirmation
+  reason: Current DQN is experimental; formal use requires parameter confirmation
+    and sensitivity analysis.
+- id: paper_section_full_pipeline
+  status: ready
+  reason: Results section upgraded; Method/Introduction/Literature Review/Discussion
+    can reuse new explanation/evidence workflow.

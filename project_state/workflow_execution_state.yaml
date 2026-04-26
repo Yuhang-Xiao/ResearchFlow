@@ -1,0 +1,18 @@
+last_run_package: outputs/工作包/20260426_2254_DQN输出复核_解释体系与论文输出升级
+last_task: DQN输出复核_解释体系与论文输出升级
+last_status: completed
+dqn_status: experimental_audited_explained_not_formal
+updated_at: "2026-04-26 22:58:00"
+latest_dqn_training_run_package: outputs/工作包/20260426_2056_推荐缓存删除与DQN修正版训练
+latest_explanation_upgrade_run_package: outputs/工作包/20260426_2254_DQN输出复核_解释体系与论文输出升级
+docx_render_qa_status: pass
+dry_run_status: pass
+next_required_user_confirmation:
+  - action_space
+  - budget
+  - unit_sampling_cost
+  - capacity
+  - minimum_coverage
+  - reward_weights
+  - transition_assumptions
+  - training_hyperparameters

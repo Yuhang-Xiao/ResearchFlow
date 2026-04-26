@@ -1,0 +1,50 @@
+﻿name,kind,line_start,line_end,docstring_present,model_component,logic,paper_relation
+rel,function,54,58,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+safe_read_text,function,61,62,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+write_text,function,65,67,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+append_text,function,70,73,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+write_csv,function,76,89,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+write_df,function,92,97,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+sha256_file,function,100,107,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+make_run_package,function,110,168,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+read_csv_rows,function,171,173,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+is_relative_to,function,176,181,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+is_cache_or_temp,function,184,195,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+is_protected_path,function,198,208,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+run_deletion,function,211,321,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+run_command,function,324,333,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+environment_audit,function,336,378,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+load_previous_config,function,381,386,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+audit_upstream,function,389,425,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+first_existing,function,428,432,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+optional_col,function,435,439,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+num_series,function,442,445,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+robust_norm,function,448,457,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+build_mapping,function,460,483,False,state,将 canonical state feature 表中的中英文字段映射到统一内部字段。,Method: state construction
+prepare_model_data,function,486,539,False,state,读取状态特征，生成 state matrix、risk_score、uncertainty、month/group key 等 DQN 输入。,Method: state feature engineering
+build_capacity,function,542,562,False,constraint,从上一轮配置和数据构建 local/stage/global capacity。,Method: constraints
+capacity_for_row,function,565,572,False,constraint,为单个状态单元计算可用容量上限。,Method: constraints
+build_valid_actions,function,575,582,False,action/constraint,基于 ACTION_VALUES 与容量生成 action mask。,Method: action space and constraints
+build_reward_matrix,function,585,608,False,reward,计算 risk reward、information gain、sampling cost、opportunity penalty、constraint penalty，并进行 tanh rescaling。,Method: reward
+QNet,class,611,617,False,training,DQN Q-network，输入 state vector，输出每个动作的 Q value。,Method: DQN architecture
+choose_valid_argmax,function,620,623,False,action/evaluation,在 action mask 下选择最大 Q 的合法动作。,Method: action selection
+evaluate_policy,function,626,697,False,evaluation,在统一预算/容量约束下评价策略，导出 reward、constraint、action 分布等指标。,Results: policy comparison
+train_dqn,function,700,817,False,training,执行 DQN 训练：epsilon-greedy、target network、mini-batch update、early stopping/logging。,Method: training
+train_qlearning,function,820,865,False,baseline,构建聚合状态 Q-learning baseline。,Method: baselines
+build_baseline_actions,function,868,895,False,baseline,生成 uniform、historical、risk-ranking、random、threshold 等 heuristic baseline。,Method: baselines
+setup_fonts,function,898,904,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+save_plot,function,907,913,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+placeholder_plot,function,916,922,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+chart_is_nonblank,function,925,928,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+generate_charts,function,931,1075,False,outputs,生成 PNG 图表并执行非空检查。,Results: figures
+build_action_space_report,function,1078,1121,False,action,输出动作空间可行性分析。,Method: action feasibility
+build_revised_config,function,1124,1226,False,configuration,写出 DQN 修正版 experimental config。,Method: configuration
+model_outputs,function,1229,1386,False,outputs,组织 DQN/Q-learning/baseline 训练、评价和表格输出。,Results: tables/model outputs
+create_reports,function,1389,1454,False,outputs,生成训练报告、审计报告、质量门控报告。,Results/Appendix
+create_results_draft,function,1457,1560,False,paper,生成 experimental Results draft 和 DOCX。,Results
+sync_outputs,function,1563,1595,False,outputs,同步必要结果到 experiments/reports canonical 位置。,Reproducibility
+update_manifest,function,1598,1626,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+check_deleted_index_links,function,1629,1640,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+update_indexes_and_state,function,1643,1792,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+copy_code_snapshot,function,1795,1797,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility
+main,function,1800,1829,False,support,辅助函数或工作流胶水代码。,Appendix/Reproducibility

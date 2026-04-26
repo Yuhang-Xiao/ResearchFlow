@@ -1,0 +1,23 @@
+{
+  "prior_alpha": 1.0,
+  "prior_beta": 1.0,
+  "forgetting_factor": 0.95,
+  "time_unit": "month",
+  "tracks": {
+    "overall_noncompliance": {
+      "success_column": "不合格批次数",
+      "trial_column": "抽检总批次数",
+      "meaning": "省份-时间-供应链环节层面的总体不合格概率"
+    },
+    "afb1_noncompliance_all_samples": {
+      "success_column": "AFB1相关不合格批次数",
+      "trial_column": "抽检总批次数",
+      "meaning": "以全部抽检批次为分母的 AFB1 相关不合格概率"
+    },
+    "afb1_noncompliance_conditional": {
+      "success_column": "AFB1相关不合格批次数",
+      "trial_column": "AFB1相关记录数",
+      "meaning": "在 AFB1 相关记录中不合格的条件概率；当分母为0时不更新，仅传播遗忘先验"
+    }
+  }
+}

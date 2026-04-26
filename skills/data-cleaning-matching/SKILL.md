@@ -17,6 +17,7 @@ Use this skill when preparing raw or intermediate data for validation, EDA, feat
 - Cleaning rule summary.
 - Matching diagnostics, such as unmatched records and duplicate keys.
 - Validation recommendations.
+- A non-destructive cleaning plan from `workflow1 --stage cleaning-plan`, when the task is planning-only.
 
 ## Recommended Workflow
 
@@ -28,3 +29,7 @@ Use this skill when preparing raw or intermediate data for validation, EDA, feat
 6. Write outputs to `data/02_intermediate` or `data/03_primary`.
 7. Pause only for destructive, irreversible, or under-specified actions.
 8. Update project state with assumptions, cleaning decisions, outputs, and next steps.
+
+## Planning-Only Mode
+
+Use `workflow1 --stage cleaning-plan` when the user asks for a cleaning plan or when the workflow needs a safe preparatory step before applying rules. This stage writes `reports/cleaning_plan_<dataset_name>.md` and must not modify raw data or create cleaned datasets.

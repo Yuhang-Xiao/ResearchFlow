@@ -1,0 +1,31 @@
+name: research_quality_audit
+description: Dry-run and execution recipe for model/result quality audit plus top-journal benchmarking.
+required_skills:
+  - research-quality-orchestrator
+  - data-generation-validator
+  - derived-data-lineage-auditor
+  - table-result-consistency-checker
+  - chart-quality-auditor
+  - model-comparison-auditor
+  - baseline-fairness-auditor
+  - reward-convergence-constraint-auditor
+  - top-journal-benchmark-scout
+  - result-claim-guard
+  - reviewer2-style-auditor
+quality_gates:
+  - data_lineage_present
+  - table_report_numbers_match
+  - chart_source_and_nonblank_check
+  - baseline_fairness_check
+  - reward_convergence_constraint_audit
+  - top_journal_benchmark_recorded
+  - result_claim_guard_passed
+approval_required:
+  - formal_policy_conclusion
+  - external_validation_tool_installation
+outputs:
+  - data_lineage_manifest.csv
+  - quality_gate_results.csv
+  - model_comparison_audit.csv
+  - result_claim_guard_findings.csv
+  - reviewer2_audit.md

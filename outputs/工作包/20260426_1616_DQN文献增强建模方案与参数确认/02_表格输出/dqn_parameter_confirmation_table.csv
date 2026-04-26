@@ -1,0 +1,33 @@
+﻿parameter_id,参数,正式值/候选,说明,主要依据,确认状态
+model_scope,正式训练开关,禁止训练,本轮只允许方案、审计、参数确认表,用户硬性要求,confirmed_for_this_task
+python_environment,正式 DQN Python,D:/anaconda3/envs/myenv1/python.exe,已验证 torch 2.11.0+cu126 / CUDA 12.6 / RTX 4060 Ti,用户指定+环境审计,confirmed
+unit_of_decision,决策单元,省份-月份-供应链环节,当前 count panel/state features 的主索引；1710 个状态单元,研究计划+数据结构,proposed_confirm
+time_step,时间步,month（月）,beta-binomial config 已设 time_unit=month；若政策按季度执行需重聚合,研究计划+本地 config,proposed_confirm
+hidden_state,隐状态,真实 AFB1 污染/不合格概率,不可直接观测，只由抽检与浓度信号更新信念,研究计划+POMDP 文献,conceptual_confirm
+observation,观测,抽检总批次数、不合格批次数、AFB1相关不合格批次数、浓度值、限量与 MOE/EDI 风险信号,当前数据已有观测字段；动作后观测生成机制需仿真设定,研究计划+当前数据,partial_confirm
+belief_update,信念更新,Beta-Binomial + forgetting factor,"当前 config: alpha=1,beta=1, forgetting=0.95；正式是否保留 0.95 需确认",本地 config+文档,needs_user_confirm
+state_features,状态特征集合,"posterior alpha/beta/mean/variance/strength, risk level, uncertainty, sampling counts, concentration availability, EDI/MOE summaries, population/consumption weights",当前 state_features 有 120 列；正式训练需确认特征白名单与标准化方式,研究计划+数据审计,needs_user_confirm
+action_space,动作空间,省份×供应链环节整数抽检批次数或离散强度档位,建议不直接枚举所有组合，可用候选动作生成器/top-K 风险单元+档位；具体档位需用户给定,研究计划+CMDP/RL 文献,needs_user_confirm
+action_mask,动作可行性 mask,预算、产能、最低覆盖、整数性、不可抽检对象屏蔽,硬约束优先用 mask；软约束可用惩罚/Lagrangian,Altman+safe RL,needs_user_confirm
+budget,总预算,待确认,可按月/年预算；若只有总预算需定义 episode 内消耗方式,研究计划,missing_required
+unit_sampling_cost,单位抽检成本,待确认,可按供应链环节/地区/检测项目设置；不得用 prototype 随机值,研究计划,missing_required
+capacity,检测/执法产能上限,待确认,省份/环节/月最大批次数，或实验室总产能,研究计划,missing_required
+minimum_coverage,最低覆盖规则,待确认,是否每省/每环节/每季度至少抽检若干批次,监管逻辑+FAO/van Asselt,missing_required
+recall_disposal_loss,召回/处置损失,待确认,不合格发现后的处置成本、召回损失、行政成本或社会损失,研究计划,missing_required
+risk_loss,风险损失,MOE/EDI 风险惩罚项,当前已有 MOE风险惩罚项；BMDL/cutoff 与人口权重仍需确认,MOE/EDI 产物+EFSA/JECFA,needs_user_confirm
+information_value,信息价值,后验方差下降/熵下降/有效样本强度增加,用于避免只追逐高风险而忽视不确定性；权重需确认,POMDP/belief-MDP 文献,needs_user_confirm
+reward_formula,reward,风险下降收益 + 信息价值 - 抽检成本 - 处置/召回损失 - 约束违约惩罚,建议拆成可审计权重；正式权重不可由 Codex 定稿,研究计划+文献,needs_user_confirm
+transition,转移逻辑,动作影响抽检样本量和观测，再通过 Beta-Binomial 更新信念；真实污染率可用历史/情景仿真,缺真实动作后反事实转移，需要仿真环境假设确认,数据限制+POMDP,needs_user_confirm
+episode,episode 定义,建议 12 个月或 24 个月滚动,取决于政策周期和 2023-2024 数据范围；需确认训练/验证切分,当前数据结构,needs_user_confirm
+baseline_policies,baseline,随机抽检、历史比例、风险排序、MOE风险优先、信息价值优先、贪心成本效果,用于比较 DQN 是否优于透明规则,食品监测优化文献,proposed_confirm
+dqn_variant,DQN variant,DQN / Double DQN / Dueling Double DQN 候选,建议首选 Double DQN 作为稳健候选；最终由用户确认,Mnih+van Hasselt,needs_user_confirm
+network_architecture,网络结构,待确认,MLP 输入 tabular state；层数/宽度/dropout/normalization 需确认,DQN 文献+数据结构,missing_required
+learning_rate,learning rate,待确认,可做敏感性网格，但正式默认值需确认,DQN readiness,missing_required
+gamma,discount factor,待确认,月度风险监管通常需体现跨期影响；具体值需确认,DQN readiness,missing_required
+epsilon_schedule,exploration,待确认,epsilon 起止值、衰减步数与评估时贪心策略需确认,DQN readiness,missing_required
+replay_buffer,replay buffer,待确认,容量、warmup、prioritized replay 是否启用需确认,DQN 文献,missing_required
+batch_size,batch size,待确认,需结合 GPU/样本规模与稳定性,DQN readiness,missing_required
+target_update,target network update,待确认,hard/soft update 周期需确认,Mnih2015,missing_required
+training_validation_split,训练/验证切分,待确认,建议时间外推：2023 train / 2024 validation，或滚动 origin；需确认,数据结构,needs_user_confirm
+evaluation_metrics,评价指标,累计 reward、MOE风险下降、低MOE比例、预算使用率、约束违约率、覆盖公平性、baseline improvement,指标集合建议确认；正式报告需全部输出,研究计划+监测文献,proposed_confirm
+formal_training_permission,正式训练许可,待用户确认后才允许,所有 missing_required/needs_user_confirm 项确认前阻断 formal DQN,用户硬性要求,blocked

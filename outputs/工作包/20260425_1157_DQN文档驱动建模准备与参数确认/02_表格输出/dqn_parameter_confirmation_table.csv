@@ -1,0 +1,30 @@
+﻿参数名称,参数类别,文档是否已指定,文档原文或摘要依据,当前数据是否可估计,是否需要我手动确认,Codex建议值,建议依据,是否允许作为prototype assumption,是否允许作为formal DQN参数,备注
+state 定义,状态,partially_specified,文档列出 belief posterior、风险特征、覆盖强度等方向；具体列集合需确认,当前数据可提供候选列,是,使用文档提到的 belief + MOE/EDI + 覆盖/不确定性特征作为候选，不作为正式定稿,研究计划 + canonical belief-MDP features,是,否，待确认,需用户确认最终字段
+observation 定义,观测,partially_specified,抽检结果、检测浓度、风险信号用于更新 belief,当前 count panel 和浓度表可估计,是,抽检批次/不合格/AFB1不合格/浓度作为候选,研究计划 + count panel,是,否，待确认,
+动作空间,动作,conceptual_only,文档仅说明跨省份/环节整数抽检、专项抽检、复检/处置触发,当前数据不能估计正式动作,是,建议由用户确认动作档位和每档批次数,用户制度参数,是,否,必须确认
+action mask,约束,not_specified,文档要求预算/产能等硬约束，但未给 mask 规则,不可估计,是,按预算、产能、最低覆盖生成 mask，待确认,safe RL/CMDP 文献 + 用户参数,是,否,
+每期预算,预算,not_specified,未发现正式数值,不可估计,是,建议值待用户提供,用户外部监管参数,否,否,必须确认
+产能上限,产能,not_specified,未发现正式数值,不可估计,是,建议值待用户提供,实验室/监管能力参数,否,否,必须确认
+单批次抽检成本,成本,conceptual_only,文档提到单位成本/两环节成本，但未给正式数值,不可估计,是,建议按环节分别给成本,用户外部成本参数,是,否,必须确认
+区域/环节最低覆盖约束,约束,conceptual_only,文档提到最低覆盖和重点风险区域优先,可从历史覆盖构造候选,是,建议用户给最低覆盖阈值,监管公平性/覆盖要求,是,否,
+inspection allocation rule,动作,conceptual_only,文档要求跨省份/环节资源配置,可生成候选排序但不能正式定规则,是,候选：按风险、人口权重、不确定性联合排序,文档目标,是,否,
+recall / disposal loss,损失,conceptual_only,文档提到处置/召回损失,当前数据不可估计,是,由用户提供或指定情景值,监管/企业损失参数,是,否,必须确认
+risk loss,损失,partially_specified,文档要求 MOE/EDI 驱动暴露风险,MOE/EDI proxy 已有,是,用 MOE风险惩罚作为候选，权重待确认,MOE/EDI 输出,是,否,
+information value weight,权重,conceptual_only,文档提到信息价值/不确定性下降,可用 posterior variance 构造候选,是,建议用不确定性下降 proxy，权重待确认,belief update 文档,是,否,必须确认
+reward function,奖励,conceptual_only,风险降低 - 成本 - 处置损失 + 信息价值 - 约束违约惩罚,只能构造 prototype,是,仅列候选公式，不定正式权重,研究计划,是,否,必须确认
+transition logic,转移,partially_specified,Beta-Binomial 更新和遗忘因子方向已出现,部分可由历史面板实现,是,沿用文档的 belief update；动作影响转移需确认,研究计划 + belief states,是,否,
+belief update,信念更新,partially_specified,Beta-Binomial 共轭更新、遗忘因子,已有 prototype 输出,是,prior/forgetting factor 需确认是否正式,Beta-Binomial 输出,是,否，待确认,
+time step,时间,partially_specified,省份-月份-环节优先，月份不可用时按年,当前数据有年月,是,建议月度,研究计划 + 数据列,是,否，待确认,
+episode definition,训练,not_specified,未发现正式 episode 定义,可按年度/全时序候选,是,建议按省份-环节时序或全局月度 episode，待确认,DQN 实现需要,是,否,
+baseline policies,评估,not_specified,未发现正式 baseline,可构造历史/随机/风险排序 baseline,是,候选：历史分配、随机、风险贪心、均匀覆盖,评估需要,是,否,
+DQN 网络结构,训练超参数,not_specified,文档未给层数/宽度,不可由数据正式决定,是,建议值待确认,DQN 实现经验 + Mnih背景,是,否,必须确认
+learning rate,训练超参数,not_specified,未指定,不可估计,是,建议值待确认,训练配置,是,否,必须确认
+gamma,训练超参数,not_specified,未指定正式折扣因子,不可估计,是,建议值待确认,训练配置,是,否,必须确认
+epsilon 策略,训练超参数,not_specified,未指定,不可估计,是,建议值待确认,DQN 探索策略,是,否,必须确认
+replay buffer 大小,训练超参数,not_specified,未指定,不可估计,是,建议值待确认,DQN 实现参数,是,否,必须确认
+batch size,训练超参数,not_specified,未指定,不可估计,是,建议值待确认,训练配置,是,否,必须确认
+episode 数,训练超参数,not_specified,未指定,不可估计,是,建议值待确认,训练配置,是,否,必须确认
+训练/验证划分,评估,not_specified,未指定,可按时间切分候选,是,建议时间外推验证，待确认,防止泄漏,是,否,
+evaluation metrics,评估,not_specified,未指定,可构造候选,是,候选：风险损失、预算违约、覆盖率、MOE改善、不确定性下降,文档目标,是,否,
+visualization outputs,输出,not_specified,未指定正式图表,可构造候选,是,建议策略地图、预算-风险曲线、约束违约图,报告需要,是,否,
+formal stopping conditions,运行治理,not_specified,未指定,不可估计,是,建议用户确认：参数未确认/上游核验失败/torch不可用时停止,项目治理规则,是,否,

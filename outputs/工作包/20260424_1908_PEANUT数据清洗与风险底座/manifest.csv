@@ -1,0 +1,25 @@
+﻿文件路径,文件类型,文件说明,是否关键输出,是否 canonical 副本,是否下游依赖,生成时间
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/00_输入说明/inputs.md,报告/文档,报告/文档,False,False,False,2026-04-24T23:57:49
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/01_数据输出/peanut_cleaned_analysis_ready.csv,表格,任务产物,True,True,True,2026-04-24T20:47:48
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/01_数据输出/peanut_cleaned_analysis_ready.xlsx,表格,任务产物,True,True,True,2026-04-24T20:48:43
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/04_报告输出/README.md,报告/文档,报告/文档,True,False,False,2026-04-24T22:44:05
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/04_报告输出/peanut_afb1_concentration_distribution.svg,图表,浓度/计数面板输出,True,False,False,2026-04-24T19:08:40
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/04_报告输出/peanut_afb1_record_distribution.svg,图表,任务产物,True,False,False,2026-04-24T19:08:40
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/04_报告输出/peanut_category_risk_ranking.svg,图表,任务产物,True,False,False,2026-04-24T19:08:40
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/04_报告输出/peanut_cleaning_report.md,报告/文档,报告/文档,True,False,False,2026-04-24T20:48:45
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/04_报告输出/peanut_data_quality_issues.svg,图表,任务产物,True,False,False,2026-04-24T19:08:40
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/04_报告输出/peanut_data_quality_summary.csv,表格,任务产物,True,False,False,2026-04-24T20:48:43
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/04_报告输出/peanut_full_workflow_summary.md,报告/文档,报告/文档,True,False,False,2026-04-24T19:08:40
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/04_报告输出/peanut_label_dictionary.csv,表格,任务产物,True,False,False,2026-04-24T19:08:39
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/04_报告输出/peanut_region_risk_ranking.svg,图表,任务产物,True,False,False,2026-04-24T19:08:40
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/04_报告输出/peanut_risk_summary_by_category.csv,表格,任务产物,True,False,False,2026-04-24T19:08:40
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/04_报告输出/peanut_risk_summary_by_region.csv,表格,任务产物,True,False,False,2026-04-24T19:08:40
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/04_报告输出/peanut_risk_summary_by_stage.csv,表格,任务产物,True,False,False,2026-04-24T19:08:40
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/04_报告输出/peanut_risk_summary_by_year.csv,表格,任务产物,True,False,False,2026-04-24T19:08:40
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/04_报告输出/peanut_stage_risk_comparison.svg,图表,任务产物,True,False,False,2026-04-24T19:08:40
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/04_报告输出/peanut_variable_dictionary.csv,表格,任务产物,True,False,False,2026-04-24T19:08:39
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/04_报告输出/peanut_workflow_run_summary.json,配置/索引,任务产物,True,False,False,2026-04-24T19:08:40
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/04_报告输出/peanut_year_noncompliance_rate.svg,图表,任务产物,True,False,False,2026-04-24T19:08:40
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/04_报告输出/peanut_year_sample_count.svg,图表,任务产物,True,False,False,2026-04-24T19:08:40
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/07_日志与错误/peanut_workflow_run_summary.json,配置/索引,任务产物,True,False,False,2026-04-24T19:08:40
+outputs/工作包/20260424_1908_PEANUT数据清洗与风险底座/README.md,报告/文档,报告/文档,False,False,False,2026-04-24T23:57:49

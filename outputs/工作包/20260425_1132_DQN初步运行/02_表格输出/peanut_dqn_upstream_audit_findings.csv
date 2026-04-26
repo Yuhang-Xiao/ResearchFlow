@@ -1,0 +1,11 @@
+﻿检查项,状态,说明
+cleaned_dataset,PASS,读取成功；行数=94556；列数=78
+concentration_table,PASS,读取成功；行数=1978；列数=30
+count_panel,PASS,读取成功；行数=1710；列数=14
+beta_binomial_states,PASS,读取成功；行数=1710；列数=87
+belief_mdp_features_with_moe_edi,PASS,读取成功；行数=1710；列数=120
+edi_moe_risk_table,PASS,读取成功；行数=766；列数=26
+count_panel_vs_beta_binomial_states_keyset,PASS,左侧键=1710；右侧键=1710；右侧缺失=0；右侧额外=0
+beta_binomial_states_vs_belief_mdp_features_with_moe_edi_keyset,PASS,左侧键=1710；右侧键=1710；右侧缺失=0；右侧额外=0
+concentration_must_pass_summary,PASS,AFB1相关=1978；浓度可解析=766；限量可解析=754；人工复核=1239
+moe_edi_numeric,PASS,MOE default 可用记录=766；EDI/MOE表行数=766

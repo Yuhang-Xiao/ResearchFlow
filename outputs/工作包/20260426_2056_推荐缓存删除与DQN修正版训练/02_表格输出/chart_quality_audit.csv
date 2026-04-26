@@ -1,0 +1,10 @@
+﻿chart_id,path,source_data,format,exists,size_bytes,nonblank,pixel_std,chinese_font,qa_status
+dqn_revised_training_curve,outputs/工作包/20260426_2056_推荐缓存删除与DQN修正版训练/03_图表输出/dqn_revised_training_curve.png,05_模型与实验/dqn_revised_training_log.csv,PNG,True,60349,True,27.9349,Microsoft YaHei,pass
+dqn_revised_reward_curve,outputs/工作包/20260426_2056_推荐缓存删除与DQN修正版训练/03_图表输出/dqn_revised_reward_curve.png,05_模型与实验/dqn_revised_training_log.csv,PNG,True,82110,True,33.4238,Microsoft YaHei,pass
+dqn_revised_moving_average_reward,outputs/工作包/20260426_2056_推荐缓存删除与DQN修正版训练/03_图表输出/dqn_revised_moving_average_reward.png,05_模型与实验/dqn_revised_training_log.csv,PNG,True,50750,True,27.2836,Microsoft YaHei,pass
+dqn_revised_policy_comparison,outputs/工作包/20260426_2056_推荐缓存删除与DQN修正版训练/03_图表输出/dqn_revised_policy_comparison.png,02_表格输出/multi_model_policy_comparison.csv,PNG,True,57214,True,69.853,Microsoft YaHei,pass
+dqn_revised_action_distribution,outputs/工作包/20260426_2056_推荐缓存删除与DQN修正版训练/03_图表输出/dqn_revised_action_distribution.png,01_数据输出/dqn_revised_policy.csv,PNG,True,28063,True,74.7271,Microsoft YaHei,pass
+dqn_revised_constraint_summary,outputs/工作包/20260426_2056_推荐缓存删除与DQN修正版训练/03_图表输出/dqn_revised_constraint_summary.png,02_表格输出/constraint_violation_summary.csv,PNG,True,55116,True,27.0466,Microsoft YaHei,pass
+dqn_revised_top_priority_risk,outputs/工作包/20260426_2056_推荐缓存删除与DQN修正版训练/03_图表输出/dqn_revised_top_priority_risk.png,01_数据输出/dqn_revised_policy.csv,PNG,True,46450,True,74.9092,Microsoft YaHei,pass
+dqn_revised_convergence_diagnosis,outputs/工作包/20260426_2056_推荐缓存删除与DQN修正版训练/03_图表输出/dqn_revised_convergence_diagnosis.png,02_表格输出/convergence_diagnosis_summary.csv,PNG,True,48532,True,43.0502,Microsoft YaHei,pass
+multi_model_comparison,outputs/工作包/20260426_2056_推荐缓存删除与DQN修正版训练/03_图表输出/multi_model_comparison.png,02_表格输出/multi_model_metric_summary.csv,PNG,True,57252,True,72.3152,Microsoft YaHei,pass

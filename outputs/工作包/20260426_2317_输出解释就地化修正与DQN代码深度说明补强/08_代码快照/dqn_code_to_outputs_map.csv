@@ -1,0 +1,11 @@
+﻿code_unit,generated_outputs,output_purpose,paper_relation,verification_needed
+run_deletion,02_表格输出/deleted_files_log.csv; delete_plan.csv; protected_or_skipped_files.csv,cleanup evidence,Appendix/Reproducibility,需要用 manifest、source CSV、chart QA 和 result claim guard 复核
+environment_audit,environment_audit_report.md; environment_audit_commands.csv,environment evidence,Appendix/Reproducibility,需要用 manifest、source CSV、chart QA 和 result claim guard 复核
+build_revised_config,06_配置参数/dqn_revised_experimental_config.yaml,model configuration,Method: configuration,需要用 manifest、source CSV、chart QA 和 result claim guard 复核
+model_outputs,01_数据输出/dqn_revised_policy.csv; qlearning_policy.csv; 05_模型与实验/*.csv; dqn_revised_model.pt,model outputs,Results: tables/model outputs,需要用 manifest、source CSV、chart QA 和 result claim guard 复核
+evaluate_policy,multi_model_policy_comparison.csv; reward_component_summary.csv; constraint_violation_summary.csv,evaluation tables,Results: policy comparison,需要用 manifest、source CSV、chart QA 和 result claim guard 复核
+generate_charts,03_图表输出/*.png; chart_quality_audit.csv,figures and chart QA,Results: figures,需要用 manifest、source CSV、chart QA 和 result claim guard 复核
+create_reports,04_报告输出/*.md; research_quality_gate_results.csv,reports and quality gates,Results/Appendix,需要用 manifest、source CSV、chart QA 和 result claim guard 复核
+create_results_draft,09_论文输出/04_结果/*.md/csv; 09_word导出/*.docx,paper Results,Results,需要用 manifest、source CSV、chart QA 和 result claim guard 复核
+sync_outputs,experiments/optimization/*; reports/项目级索引与摘要/*,canonical sync,Reproducibility,需要用 manifest、source CSV、chart QA 和 result claim guard 复核
+update_indexes_and_state,outputs/_index/*; project_state/*,project state,Appendix/Reproducibility,需要用 manifest、source CSV、chart QA 和 result claim guard 复核

@@ -1,0 +1,10 @@
+﻿timestamp,run_package,action,risk_level,status,approval_required,notes,date,item,change_type
+2026-04-26T17:02:00,outputs/工作包/20260426_1702_工作流自我升级机制构建,create_self_improvement_system,low,applied,False,"Local framework, skills, recipes, stubs, and dry-run CLI only.",,,
+2026-04-26T17:18:00,outputs/工作包/20260426_1718_一句话自动科研验收与补强,one_line_dry_run_router_reinforcement,low,applied,False,Added structured one-line dry-run router and acceptance recipe.,,,
+2026-04-26 19:11:21,research_quality_system_upgrade,research_quality_and_quality_skills,completed,"Added quality policies, skills, stubs, benchmark registry, comparison protocols, and approval queue entries.",,,,,
+2026-04-26 19:12:22,research_quality_system_upgrade,research_quality_and_quality_skills,completed,"Added quality policies, skills, stubs, benchmark registry, comparison protocols, and approval queue entries.",,,,,
+,outputs/工作包/20260426_2245_DQN输出复核_解释体系与论文输出升级,,,applied,external plugins only; no third-party install executed,,2026-04-26,output_explanation_and_reporting_upgrade,safe_local_workflow_upgrade
+,outputs/工作包/20260426_2245_DQN输出复核_解释体系与论文输出升级,,,applied,external plugins only; no third-party install executed,,2026-04-26,output_explanation_and_reporting_upgrade,safe_local_workflow_upgrade
+,outputs/工作包/20260426_2249_DQN输出复核_解释体系与论文输出升级,,,applied,external plugins only; no third-party install executed,,2026-04-26,output_explanation_and_reporting_upgrade,safe_local_workflow_upgrade
+,outputs/工作包/20260426_2252_DQN输出复核_解释体系与论文输出升级,,,applied,external plugins only; no third-party install executed,,2026-04-26,output_explanation_and_reporting_upgrade,safe_local_workflow_upgrade
+,outputs/工作包/20260426_2254_DQN输出复核_解释体系与论文输出升级,,,applied,external plugins only; no third-party install executed,,2026-04-26,output_explanation_and_reporting_upgrade,safe_local_workflow_upgrade

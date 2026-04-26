@@ -1,0 +1,18 @@
+﻿candidate,url,category,useful_for,score_1_5,adoption_mode,risk_or_condition
+OpenAI Codex Skills,https://github.com/openai/skills,official skill catalog,skill packaging conventions,4,safe_adapt,use SKILL.md layout only
+ComposioHQ/awesome-codex-skills,https://github.com/ComposioHQ/awesome-codex-skills,Codex skills collection,trigger phrase and folder conventions,4,safe_adapt,do not install
+K-Dense-AI/scientific-agent-skills,https://github.com/K-Dense-AI/scientific-agent-skills,scientific skills,domain skill structure and scientific QA breadth,4,safe_adapt,dependencies require approval
+Curie,https://github.com/Just-Curieous/Curie,rigorous automated experimentation,"rigor modules, experiment knowledge, reporting",5,concept_adapt,Docker/execution requires approval
+karpathy/autoresearch,https://github.com/karpathy/autoresearch,auto experiment loop,experiment ledger and keep/discard based on metric,4,concept_adapt,do not run overnight experiments
+ResearchClawBench,https://github.com/InternScience/ResearchClawBench,AI research benchmark,benchmark-style task evaluation,4,concept_adapt,external benchmark execution requires approval
+Deepchecks,https://github.com/deepchecks/deepchecks,data/model validation and drift,validation suite ideas,5,approval_queue_for_install,dependency install needed
+Great Expectations,https://docs.greatexpectations.io/,data quality expectations,expectation suite and data docs idea,5,approval_queue_for_install,dependency setup needed
+Pandera,https://pandera.readthedocs.io/,DataFrame schema validation,schema/check contracts,5,approval_queue_for_install,dependency install optional
+Evidently,https://github.com/evidentlyai/evidently,drift and monitoring,data/model drift metrics,4,approval_queue_for_install,dependency/server optional
+MLflow,https://mlflow.org/docs/latest/ml/tracking/,experiment tracking,run tracking and model registry schema,5,approval_queue_for_install,tracking server requires approval
+DVC,https://dvc.org/doc,data/model versioning,reproducible data lineage,4,approval_queue_for_install,data remote setup requires approval
+Optuna,https://github.com/optuna/optuna,hyperparameter optimization,trial ledger and pruning concepts,4,approval_queue_for_install,dependency install needed
+markrussinovich/refchecker,https://github.com/markrussinovich/refchecker,academic reference validation,reference verification workflow,4,approval_queue_for_api,LLM/provider/API use requires approval
+amazon-science/RefChecker,https://github.com/amazon-science/RefChecker,claim/reference hallucination checker,claim-triplet evidence checking,4,concept_adapt,heavy model dependencies not installed
+Zotero MCP servers,https://github.com/swairshah/zotero-mcp-server,Zotero MCP,library read/search workflow,3,approval_queue,MCP/database/API risks
+OpenAlex/CrossRef/Semantic Scholar,https://api.crossref.org/,citation metadata APIs,deterministic DOI metadata checks,5,safe_plan,"API/network use only, no keys by default"

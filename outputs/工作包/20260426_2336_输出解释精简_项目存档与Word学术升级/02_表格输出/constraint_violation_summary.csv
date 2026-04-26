@@ -1,0 +1,8 @@
+﻿policy,constraint_violation_count,constraint_violation_rate,constraint_adjustment_count,monthly_budget
+Q-learning,0,0.0,0,4567
+DQN修正版,0,0.0,0,4567
+threshold/greedy uncertainty,0,0.0,0,4567
+risk-ranking top-k,0,0.0,0,4567
+uniform allocation,0,0.0,0,4567
+historical allocation,0,0.0,0,4567
+random policy,0,0.0,0,4567

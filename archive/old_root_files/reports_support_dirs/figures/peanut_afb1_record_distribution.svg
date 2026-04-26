@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="450.0" y="34" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial" font-size="22" font-weight="700" fill="#222">AFB1 相关记录分布</text>
+<line x1="70" y1="430" x2="860" y2="430" stroke="#333"/>
+<rect x="146.75" y="70.0" width="44" height="360.0" fill="#B279A2"/>
+<text transform="translate(168.75,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">流通</text>
+<text x="168.75" y="65.0" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">1102</text>
+<rect x="344.25" y="264.37386569872956" width="44" height="165.6261343012704" fill="#B279A2"/>
+<text transform="translate(366.25,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">生产</text>
+<text x="366.25" y="259.37386569872956" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">507</text>
+<rect x="541.75" y="310.1088929219601" width="44" height="119.89110707803994" fill="#B279A2"/>
+<text transform="translate(563.75,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">餐饮</text>
+<text x="563.75" y="305.1088929219601" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">367</text>
+<rect x="739.25" y="428.69328493647913" width="44" height="1.306715063520871" fill="#B279A2"/>
+<text transform="translate(761.25,448) rotate(35)" text-anchor="start" font-family="Microsoft YaHei, SimHei, Arial" font-size="12" fill="#333">其他</text>
+<text x="761.25" y="423.69328493647913" text-anchor="middle" font-family="Arial" font-size="11" fill="#333">4</text>
+<text x="20" y="250.0" transform="rotate(-90 20,250.0)" text-anchor="middle" font-family="Microsoft YaHei, SimHei, Arial" font-size="13" fill="#333">记录数</text>
+</svg>

@@ -1,0 +1,35 @@
+name: top_journal_benchmark_policy
+title: Top Journal Benchmark Policy
+version: 1
+created_at: "2026-04-26 19:12:22"
+scope: workflow1 scientific research quality assurance
+default_language: zh-CN
+principles:
+  - data_first: every result must be traceable to validated data, model output, figure/table, or literature evidence
+  - prototype_guard: prototype and experimental results must not be written as formal policy conclusions
+  - benchmark_first: major methods, figures, tables, and paper sections must be checked against top-journal exemplars
+  - safe_adaptation: external tools may inspire local rules, but installation, services, APIs, MCP, and database writes require approval
+required_checks:
+  - id: top_journal_benchmark_policy_01
+    check: 方法、图表、结果、论文段落生成前后必须对标高质量论文
+    severity: high
+    required: true
+  - id: top_journal_benchmark_policy_02
+    check: 无法全文读取时标记 abstract-only 或 metadata-only
+    severity: high
+    required: true
+  - id: top_journal_benchmark_policy_03
+    check: 记录可借鉴点和不可直接套用点
+    severity: high
+    required: true
+stop_conditions:
+  - missing required input or lineage
+  - unresolved core data validation error
+  - formal DQN/RL parameters not confirmed by user
+  - citation cannot be verified but is needed for a formal claim
+  - result claim is stronger than available evidence
+outputs:
+  - quality_gate_table
+  - issue_log
+  - repair_log
+  - approval_queue_entry_when_needed

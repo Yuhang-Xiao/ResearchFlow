@@ -1,0 +1,6 @@
+﻿"gap","severity","fix","status"
+"补强前 dry-run 路由粒度不足","high","新增 src/workflow1/one_line.py 并接入 CLI dry-run","fixed_low_risk"
+"research_loop/ 目录缺失","medium","本轮不构建实验循环，仅记录为后续 AutoResearch-style 任务；不影响 dry-run 验收","backlog"
+"外部 Zotero MCP 未安装","medium","保持 approval queue；不写 Zotero 数据库","approval_required"
+"正式 DQN 参数仍未确认","high","dry-run 明确 formal_dqn_guarded_plan blocked","blocked_by_design"
+"真实数据流程未执行","info","符合本轮限制：只做验收和 dry-run","expected"

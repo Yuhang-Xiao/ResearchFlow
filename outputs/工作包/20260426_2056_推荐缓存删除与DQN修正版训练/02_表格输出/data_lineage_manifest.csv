@@ -1,0 +1,3 @@
+﻿output,input_sources,row_count,column_count,key_fields,transformation_intent,experimental_label
+dqn_revised_policy.csv,data/04_feature/peanut_belief_mdp_state_features_with_moe_edi.csv,1710,11,"状态ID,省份,年月,供应链环节",revised experimental DQN policy inference,DQN修正版 experimental run / revised DQN experimental run; not formal policy conclusion
+qlearning_policy.csv,data/04_feature/peanut_belief_mdp_state_features_with_moe_edi.csv,1710,11,"状态ID,省份,年月,供应链环节",aggregated-state Q-learning baseline policy,DQN修正版 experimental run / revised DQN experimental run; not formal policy conclusion

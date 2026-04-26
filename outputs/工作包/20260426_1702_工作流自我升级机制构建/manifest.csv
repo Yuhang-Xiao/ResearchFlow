@@ -1,0 +1,22 @@
+﻿path,type,description,created_at
+README.md,readme,工作包说明,2026-04-26T17:02:47
+00_输入说明/inputs.md,input,任务输入说明,2026-04-26T17:02:47
+02_表格输出/workflow_upgrade_candidates.csv,table,候选项目清单,2026-04-26T17:02:00
+02_表格输出/workflow_upgrade_evaluation_matrix.csv,table,候选评分矩阵,2026-04-26T17:02:00
+02_表格输出/workflow_upgrade_action_plan.csv,table,升级行动计划,2026-04-26T17:02:00
+02_表格输出/external_plugin_approval_queue.csv,table,外部插件确认队列,2026-04-26T17:02:00
+02_表格输出/applied_safe_workflow_upgrades.csv,table,已应用安全升级,2026-04-26T17:02:00
+02_表格输出/updated_skill_registry.csv,table,更新后技能注册清单,2026-04-26T17:02:00
+04_报告输出/workflow_self_improvement_github_scout_report.md,report,GitHub scout 报告,2026-04-26T17:02:00
+04_报告输出/initial_workflow_self_improvement_report.md,report,初始自我升级报告,2026-04-26T17:02:00
+04_报告输出/workflow_gap_after_self_improvement.md,report,升级后缺口报告,2026-04-26T17:02:00
+04_报告输出/workflow_self_improvement_system_report.md,report,自我升级系统总报告,2026-04-26T17:02:00
+04_报告输出/github_skill_scout_findings.md,report,GitHub skill scout findings,2026-04-26T17:02:00
+04_报告输出/safe_upgrade_application_report.md,report,安全升级应用报告,2026-04-26T17:02:00
+04_报告输出/external_plugin_approval_report.md,report,外部插件确认报告,2026-04-26T17:02:00
+06_配置参数/workflow_self_improvement_policy_snapshot.yaml,config,自我升级策略快照,2026-04-26T17:02:00
+02_表格输出/workflow_self_improvement_dry_run_results.csv,table,dry-run 结果,2026-04-26T17:07:54
+04_报告输出/workflow_self_improvement_dry_run_report.md,report,dry-run 报告,2026-04-26T17:07:54
+project_state_updates,state,项目状态更新,2026-04-26T17:09:05
+08_代码快照/build_self_improvement_system.py,code,自我升级机制构建脚本,2026-04-26T17:09:28
+07_日志与错误/workspace_cleanup_check.md,log,全工作目录整理检查,2026-04-26T17:09:28

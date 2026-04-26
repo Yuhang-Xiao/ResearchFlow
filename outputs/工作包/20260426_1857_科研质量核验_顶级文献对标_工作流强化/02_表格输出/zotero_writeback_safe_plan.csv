@@ -1,0 +1,6 @@
+﻿step,action,approval_required
+scan_local_zotero_workspace,read files only,no
+detect_garbled_notes,write issue CSV and sidecar notes,no
+export_bibtex_ris_csv,write sidecar export files under workflow1 run package,no
+write_to_zotero_database,blocked until explicit user confirmation,yes
+install_zotero_mcp,approval queue,yes

@@ -1,0 +1,54 @@
+version: 2026-04-26
+language: zh
+purpose: >
+  通用模型说明协议。任何模型输出进入报告或论文前，必须生成模型设置说明、结果解读、
+  baseline 说明、文献映射和 experimental/formal 状态标记。
+required_sections:
+  - model_purpose
+  - input_features_or_state
+  - target_or_action_or_reward
+  - constraints_and_transition_when_relevant
+  - parameters_and_hyperparameters
+  - training_process
+  - evaluation_metrics
+  - baselines
+  - result_interpretation
+  - literature_basis
+  - limitations
+  - experimental_or_formal_status
+model_families:
+  rl_dqn:
+    required_extra_fields:
+      - state
+      - action_space
+      - reward_decomposition
+      - transition_approximation
+      - belief_update
+      - action_mask
+      - convergence_diagnosis
+      - reward_hacking_check
+      - constraint_violation_check
+    formal_blocker: user_confirmed_parameter_table_required
+  supervised_ml:
+    required_extra_fields:
+      - target
+      - leakage_risk
+      - split_protocol
+      - calibration_or_uncertainty_when_relevant
+  bayesian_or_monte_carlo:
+    required_extra_fields:
+      - priors
+      - posterior_or_simulation_design
+      - sensitivity_analysis
+  optimization:
+    required_extra_fields:
+      - objective
+      - decision_variables
+      - constraints
+      - solver_or_heuristic
+quality_gates:
+  - settings must be sourced from local config/code/data/project_state/literature
+  - unknown settings are marked 未核验 or experimental_assumption
+  - at least one baseline/control is documented
+  - every metric has an interpretation
+  - experimental outputs are blocked from formal claims

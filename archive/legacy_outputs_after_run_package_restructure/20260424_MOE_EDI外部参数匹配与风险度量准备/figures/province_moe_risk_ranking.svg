@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="480.0" y="34" text-anchor="middle" font-size="20" font-family="Arial, Microsoft YaHei">省份维度 MOE 风险排序（低于阈值比例）</text>
+<line x1="180" y1="490" x2="920" y2="490" stroke="#333"/>
+<text x="172" y="69.7" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">北京</text>
+<rect x="180" y="60.0" width="740.0" height="12.9" fill="#2f6f73"/>
+<text x="925.0" y="69.7" font-size="11" font-family="Arial, Microsoft YaHei">1</text>
+<text x="172" y="87.8" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">内蒙古</text>
+<rect x="180" y="78.1" width="740.0" height="12.9" fill="#2f6f73"/>
+<text x="925.0" y="87.8" font-size="11" font-family="Arial, Microsoft YaHei">1</text>
+<text x="172" y="105.9" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">福建</text>
+<rect x="180" y="96.3" width="740.0" height="12.9" fill="#2f6f73"/>
+<text x="925.0" y="105.9" font-size="11" font-family="Arial, Microsoft YaHei">1</text>
+<text x="172" y="124.1" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">江苏</text>
+<rect x="180" y="114.4" width="740.0" height="12.9" fill="#2f6f73"/>
+<text x="925.0" y="124.1" font-size="11" font-family="Arial, Microsoft YaHei">1</text>
+<text x="172" y="142.2" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">山东</text>
+<rect x="180" y="132.5" width="740.0" height="12.9" fill="#2f6f73"/>
+<text x="925.0" y="142.2" font-size="11" font-family="Arial, Microsoft YaHei">1</text>
+<text x="172" y="160.3" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">云南</text>
+<rect x="180" y="150.7" width="740.0" height="12.9" fill="#2f6f73"/>
+<text x="925.0" y="160.3" font-size="11" font-family="Arial, Microsoft YaHei">1</text>
+<text x="172" y="178.5" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">浙江</text>
+<rect x="180" y="168.8" width="740.0" height="12.9" fill="#2f6f73"/>
+<text x="925.0" y="178.5" font-size="11" font-family="Arial, Microsoft YaHei">1</text>
+<text x="172" y="196.6" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">湖北</text>
+<rect x="180" y="186.9" width="740.0" height="12.9" fill="#2f6f73"/>
+<text x="925.0" y="196.6" font-size="11" font-family="Arial, Microsoft YaHei">1</text>
+<text x="172" y="214.8" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">四川</text>
+<rect x="180" y="205.1" width="740.0" height="12.9" fill="#2f6f73"/>
+<text x="925.0" y="214.8" font-size="11" font-family="Arial, Microsoft YaHei">1</text>
+<text x="172" y="232.9" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">河南</text>
+<rect x="180" y="223.2" width="740.0" height="12.9" fill="#2f6f73"/>
+<text x="925.0" y="232.9" font-size="11" font-family="Arial, Microsoft YaHei">1</text>
+<text x="172" y="251.0" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">江西</text>
+<rect x="180" y="241.3" width="740.0" height="12.9" fill="#2f6f73"/>
+<text x="925.0" y="251.0" font-size="11" font-family="Arial, Microsoft YaHei">1</text>
+<text x="172" y="269.2" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">河北</text>
+<rect x="180" y="259.5" width="740.0" height="12.9" fill="#2f6f73"/>
+<text x="925.0" y="269.2" font-size="11" font-family="Arial, Microsoft YaHei">1</text>
+<text x="172" y="287.3" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">贵州</text>
+<rect x="180" y="277.6" width="740.0" height="12.9" fill="#2f6f73"/>
+<text x="925.0" y="287.3" font-size="11" font-family="Arial, Microsoft YaHei">1</text>
+<text x="172" y="305.4" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">海南</text>
+<rect x="180" y="295.8" width="740.0" height="12.9" fill="#2f6f73"/>
+<text x="925.0" y="305.4" font-size="11" font-family="Arial, Microsoft YaHei">1</text>
+<text x="172" y="323.6" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">安徽</text>
+<rect x="180" y="313.9" width="740.0" height="12.9" fill="#2f6f73"/>
+<text x="925.0" y="323.6" font-size="11" font-family="Arial, Microsoft YaHei">1</text>
+<text x="172" y="341.7" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">湖南</text>
+<rect x="180" y="332.0" width="740.0" height="12.9" fill="#2f6f73"/>
+<text x="925.0" y="341.7" font-size="11" font-family="Arial, Microsoft YaHei">1</text>
+<text x="172" y="359.8" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">山西</text>
+<rect x="180" y="350.2" width="740.0" height="12.9" fill="#2f6f73"/>
+<text x="925.0" y="359.8" font-size="11" font-family="Arial, Microsoft YaHei">1</text>
+<text x="172" y="378.0" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">黑龙江</text>
+<rect x="180" y="368.3" width="740.0" height="12.9" fill="#2f6f73"/>
+<text x="925.0" y="378.0" font-size="11" font-family="Arial, Microsoft YaHei">1</text>
+<text x="172" y="396.1" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">广西</text>
+<rect x="180" y="386.4" width="740.0" height="12.9" fill="#2f6f73"/>
+<text x="925.0" y="396.1" font-size="11" font-family="Arial, Microsoft YaHei">1</text>
+<text x="172" y="414.2" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">新疆</text>
+<rect x="180" y="404.6" width="740.0" height="12.9" fill="#2f6f73"/>
+<text x="925.0" y="414.2" font-size="11" font-family="Arial, Microsoft YaHei">1</text>
+<text x="172" y="432.4" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">陕西</text>
+<rect x="180" y="422.7" width="740.0" height="12.9" fill="#2f6f73"/>
+<text x="925.0" y="432.4" font-size="11" font-family="Arial, Microsoft YaHei">1</text>
+<text x="172" y="450.5" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">不详</text>
+<rect x="180" y="440.8" width="737.9" height="12.9" fill="#2f6f73"/>
+<text x="922.9" y="450.5" font-size="11" font-family="Arial, Microsoft YaHei">0.997</text>
+<text x="172" y="468.6" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">广东</text>
+<rect x="180" y="459.0" width="713.6" height="12.9" fill="#2f6f73"/>
+<text x="898.6" y="468.6" font-size="11" font-family="Arial, Microsoft YaHei">0.964</text>
+<text x="172" y="486.8" text-anchor="end" font-size="12" font-family="Arial, Microsoft YaHei">甘肃</text>
+<rect x="180" y="477.1" width="185.0" height="12.9" fill="#2f6f73"/>
+<text x="370.0" y="486.8" font-size="11" font-family="Arial, Microsoft YaHei">0.25</text>
+<text x="480.0" y="538" text-anchor="middle" font-size="13" font-family="Arial, Microsoft YaHei">低于阈值比例</text>
+</svg>

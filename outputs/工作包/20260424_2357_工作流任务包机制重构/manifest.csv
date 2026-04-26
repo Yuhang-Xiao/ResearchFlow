@@ -1,0 +1,11 @@
+﻿文件路径,文件类型,文件说明,是否关键输出,是否 canonical 副本,是否下游依赖,生成时间
+outputs/工作包/20260424_2357_工作流任务包机制重构/00_输入说明/inputs.md,报告/文档,报告/文档,False,False,False,2026-04-24T23:57:49
+outputs/工作包/20260424_2357_工作流任务包机制重构/02_表格输出/deleted_duplicates_log.csv,表格,日志/错误/修复记录,True,False,False,2026-04-24T23:59:56
+outputs/工作包/20260424_2357_工作流任务包机制重构/02_表格输出/reorganized_files_log.csv,表格,日志/错误/修复记录,True,False,False,2026-04-24T23:57:49
+outputs/工作包/20260424_2357_工作流任务包机制重构/02_表格输出/unclassified_unique_files_log.csv,表格,日志/错误/修复记录,True,False,False,2026-04-24T23:57:49
+outputs/工作包/20260424_2357_工作流任务包机制重构/04_报告输出/workflow_run_package_restructure_report.md,报告/文档,报告/文档,True,False,False,2026-04-24T23:57:49
+outputs/工作包/20260424_2357_工作流任务包机制重构/06_配置参数/run_package_policy_snapshot.md,报告/文档,报告/文档,True,False,False,2026-04-24T23:57:48
+outputs/工作包/20260424_2357_工作流任务包机制重构/07_日志与错误/cli_stub_check_log.json,配置/索引,日志/错误/修复记录,True,False,False,2026-04-24T23:57:50
+outputs/工作包/20260424_2357_工作流任务包机制重构/08_代码快照/organize_workspace.py,代码,任务产物,False,False,False,2026-04-24T22:44:00
+outputs/工作包/20260424_2357_工作流任务包机制重构/08_代码快照/run_package_restructure.py,代码,任务产物,False,False,False,2026-04-24T23:57:41
+outputs/工作包/20260424_2357_工作流任务包机制重构/README.md,报告/文档,报告/文档,False,False,False,2026-04-24T23:57:49

@@ -1,0 +1,22 @@
+queue:
+  - candidate: Zotero MCP servers
+    reason: Requires MCP installation and possible Zotero database access.
+    approval_required_for: [install_mcp, write_zotero_database, start_service]
+    status: waiting_user_confirmation
+  - candidate: AutoML/data-science agents
+    reason: Often require dependencies and execution of external code.
+    approval_required_for: [install_dependencies, run_third_party_code]
+    status: waiting_user_confirmation
+
+- candidate: Deepchecks / Great Expectations / Pandera / Evidently
+  reason: Optional validation dependencies may improve QA but require installation.
+  approval_required_for: [install_dependencies, run_third_party_code]
+  status: waiting_user_confirmation
+- candidate: MLflow / DVC / Optuna
+  reason: Experiment tracking and optimization tools may require dependency setup, services, or data remotes.
+  approval_required_for: [install_dependencies, start_service, configure_remote]
+  status: waiting_user_confirmation
+- candidate: Zotero MCP / RefChecker with LLM provider
+  reason: MCP/API/database/provider interactions are high risk.
+  approval_required_for: [install_mcp, api_key, write_zotero_database, run_third_party_code]
+  status: waiting_user_confirmation

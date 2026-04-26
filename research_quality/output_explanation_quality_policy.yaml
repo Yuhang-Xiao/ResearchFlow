@@ -1,0 +1,38 @@
+version: 2026-04-26
+language: zh
+scope:
+  - figures
+  - tables
+  - model_outputs
+  - code
+  - reports
+  - docx
+  - literature_exports
+required_artifacts:
+  - artifact_explanation_index.md
+  - figure_explanations.md
+  - table_explanations.md
+  - model_output_explanations.md
+  - code_explanations.md
+  - result_interpretation_guide.md
+  - artifact_to_evidence_map.csv
+chart_quality:
+  png_first: true
+  chinese_font_required: true
+  blank_chart_detection: true
+  all_zero_chart_detection: true
+  no_difference_chart_detection: true
+  explanatory_png_required_for_semantic_blank: true
+table_quality:
+  field_explanation_required: true
+  unit_or_scale_required_when_applicable: true
+  data_source_required: true
+  key_findings_required: true
+model_quality:
+  setting_documentation_required: true
+  result_interpretation_required: true
+  baseline_required: true
+  literature_mapping_required: true
+claim_guard:
+  experimental_must_not_be_formal: true
+  every_claim_needs_evidence_map: true

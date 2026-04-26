@@ -1,9 +1,7 @@
-"""Data validation pipeline stubs."""
+"""Data validation pipeline."""
 
-from workflow1.pipelines.runner import PipelineResult, run_placeholder_pipeline
+from workflow1.pipelines.runner import PipelineResult
+from workflow1.pipelines.validation.runner import run
 
 
-def run() -> PipelineResult:
-    """Run the validation pipeline placeholder."""
-
-    return run_placeholder_pipeline("validation")
+__all__ = ["PipelineResult", "run"]

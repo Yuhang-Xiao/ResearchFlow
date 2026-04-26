@@ -1,0 +1,21 @@
+﻿skill,triggers,synced_to_skills,synced_to_agents,status
+research-quality-orchestrator,"核验结果, quality gate, 科研质量核验, result claim guard",true,true,new_or_upgraded
+top-journal-benchmark-scout,"顶级期刊对标, top journal benchmark, 高质量论文检索",true,true,new_or_upgraded
+top-journal-method-comparator,"方法对标, 模型设定对标, top journal method comparator",true,true,new_or_upgraded
+literature-coverage-auditor,"文献覆盖, literature coverage, 文献质量检查",true,true,new_or_upgraded
+citation-and-reference-verifier,"citation verification, 引用核验, DOI核验",true,true,new_or_upgraded
+data-generation-validator,"数据生成核验, generated data validation, 数据输出检查",true,true,new_or_upgraded
+derived-data-lineage-auditor,"派生数据核验, lineage audit, data_lineage_manifest",true,true,new_or_upgraded
+table-result-consistency-checker,"表格和报告数字核对, table consistency",true,true,new_or_upgraded
+chart-quality-auditor,"图表 QA, 空图检测, 中文字体, PNG 输出",true,true,new_or_upgraded
+model-comparison-auditor,"模型对比, 多模型比较, model comparison",true,true,new_or_upgraded
+baseline-fairness-auditor,"baseline fairness, baseline 公平性, 可解释对照",true,true,new_or_upgraded
+model-validation-and-diagnostics-runner,"模型验证, diagnostics, drift, leakage",true,true,new_or_upgraded
+reward-convergence-constraint-auditor,"reward audit, convergence check, constraint violation",true,true,new_or_upgraded
+result-claim-guard,"result claim guard, 论文论断保护, 过度推断",true,true,new_or_upgraded
+adversarial-reviewer,"adversarial reviewer, 对抗式审稿, robust audit",true,true,new_or_upgraded
+reviewer2-style-auditor,"reviewer 2 audit, Reviewer 2 风格自审",true,true,new_or_upgraded
+reproducibility-auditor,"reproducibility, 可复现实验, seed/config/hash",true,true,new_or_upgraded
+paper-section-quality-reviewer,"论文质量检查, paper section review, Word 输出前核验",true,true,new_or_upgraded
+zotero-writeback-and-note-validator,"Zotero 写入计划, 无乱码中文笔记, citation verification",true,true,new_or_upgraded
+workflow-quality-memory-updater,"任务结束质量复盘, project memory, workflow improvement backlog",true,true,new_or_upgraded

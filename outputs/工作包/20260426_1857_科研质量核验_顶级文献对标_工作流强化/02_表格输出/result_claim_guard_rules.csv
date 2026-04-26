@@ -1,0 +1,9 @@
+﻿rule,block_if_failed
+claim_requires_evidence,yes
+experimental_not_formal,yes
+prototype_not_policy_recommendation,yes
+synthetic_parameters_must_be_labeled,yes
+unconverged_model_no_effective_strategy_claim,yes
+unfair_baseline_no_superiority_claim,yes
+literature_insufficient_no_mainstream_claim,yes
+quality_gate_required_for_results,yes

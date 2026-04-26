@@ -1,0 +1,19 @@
+﻿candidate,url,category,classification,reason
+openai/skills,https://github.com/openai/skills,official/community skills,REFERENCE_ONLY,Useful source of skill packaging patterns; use official docs first.
+ComposioHQ/awesome-codex-skills,https://github.com/ComposioHQ/awesome-codex-skills,skill list,ADAPT_AS_LOCAL_SKILL,Good watchlist and trigger-pattern source; no install needed.
+ComposioHQ/awesome-claude-skills,https://github.com/ComposioHQ/awesome-claude-skills,skill list,REFERENCE_ONLY,Useful cross-agent skill examples; adapt structure only.
+the911fund/skill-of-skills,https://github.com/the911fund/skill-of-skills,meta skill,ADAPT_AS_LOCAL_SKILL,Supports skill discovery mindset; adapt as local self-improvement scout.
+skillcreatorai/Ai-Agent-Skills,https://github.com/skillcreatorai/Ai-Agent-Skills,skill collection,REFERENCE_ONLY,"Reference for skill registry, license must be checked before reuse."
+Imbad0202/academic-research-skills,https://github.com/Imbad0202/academic-research-skills,academic research skills,ADAPT_AS_LOCAL_SKILL,Relevant to literature/research workflows; adapt checklists only.
+karpathy/autoresearch,https://github.com/karpathy/autoresearch,autonomous experiment loop,ADD_TO_RECIPE_OR_REGISTRY,"Experiment loop ideas useful, LLM training code not copied."
+SamuelSchmidgall/AgentLaboratory,https://github.com/SamuelSchmidgall/AgentLaboratory,research agent,REFERENCE_ONLY,Large framework; use as design reference only.
+ruc-datalab/DeepAnalyze,https://github.com/ruc-datalab/DeepAnalyze,data science agent,REFERENCE_ONLY,Potential data analysis workflow ideas; do not run external stack.
+poemswe/co-researcher,https://github.com/poemswe/co-researcher,co-research agent,REFERENCE_ONLY,Research collaboration pattern only.
+kujenga/zotero-mcp,https://github.com/kujenga/zotero-mcp,Zotero MCP,APPROVAL_REQUIRED_PLUGIN,MCP install and Zotero access require confirmation.
+cookjohn/zotero-mcp,https://github.com/cookjohn/zotero-mcp,Zotero MCP,APPROVAL_REQUIRED_PLUGIN,MCP install and Zotero access require confirmation.
+54yyyu/zotero-mcp,https://github.com/54yyyu/zotero-mcp,Zotero MCP,APPROVAL_REQUIRED_PLUGIN,MCP install and Zotero access require confirmation.
+Nikhil-Doye/auto-ml-agent,https://github.com/Nikhil-Doye/auto-ml-agent,AutoML agent,REFERENCE_ONLY,Potential AutoML patterns; external code/deps not run.
+business-science/ai-data-science-team,https://github.com/business-science/ai-data-science-team,data science agents,REFERENCE_ONLY,Good role decomposition patterns; likely dependency-heavy.
+K-Dense-AI/agentic-data-scientist,https://github.com/K-Dense-AI/agentic-data-scientist,data scientist agent,REFERENCE_ONLY,Reference for data-science agent loop.
+K-Dense-AI/scientific-agent-skills,https://github.com/K-Dense-AI/scientific-agent-skills,scientific skills,ADAPT_AS_LOCAL_SKILL,Potential scientific skill taxonomy; adapt locally.
+Orchestra-Research/AI-research-SKILLs,https://github.com/Orchestra-Research/AI-research-SKILLs,research skills,ADAPT_AS_LOCAL_SKILL,Potential paper/research workflow patterns.

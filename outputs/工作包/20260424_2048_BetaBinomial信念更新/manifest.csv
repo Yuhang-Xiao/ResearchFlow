@@ -1,0 +1,12 @@
+﻿文件路径,文件类型,文件说明,是否关键输出,是否 canonical 副本,是否下游依赖,生成时间
+outputs/工作包/20260424_2048_BetaBinomial信念更新/00_输入说明/inputs.md,报告/文档,报告/文档,False,False,False,2026-04-24T23:57:49
+outputs/工作包/20260424_2048_BetaBinomial信念更新/01_数据输出/peanut_belief_mdp_state_features.csv,表格,信念状态输出,True,True,True,2026-04-24T20:48:44
+outputs/工作包/20260424_2048_BetaBinomial信念更新/01_数据输出/peanut_belief_mdp_state_features.xlsx,表格,信念状态输出,True,False,False,2026-04-24T20:48:45
+outputs/工作包/20260424_2048_BetaBinomial信念更新/01_数据输出/peanut_beta_binomial_belief_states.csv,表格,信念状态输出,True,True,True,2026-04-24T20:48:43
+outputs/工作包/20260424_2048_BetaBinomial信念更新/04_报告输出/peanut_belief_state_latest.csv,表格,信念状态输出,True,False,False,2026-04-24T20:48:45
+outputs/工作包/20260424_2048_BetaBinomial信念更新/04_报告输出/peanut_belief_state_summary_by_stage.csv,表格,信念状态输出,True,False,False,2026-04-24T20:48:45
+outputs/工作包/20260424_2048_BetaBinomial信念更新/04_报告输出/peanut_beta_binomial_belief_update_report.md,报告/文档,信念状态输出,True,False,False,2026-04-24T20:48:45
+outputs/工作包/20260424_2048_BetaBinomial信念更新/04_报告输出/peanut_beta_binomial_run_summary.json,配置/索引,信念状态输出,True,False,False,2026-04-24T20:48:45
+outputs/工作包/20260424_2048_BetaBinomial信念更新/06_配置参数/peanut_beta_binomial_config.json,配置/索引,信念状态输出,True,False,False,2026-04-24T20:48:45
+outputs/工作包/20260424_2048_BetaBinomial信念更新/07_日志与错误/peanut_beta_binomial_error_log.md,报告/文档,日志/错误/修复记录,True,False,False,2026-04-24T20:48:45
+outputs/工作包/20260424_2048_BetaBinomial信念更新/README.md,报告/文档,报告/文档,False,False,False,2026-04-24T23:57:49

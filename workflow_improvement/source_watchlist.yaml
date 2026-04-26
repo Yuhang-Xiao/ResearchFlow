@@ -1,0 +1,66 @@
+sources:
+  - name: OpenAI official skills
+    type: official_reference
+    query: "OpenAI Codex skills official"
+  - name: OpenAI Codex docs
+    type: official_reference
+    query: "OpenAI Codex docs skills"
+  - name: ComposioHQ/awesome-codex-skills
+    type: github_repository
+    url: https://github.com/ComposioHQ/awesome-codex-skills
+  - name: ComposioHQ/awesome-claude-skills
+    type: github_repository
+    url: https://github.com/ComposioHQ/awesome-claude-skills
+  - name: Imbad0202/academic-research-skills
+    type: github_repository
+    url: https://github.com/Imbad0202/academic-research-skills
+  - name: karpathy/autoresearch
+    type: github_repository
+    url: https://github.com/karpathy/autoresearch
+  - name: SamuelSchmidgall/AgentLaboratory
+    type: github_repository
+    url: https://github.com/SamuelSchmidgall/AgentLaboratory
+  - name: ruc-datalab/DeepAnalyze
+    type: github_repository
+    url: https://github.com/ruc-datalab/DeepAnalyze
+  - name: Zotero MCP projects
+    type: github_search
+    query: "zotero mcp github"
+  - name: AutoML agent
+    type: github_search
+    query: "AutoML agent data science GitHub"
+  - name: data science agent
+    type: github_search
+    query: "agentic data scientist GitHub"
+  - name: scientific research agent
+    type: github_search
+    query: "scientific research agent GitHub"
+  - name: PDF full-text reader
+    type: github_search
+    query: "PDF full text reader agent literature review GitHub"
+  - name: experiment tracking
+    type: github_search
+    query: "experiment tracking agent GitHub"
+  - name: visualization/report writing skills
+    type: github_search
+    query: "visualization report writing agent skill GitHub"
+  - name: workflow organizer skills
+    type: github_search
+    query: "workflow organizer skill Codex Claude"
+review_frequency: after_each_durable_task_or_on_user_request
+
+- name: Deepchecks
+  url: https://github.com/deepchecks/deepchecks
+  category: data_model_validation
+- name: Great Expectations
+  url: https://docs.greatexpectations.io/
+  category: data_quality
+- name: Pandera
+  url: https://pandera.readthedocs.io/
+  category: dataframe_validation
+- name: Evidently
+  url: https://github.com/evidentlyai/evidently
+  category: drift_monitoring
+- name: RefChecker
+  url: https://github.com/markrussinovich/refchecker
+  category: citation_verification

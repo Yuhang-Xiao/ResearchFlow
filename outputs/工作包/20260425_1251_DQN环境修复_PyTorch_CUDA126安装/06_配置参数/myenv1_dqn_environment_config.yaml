@@ -1,0 +1,37 @@
+python_interpreter: "D:\\anaconda3\\envs\\myenv1\\python.exe"
+torch_expected_cuda: "12.6"
+torch_install_index: "https://download.pytorch.org/whl/cu126"
+torch_version_verified: "2.11.0+cu126"
+torch_cuda_verified: "12.6"
+cuda_available_verified: true
+gpu_name_verified: "NVIDIA GeForce RTX 4060 Ti"
+use_gpu_if_available: true
+formal_dqn_training_allowed_without_parameter_confirmation: false
+required_core_packages:
+  - torch
+  - torchvision
+  - torchaudio
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - plotly
+  - openpyxl
+  - xlsxwriter
+  - pyyaml
+  - tqdm
+  - joblib
+  - tensorboard
+  - gymnasium
+  - python-docx
+  - pypdf
+  - pyarrow
+validation:
+  interpreter_checked: true
+  pip_points_to_myenv1: true
+  cu130_removed: true
+  cu126_installed: true
+  torch_gpu_smoke_test_passed: true
+  openmp_conflict_observed_after_reinstall: false

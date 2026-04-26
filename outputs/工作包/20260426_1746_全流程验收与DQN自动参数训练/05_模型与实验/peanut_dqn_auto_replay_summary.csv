@@ -1,0 +1,2 @@
+﻿replay_buffer_size_final,episodes,state_dim,n_actions,feature_columns
+10000,120,15,5,"总体不合格_后验均值,总体不合格_后验方差,AFB1全样本不合格_后验均值,AFB1全样本不合格_后验方差,抽检总批次数,不合格批次数,AFB1相关记录数,AFB1相关不合格批次数,浓度可用记录数,EDI均值,EDI_P95,MOE_default_最小值,MOE风险惩罚_proxy,人口加权风险_proxy,人口数_人"
