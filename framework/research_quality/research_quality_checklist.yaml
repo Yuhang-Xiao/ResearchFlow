@@ -1,0 +1,21 @@
+{
+  "checklist": [
+    "pre_generation_data_validation",
+    "post_generation_data_validation",
+    "derived_data_lineage",
+    "table_result_consistency",
+    "chart_nonblank_and_font_check",
+    "model_preflight_validation",
+    "model_postrun_diagnostics",
+    "multi_model_fair_comparison",
+    "baseline_fairness",
+    "reward_convergence_constraint_audit",
+    "result_claim_guard",
+    "literature_support_check",
+    "citation_verification",
+    "top_journal_benchmark",
+    "reviewer2_audit",
+    "reproducibility_record",
+    "approval_required_items"
+  ]
+}

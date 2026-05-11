@@ -1,0 +1,18 @@
+name: github_skill_scout
+version: 2026-05-06
+trigger_phrases:
+  - 让 Codex 自己寻找可升级的 skill
+  - 搜索 GitHub 改进 workflow
+purpose: Scout public GitHub/open-source projects for ideas that can be safely adapted into local workflow1 skills or recipes.
+github_search_strategy:
+  - read README/SKILL/docs/license only
+  - do not clone and run third-party code
+  - classify as local_skill, recipe_registry, lightweight_stub, approval_required, reference_only, or reject
+outputs:
+  - github_candidate_projects.csv
+  - workflow_upgrade_action_plan.md
+  - approval_queue.csv
+safety_rules:
+  - no third-party code execution
+  - no secrets or credentials in logs
+  - adapt ideas, not uncontrolled code

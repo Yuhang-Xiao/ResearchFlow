@@ -1,0 +1,39 @@
+name: figure_table_product_gate
+version: 2026-05-06
+hard_gate: true
+figure_candidates:
+  - research_flow
+  - target_distribution
+  - time_trend
+  - group_or_region_difference
+  - missingness
+  - feature_association
+  - model_comparison
+  - observed_vs_predicted
+  - residuals
+  - confusion_matrix
+  - ROC_PR_curves
+  - SHAP
+  - feature_importance
+  - robustness_validation
+table_candidates:
+  - literature_evidence_map
+  - data_dictionary
+  - model_setting_table
+  - complete_metric_table
+  - quality_gate_table
+  - appendix_supplement
+rules:
+  - Main figures are PNG-first and nonblank.
+  - Complete paper products must include at least 6 main figures and 4 main tables unless a not-applicable reason is recorded.
+  - Chinese text must render correctly or fallback font must be recorded.
+  - Every figure/table has source data, caption, explanation, and paper reference.
+  - Failed artifacts are repaired before final verdict.
+outputs:
+  - figure_table_plan.csv
+  - figure_crossref_map.csv
+  - table_crossref_map.csv
+  - chart_quality_audit.csv
+  - table_quality_audit.csv
+  - figure_explanations.md
+  - table_explanations.md

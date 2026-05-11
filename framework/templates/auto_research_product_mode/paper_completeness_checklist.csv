@@ -1,0 +1,20 @@
+section,required,status_values,repair_if_missing
+Title,yes,pass|fail,yes
+Abstract,yes,pass|fail,yes
+Keywords,yes,pass|fail,yes
+Introduction,yes,pass|fail,yes
+Literature Review,yes,pass|fail,yes
+Method,yes,pass|fail,yes
+Results,yes,pass|fail,yes
+Discussion,yes,pass|fail,yes
+Conclusion,yes,pass|fail,yes
+References,yes,pass|fail,yes
+Appendix,yes,pass|fail,yes
+section_evidence_table,yes,pass|fail,yes
+verified_citation_status,yes,pass|partial|fail,yes_or_authorization
+complete_metric_table,yes,pass|fail,yes
+model_comparison_table,yes,pass|fail,yes
+explainability_artifacts,yes,pass|fallback|fail,yes
+figure_table_caption_and_reference,yes,pass|fail,yes
+word_render_audit,yes,pass|fallback|fail,yes
+reproducibility_statement,yes,pass|fail,yes

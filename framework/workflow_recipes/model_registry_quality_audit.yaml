@@ -1,0 +1,13 @@
+name: model_registry_quality_audit
+version: 2026-05-07
+purpose: Gate-as-code audit for registry readiness.
+checks:
+  - baseline_per_task
+  - at_least_two_model_families_per_task
+  - metrics_per_task
+  - validation_per_task
+  - explainability_per_task
+  - figure_table_per_task
+  - literature_per_task
+  - repair_strategy_per_task
+executor: workflow1.model_registry.model_registry_auditor.audit_model_registry

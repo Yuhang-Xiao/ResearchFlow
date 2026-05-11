@@ -1,0 +1,5 @@
+version: 2026-05-07
+methods:
+  schema_inventory: {purpose: column types, outputs: [column_profile, missingness, uniqueness], local_implementation: pandas_profile_light}
+  target_structure_profile: {purpose: infer target type, outputs: [target_distribution, zero_rate, imbalance, skewness], local_implementation: task_inference_engine}
+  leakage_scan: {purpose: identify target proxies and temporal leakage, outputs: [leakage_candidates], local_implementation: planned_gate}

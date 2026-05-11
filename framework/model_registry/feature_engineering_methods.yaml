@@ -1,0 +1,6 @@
+version: 2026-05-07
+methods:
+  date_parts: {purpose: extract year/month/season when scientifically valid, leakage_check: no_future_features}
+  lag_features: {purpose: time series supervised conversion, leakage_check: chronological_only}
+  group_aggregates: {purpose: grouped baselines, leakage_check: compute_inside_train_fold}
+  threshold_auxiliary_label: {purpose: extreme event auxiliary classification, leakage_check: threshold_defined_before_evaluation}

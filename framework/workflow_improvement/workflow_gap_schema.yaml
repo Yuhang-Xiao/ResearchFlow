@@ -1,0 +1,11 @@
+fields:
+  - capability
+  - current_assets
+  - coverage_level
+  - evidence
+  - gap
+  - risk_if_unfixed
+  - recommended_upgrade_type
+  - auto_allowed
+  - approval_required
+coverage_levels: [none, partial, adequate, strong]

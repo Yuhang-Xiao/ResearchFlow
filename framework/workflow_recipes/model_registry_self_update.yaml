@@ -1,0 +1,13 @@
+name: model_registry_self_update
+version: 2026-05-07
+purpose: Convert repeated failures or new evidence into safe registry update proposals.
+triggers:
+  - new_task_type
+  - missing_model_family
+  - missing_metric
+  - repeated_quality_gate_failure
+  - new_literature_or_engineering_reference
+  - user_feedback_output_incomplete
+outputs:
+  - framework/workflow_improvement/model_registry_update_ledger.csv
+  - model_registry_update_backlog

@@ -1,0 +1,23 @@
+name: safe_workflow_upgrade
+version: 2026-05-06
+trigger_phrases:
+  - 应用安全工作流升级
+  - safe workflow upgrade
+purpose: Apply low-risk local upgrades without external installs or data mutation.
+allowed_actions:
+  - add local SKILL.md
+  - add workflow recipe
+  - add model registry entry
+  - add lightweight Python stub
+  - update README/prompt/project_state
+  - run dry-run and skills-doctor
+forbidden_without_approval:
+  - install MCP/plugin/dependency
+  - write Zotero/database
+  - use API key
+  - run unknown external code
+  - delete unique files
+outputs:
+  - applied_upgrade_log.csv
+  - improvement_ledger.csv
+  - dry_run_results.csv

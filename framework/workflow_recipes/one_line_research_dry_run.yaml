@@ -1,0 +1,32 @@
+name: one_line_research_dry_run
+description: Route one-line research commands into dry-run plans without real data processing or model execution.
+trigger_phrases:
+  - 启动自动科研成品模式
+  - auto research product
+  - continue previous research workflow
+required_inputs:
+  - AGENTS.md
+  - START_HERE.md
+  - project_state/
+  - framework/workflow_recipes/
+  - framework/workflow_improvement/
+  - .agents/skills/
+dry_run_guards:
+  - do_not_process_real_data
+  - do_not_clean_or_reclean_data
+  - do_not_train_models
+  - do_not_run_formal_optimization
+  - do_not_write_zotero_database
+outputs:
+  - structured intent
+  - mode
+  - required skills
+  - planned stages
+  - quality gates
+  - approval required items
+  - block reason when execution is not allowed
+quality_gates:
+  - raw data remains read-only
+  - formal parameters require confirmation
+  - outputs must route to run package
+  - project_state must be updated after durable tasks

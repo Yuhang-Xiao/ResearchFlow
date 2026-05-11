@@ -1,0 +1,28 @@
+name: metric_completeness_gate
+version: 2026-05-06
+hard_gate: true
+classification_metrics:
+  - Accuracy
+  - Precision
+  - Recall
+  - F1
+  - Macro-F1
+  - Weighted-F1
+  - Balanced Accuracy
+  - MCC
+  - ROC-AUC
+  - PR-AUC
+  - confusion matrix
+regression_metrics:
+  - MAE
+  - RMSE
+  - R2
+  - RMSLE
+  - MedianAE
+  - residual analysis
+  - extreme value error
+rule: "If a metric is not applicable, write not_applicable_reason; omission without reason fails."
+outputs:
+  - metric_completeness_audit.csv
+  - metric_contract_by_task.csv
+failure_action: auto_repair

@@ -1,0 +1,4 @@
+timestamp,area,change_type,status,approval_required,notes
+2026-05-11,public_release,repository_cleanup,applied,false,Reset the public repository to framework-only mode with synthetic examples and local-only data rules.
+2026-05-11,skills,duplicate_directory_cleanup,applied,false,Kept .agents/skills as the single Codex-facing skill directory and migrated unique root skills.
+2026-05-11,documentation,bilingual_public_readme,applied,false,Renamed public presentation to ResearchFlow OS while preserving workflow1 package and CLI compatibility.

@@ -1,0 +1,8 @@
+version: 2026-05-07
+patterns:
+  word_success_not_completion: {gate: WordRenderGate, repair: repair_docx_layout}
+  paper_sections_missing: {gate: PaperCompletenessGate, repair: write_missing_paper_sections}
+  metric_incomplete: {gate: MetricCompletenessGate, repair: rerun_task_appropriate_metrics}
+  shap_missing: {gate: ExplainabilityGate, repair: run_shap_or_fallback}
+  model_comparison_missing: {gate: ModelComparisonGate, repair: train_baseline_and_compare_models}
+  registry_incomplete: {gate: ModelRegistryGate, repair: update_model_registry_entry}

@@ -1,0 +1,45 @@
+name: workflow_self_improvement
+version: 2026-05-11
+trigger_phrases:
+  - workflow upgrade
+  - improve current workflow
+  - optimize workflow
+required_inputs:
+  - workflow_improvement policies
+  - local skills and recipes
+  - project_state
+sources_to_inspect:
+  - .agents/skills/
+  - framework/workflow_recipes/
+  - framework/model_registry/
+  - src/workflow1/
+  - project_state/
+  - references/
+github_search_strategy:
+  - read README, skill, docs, and license files only
+  - do not clone and run third-party code
+  - classify candidates before local adaptation
+allowed_actions:
+  - add local skills
+  - add recipes
+  - add lightweight stubs
+  - update project_state
+  - generate reports
+  - run dry-run tests
+approval_required_actions:
+  - install MCP, plugin, or dependencies
+  - write Zotero or database records
+  - run external code
+  - modify formal parameters
+outputs:
+  - workflow gap report
+  - candidate evaluation matrix
+  - upgrade action plan
+  - approval queue
+  - improvement ledger
+quality_gates:
+  - no raw data modification
+  - no formal model execution
+  - no unknown third-party script execution
+  - ledger updated
+  - approval queue updated

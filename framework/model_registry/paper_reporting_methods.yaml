@@ -1,0 +1,6 @@
+version: 2026-05-07
+methods:
+  full_paper_structure: {required_sections: [Title, Abstract, Keywords, Introduction, Literature Review, Method, Results, Discussion, Conclusion, References, Appendix]}
+  evidence_table_per_section: {rule: every formal claim maps to literature/result/figure/table/code evidence}
+  word_render_audit: {rule: docx generation is not final completion until render gate passes}
+  reviewer2_audit: {rule: critical objection checklist before ready_for_human_review}

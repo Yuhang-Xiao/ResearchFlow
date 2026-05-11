@@ -1,0 +1,18 @@
+name: zotero_evidence_chain_workflow
+version: 2026-05-07
+mode: sidecar_first_then_mcp_api_when_authorized
+rules:
+  - Read local Zotero/deepread notes read-only when available.
+  - Do not write Zotero SQLite directly.
+  - Generate sidecar notes, BibTeX, RIS, and import plan.
+  - Any real Zotero write must use Zotero MCP/API after user authorization.
+  - API keys must come from environment variables, not repository files or logs.
+  - After writeback, read the written item/note/tags back and write verification JSON.
+outputs:
+  - zotero_sidecar_notes.md
+  - zotero_pending_import_items.csv
+  - references.bib
+  - references.ris
+  - zotero_writeback_or_import_plan.csv
+  - zotero_mcp_writeback_log.md
+  - zotero_readback_verification.json

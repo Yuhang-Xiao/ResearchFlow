@@ -1,0 +1,41 @@
+version: 2026-05-07
+intents:
+  启动自动科研成品模式: auto_research_product_mode
+  从数据和目标生成完整论文: auto_research_product_mode
+  自动完成从数据到论文的全流程: auto_research_product_mode
+  自动审计并返工直到论文可微调: auto_research_product_mode
+  自动补齐模型、指标、SHAP、图表、文献和论文: auto_research_product_mode
+  自动生成高水平期刊风格论文: auto_research_product_mode
+  自动执行论文级质量门禁: auto_research_product_mode
+  自动生成 Word 并逐页渲染审计: auto_research_product_mode
+  自动完成 Zotero 文献证据链: auto_research_product_mode
+  自动生成可复现科研工作包: auto_research_product_mode
+  从模型库自动选择模型: model_selection_from_registry
+  自动更新模型库: model_registry_self_update
+  审计模型库是否完整: model_registry_quality_audit
+  自动参考 GitHub/HF/OpenML 更新工作流: external_model_workflow_scout
+  优化当前工作流: workflow_self_improvement
+  执行工作流自我升级: workflow_self_improvement
+  继续上次任务: continue_previous_task
+  生成交接文件: update_conversation_handoff
+entry_contracts:
+  auto_research_product_mode:
+    required_sentence: 启动自动科研成品模式：数据文件是 XXX，研究目标是 XXX。
+    router: workflow1.one_line.route_goal
+    executable_entrypoint: workflow1.orchestration.auto_research_product_orchestrator.run_auto_research_product
+    recipe: framework/workflow_recipes/auto_research_product_orchestrator.yaml
+    model_registry_recipe: framework/workflow_recipes/model_selection_from_registry.yaml
+    gate_recipe: framework/workflow_recipes/research_quality_gate_orchestrator.yaml
+    repair_recipe: framework/workflow_recipes/auto_repair_loop.yaml
+safe_external_reference_intents:
+  GitHub: engineering_reference_only
+  HuggingFace: engineering_reference_only
+  OpenML: benchmark_reference_only
+  official_docs: engineering_reference_only
+authorization_required:
+  - dependency_installation
+  - API_key_use
+  - Zotero_database_write
+  - MCP_or_plugin_installation
+  - large_model_or_dataset_download
+  - running_unknown_third_party_code

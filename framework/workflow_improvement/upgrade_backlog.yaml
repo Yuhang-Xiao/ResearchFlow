@@ -1,0 +1,17 @@
+backlog:
+  - id: self_improvement_cli
+    title: Keep self-improvement dry-run stages working after recipe changes.
+    status: active
+    priority: high
+  - id: zotero_mcp_review
+    title: Evaluate Zotero MCP options through the approval queue before installation or writeback.
+    status: approval_required
+    priority: medium
+  - id: pdf_fulltext_reader
+    title: Strengthen PDF full-text reading and OCR workflow with safe local fallbacks.
+    status: candidate_review
+    priority: medium
+  - id: optional_validation_tool_integrations
+    title: Evaluate data validation, experiment tracking, tuning, reference checking, and reproducibility tools before any dependency change.
+    status: approval_required
+    priority: medium

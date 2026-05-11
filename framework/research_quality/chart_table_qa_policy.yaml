@@ -1,0 +1,31 @@
+name: chart_table_qa_policy
+title: Chart Table Qa Policy
+version: 1
+created_at: "2026-04-26 19:12:22"
+scope: workflow1 scientific research quality assurance
+default_language: zh-CN
+principles:
+  - data_first: every result must be traceable to validated data, model output, figure/table, or literature evidence
+  - prototype_guard: prototype and experimental results must not be written as formal policy conclusions
+  - benchmark_first: major methods, figures, tables, and paper sections must be checked against top-journal exemplars
+  - safe_adaptation: external tools may inspire local rules, but installation, services, APIs, MCP, and database writes require approval
+required_checks:
+  - id: chart_table_qa_policy_01
+    check: 图表必须检查空图、坐标轴、中文字体、PNG/SVG 输出和数据来源
+    severity: high
+    required: true
+  - id: chart_table_qa_policy_02
+    check: 表格必须检查 row/column count、主键、单位和报告数字一致性
+    severity: high
+    required: true
+stop_conditions:
+  - missing required input or lineage
+  - unresolved core data validation error
+  - formal DQN/RL parameters not confirmed by user
+  - citation cannot be verified but is needed for a formal claim
+  - result claim is stronger than available evidence
+outputs:
+  - quality_gate_table
+  - issue_log
+  - repair_log
+  - approval_queue_entry_when_needed

@@ -1,0 +1,7 @@
+version: 2026-05-07
+methods:
+  stratified_split: {for: classification, local_implementation: train_test_split_stratify}
+  kfold: {for: ordinary_regression, local_implementation: KFold}
+  group_kfold: {for: grouped_prediction, local_implementation: GroupKFold}
+  chronological_split: {for: time_series, local_implementation: time_sorted_holdout}
+  rolling_origin: {for: forecasting, local_implementation: rolling_backtest_stub}

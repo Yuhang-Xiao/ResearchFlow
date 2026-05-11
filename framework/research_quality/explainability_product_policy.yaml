@@ -1,0 +1,14 @@
+name: explainability_product_policy
+version: 2026-05-06
+hard_gate: true
+requirements:
+  - shap_availability_check
+  - shap_if_available_and_supported
+  - fallback_reason_if_shap_unavailable
+  - permutation_importance_control
+  - pdp_or_ale_or_interpretable_substitute
+  - local_explanation
+  - subgroup_error_analysis
+  - extreme_case_explanation
+  - predictive_association_not_causal_mechanism_statement
+failure_action: auto_repair_or_record_unavailable_reason

@@ -1,0 +1,21 @@
+name: periodic_workflow_review
+version: 2026-05-11
+trigger_phrases:
+  - periodic workflow review
+  - review workflow gaps
+purpose: Review ResearchFlow OS capability gaps after durable tasks.
+sources_to_inspect:
+  - outputs/_index/
+  - project_state/
+  - framework/workflow_recipes/
+  - .agents/skills/
+  - framework/research_quality/
+  - framework/model_registry/
+outputs:
+  - workflow_gap_report.md
+  - workflow_quality_improvement_backlog.csv
+  - approval_required_external_tools.csv
+quality_gates:
+  - repeated_friction_recorded
+  - missing_gate_or_skill_recorded
+  - safe_upgrade_or_backlog_created

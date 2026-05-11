@@ -1,0 +1,10 @@
+adapted_components:
+  - id: workflow_self_improvement_system
+    source: user_request
+    type: local_framework
+    files:
+      - framework/workflow_improvement/
+      - src/workflow1/self_improvement/
+      - .agents/skills/workflow-self-improvement-scout/SKILL.md
+      - framework/workflow_recipes/workflow_self_improvement.yaml
+    approval_needed: false

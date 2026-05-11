@@ -1,0 +1,17 @@
+name: output_explanation_and_interpretation
+status: active
+language: zh-first
+run_package_required: true
+safe_defaults:
+- metadata_only_external_search
+- no_unknown_code_execution
+- no_zotero_db_write
+quality_gates:
+- artifact_explanation
+- evidence_mapping
+- experimental_boundary
+- approval_queue_for_high_risk_actions
+outputs:
+- markdown_report
+- csv_audit_table
+- artifact_explanation_index

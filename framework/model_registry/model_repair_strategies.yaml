@@ -1,0 +1,20 @@
+version: 2026-05-07
+tasks:
+  binary_classification: {strategies: [{name: rerun_full_classification_metrics, applies_to_gates: [MetricCompletenessGate]}, {name: add_threshold_and_calibration_review, applies_to_gates: [ExplainabilityGate]}]}
+  multiclass_classification: {strategies: [{name: add_macro_weighted_per_class_metrics, applies_to_gates: [MetricCompletenessGate]}]}
+  imbalanced_classification: {strategies: [{name: rerun_pr_auc_and_minority_metrics, applies_to_gates: [MetricCompletenessGate]}, {name: move_resampling_inside_pipeline, applies_to_gates: [ModelComparisonGate]}]}
+  regression: {strategies: [{name: add_residual_and_extreme_error_analysis, applies_to_gates: [MetricCompletenessGate]}]}
+  count_regression: {strategies: [{name: check_nonnegative_and_poisson_or_tweedie, applies_to_gates: [ModelComparisonGate]}]}
+  zero_inflated_count: {strategies: [{name: add_two_part_zero_positive_model, applies_to_gates: [ModelComparisonGate, MetricCompletenessGate]}]}
+  extreme_event_prediction: {strategies: [{name: add_tail_metrics_and_threshold_task, applies_to_gates: [MetricCompletenessGate]}]}
+  time_series_forecasting: {strategies: [{name: replace_random_split_with_rolling_origin, applies_to_gates: [ModelComparisonGate]}]}
+  panel_or_grouped_prediction: {strategies: [{name: rerun_group_holdout_metrics, applies_to_gates: [MetricCompletenessGate]}]}
+  spatial_generalization: {strategies: [{name: add_leave_region_out_validation, applies_to_gates: [ModelComparisonGate]}]}
+  causal_inference: {strategies: [{name: downgrade_causal_claim_or_add_identification_table, applies_to_gates: [ClaimGuardGate]}]}
+  survival_analysis: {strategies: [{name: add_censoring_and_event_time_audit, applies_to_gates: [MetricCompletenessGate]}]}
+  reinforcement_learning: {strategies: [{name: block_until_reward_parameters_confirmed, applies_to_gates: [ModelComparisonGate]}]}
+  optimization: {strategies: [{name: rerun_feasibility_and_constraint_audit, applies_to_gates: [MetricCompletenessGate]}]}
+  Bayesian_modeling: {strategies: [{name: add_prior_sensitivity_and_ppc, applies_to_gates: [MetricCompletenessGate]}]}
+  anomaly_detection: {strategies: [{name: add_top_case_review_and_stability, applies_to_gates: [MetricCompletenessGate]}]}
+  clustering: {strategies: [{name: add_cluster_stability_and_profile_table, applies_to_gates: [MetricCompletenessGate]}]}
+  ranking_or_prioritization: {strategies: [{name: add_top_k_lift_and_constraint_review, applies_to_gates: [MetricCompletenessGate]}]}

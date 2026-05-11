@@ -1,0 +1,111 @@
+version: 2026-05-07
+families:
+  linear_model:
+    local_implementations: [LogisticRegression, Ridge, Lasso]
+    optional_dependencies: []
+    strengths: [transparent, fast, stable_baseline]
+  generalized_linear_model:
+    local_implementations: [PoissonRegressor, TweedieRegressor]
+    optional_dependencies: []
+  tree_ensemble:
+    local_implementations: [RandomForestClassifier, RandomForestRegressor, ExtraTrees]
+    optional_dependencies: []
+  gradient_boosting:
+    local_implementations: [HistGradientBoostingClassifier, HistGradientBoostingRegressor]
+    optional_dependencies: [xgboost, lightgbm, catboost]
+  balanced_ensemble:
+    local_implementations: [class_weighted_models, resampling_pipeline]
+    optional_dependencies: [imbalanced-learn]
+  two_part_model:
+    local_implementations: [zero_vs_positive_classifier, positive_value_regressor]
+    optional_dependencies: []
+  quantile_regression:
+    local_implementations: [QuantileRegressor, GradientBoostingRegressor_quantile]
+    optional_dependencies: []
+  classical_forecasting:
+    local_implementations: [naive, rolling_mean, exponential_smoothing_if_available]
+    optional_dependencies: [statsforecast, prophet, sktime, darts]
+  machine_learning_forecaster:
+    local_implementations: [lag_features_plus_sklearn]
+    optional_dependencies: [sktime, darts]
+  mixed_effects:
+    local_implementations: [group_baseline, fixed_effect_encoding]
+    optional_dependencies: [statsmodels]
+  group_aware_ml:
+    local_implementations: [GroupKFold_pipeline]
+    optional_dependencies: []
+  spatial_features_ml:
+    local_implementations: [leave_region_out_validation, spatial_feature_engineering]
+    optional_dependencies: [geopandas]
+  hierarchical_model:
+    local_implementations: [grouped_partial_pooling_stub]
+    optional_dependencies: [pymc]
+  propensity_score:
+    local_implementations: [logistic_propensity, matching_or_weighting_plan]
+    optional_dependencies: []
+  doubly_robust:
+    local_implementations: [aipw_plan]
+    optional_dependencies: [econml, dowhy]
+  causal_forest:
+    local_implementations: [causal_forest_plan]
+    optional_dependencies: [econml, grf]
+  cox_model:
+    local_implementations: [cox_ph_plan]
+    optional_dependencies: [lifelines]
+  survival_forest:
+    local_implementations: [survival_forest_plan]
+    optional_dependencies: [scikit-survival]
+  q_learning:
+    local_implementations: [tabular_q_learning]
+    optional_dependencies: []
+  dqn:
+    local_implementations: [document_governed_dqn]
+    optional_dependencies: [torch]
+  constrained_rl:
+    local_implementations: [constraint_audit_stub]
+    optional_dependencies: [torch]
+  linear_programming:
+    local_implementations: [scipy_linprog_if_available]
+    optional_dependencies: [scipy]
+  mixed_integer_programming:
+    local_implementations: [mip_plan]
+    optional_dependencies: [pulp, ortools]
+  heuristic_search:
+    local_implementations: [greedy, local_search]
+    optional_dependencies: []
+  bayesian_glm:
+    local_implementations: [bayesian_plan]
+    optional_dependencies: [pymc, stan]
+  hierarchical_bayes:
+    local_implementations: [hierarchical_plan]
+    optional_dependencies: [pymc, stan]
+  bayesian_time_series:
+    local_implementations: [state_space_plan]
+    optional_dependencies: [pymc, statsmodels]
+  density_model:
+    local_implementations: [robust_covariance, gaussian_mixture]
+    optional_dependencies: []
+  isolation_forest:
+    local_implementations: [IsolationForest]
+    optional_dependencies: []
+  one_class_svm:
+    local_implementations: [OneClassSVM]
+    optional_dependencies: []
+  partition_clustering:
+    local_implementations: [KMeans]
+    optional_dependencies: []
+  density_clustering:
+    local_implementations: [DBSCAN]
+    optional_dependencies: []
+  mixture_model:
+    local_implementations: [GaussianMixture]
+    optional_dependencies: []
+  learning_to_rank:
+    local_implementations: [rank_by_calibrated_score]
+    optional_dependencies: [xgboost, lightgbm]
+  calibrated_risk_model:
+    local_implementations: [CalibratedClassifierCV]
+    optional_dependencies: []
+  constrained_ranking:
+    local_implementations: [risk_score_plus_constraint_filter]
+    optional_dependencies: []

@@ -1,0 +1,18 @@
+name: model_comparison_quality_audit
+description: Ensure every model result has fair baselines, consistent splits, diagnostics, and paper-use status.
+required_skills:
+  - model-comparison-auditor
+  - baseline-fairness-auditor
+  - model-validation-and-diagnostics-runner
+  - reward-convergence-constraint-auditor
+  - reproducibility-auditor
+quality_gates:
+  - at_least_one_simple_baseline
+  - advanced_model_has_interpretable_control
+  - same_split_budget_constraints_metrics
+  - uncertainty_runtime_parameters_interpretability_recorded
+  - paper_usable_status_recorded
+outputs:
+  - model_comparison_required_baselines.csv
+  - model_comparison_quality_audit_report.md
+  - baseline_fairness_findings.csv

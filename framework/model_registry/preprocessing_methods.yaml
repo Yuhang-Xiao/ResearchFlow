@@ -1,0 +1,6 @@
+version: 2026-05-07
+methods:
+  numeric_imputation: {local_implementation: SimpleImputer_median, applies_to: [tabular_ml]}
+  categorical_imputation: {local_implementation: SimpleImputer_most_frequent, applies_to: [tabular_ml]}
+  one_hot_encoding: {local_implementation: OneHotEncoder_handle_unknown_ignore, applies_to: [categorical_features]}
+  scaling: {local_implementation: StandardScaler_for_linear_models, applies_to: [linear_model]}

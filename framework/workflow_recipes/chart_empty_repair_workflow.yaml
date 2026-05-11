@@ -1,0 +1,15 @@
+name: chart_empty_repair_workflow
+version: 2026-04-26
+language: zh
+purpose: >
+  检查空图、近似空图、全 0 图、无差异图和中文字体问题，并生成解释性 PNG、
+  替代表格或明确无法可视化说明。
+required_outputs:
+  - chart_quality_audit.csv
+  - chart_system_repair_report.md
+  - figure_explanations.md
+quality_gates:
+  - no blank axes-only main figure
+  - all-zero charts explain whether zero means no violation or missing data
+  - PNG is preferred for main figures
+  - Chinese font status is recorded

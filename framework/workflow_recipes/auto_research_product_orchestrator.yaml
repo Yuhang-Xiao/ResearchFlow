@@ -1,0 +1,107 @@
+name: auto_research_product_orchestrator
+version: 2026-05-07
+upgraded_to_research_os: true
+executable_entrypoint: workflow1.orchestration.auto_research_product_orchestrator.run_auto_research_product
+mode: data_goal_to_research_product
+purpose: >
+  Treat "data file + research goal + optional constraints" as a product contract
+  and route the run from data understanding to a paper-grade, auditable,
+  reproducible research package.
+inputs:
+  required:
+    - data_file
+    - research_goal
+  optional:
+    - constraints
+    - preferred_language
+    - journal_or_report_target
+entry_sentence: "启动自动科研成品模式：数据文件是 XXX，研究目标是 XXX。"
+layers:
+  - user_input_layer
+  - task_understanding_layer
+  - data_understanding_layer
+  - research_planning_layer
+  - literature_evidence_layer
+  - external_engineering_reference_layer
+  - modeling_execution_layer
+  - model_explainability_layer
+  - figure_table_product_layer
+  - full_paper_writing_layer
+  - word_product_layer
+  - quality_gate_layer
+  - auto_repair_layer
+  - archival_reproducibility_layer
+default_stage_order:
+  - create_run_package
+  - parse_input_contract
+  - profile_schema_and_target_structure
+  - build_literature_first_evidence_chain
+  - plan_multi_task_modeling
+  - run_baselines_and_model_comparison
+  - complete_task_appropriate_metrics
+  - run_explainability_gate
+  - build_figure_table_product
+  - write_full_paper_product
+  - export_and_render_audit_word
+  - run_research_quality_gates
+  - auto_repair_failed_gates
+  - package_reproducibility_artifacts
+research_os_executable_chain:
+  - data_profile
+  - infer_target_type
+  - load_model_registry
+  - select_models
+  - select_metrics
+  - select_validation_strategy
+  - select_explainability
+  - select_figure_table_plan
+  - select_literature_needs
+  - run_sklearn_baseline_or_automl_candidate
+  - run_gate_as_code
+  - create_repair_actions
+  - package_reproducibility_artifacts
+required_gates:
+  - input_contract_gate
+  - data_profile_gate
+  - target_structure_gate
+  - multi_task_modeling_gate
+  - metric_completeness_gate
+  - model_comparison_gate
+  - explainability_gate
+  - figure_table_product_gate
+  - literature_first_evidence_gate
+  - reference_integrity_gate
+  - full_paper_product_gate
+  - word_render_gate
+  - result_claim_guard_gate
+  - high_journal_readiness_gate
+  - auto_repair_gate
+  - reproducibility_gate
+auto_repair:
+  rounds:
+    - round_1_initial_execution
+    - round_2_quality_gate_repair
+    - round_3_word_and_paper_repair
+  fail_statuses:
+    - fail
+    - missing
+    - unable_to_verify_without_reason
+final_verdict:
+  ready_for_user_micro_edit_requires:
+    - full_paper_markdown
+    - full_paper_docx_or_audited_fallback
+    - model_comparison_and_metric_tables
+    - shap_or_explainability_fallback
+    - paper_grade_figures_tables
+    - citation_evidence_map
+    - quality_gate_report
+    - redo_logs
+    - reproducibility_readme
+approval_required:
+  - Zotero database write
+  - API key
+  - MCP/plugin install
+  - large dependency
+  - paid full text
+  - large external model_or_dataset_download
+  - running_unknown_third_party_code

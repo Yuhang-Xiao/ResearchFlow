@@ -1,0 +1,20 @@
+name: external_plugin_approval
+version: 2026-05-06
+trigger_phrases:
+  - 列出需要我确认的外部插件
+  - approval queue
+purpose: List actions that require explicit user approval before workflow1 can proceed.
+approval_required_actions:
+  - install MCP/plugin/dependencies
+  - write Zotero/database
+  - use API key
+  - run external code
+  - modify formal model parameters
+  - download large external models or datasets
+outputs:
+  - approval_required_external_tools.csv
+  - unsafe_external_action_policy.md
+quality_gates:
+  - no credential logged
+  - no direct Zotero SQLite write
+  - no unknown third-party script execution

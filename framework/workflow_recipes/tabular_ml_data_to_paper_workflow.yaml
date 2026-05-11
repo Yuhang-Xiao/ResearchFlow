@@ -1,0 +1,21 @@
+name: tabular_ml_data_to_paper_workflow
+status: active
+language: zh-first
+workflow_order:
+- capability_check
+- sheet_inventory
+- data_profile
+- task_inference
+- leakage_time_group_imbalance_audit
+- literature_scout
+- github_hf_engineering_reference
+- feature_engineering
+- model_comparison
+- interpretability
+- robustness
+- paper_docx_export
+- readiness_audit
+safe_defaults:
+- no_raw_data_modification
+- metadata_only_external_reference
+- zotero_sidecar_first
