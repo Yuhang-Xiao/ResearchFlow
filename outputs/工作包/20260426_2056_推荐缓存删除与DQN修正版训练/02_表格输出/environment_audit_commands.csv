@@ -1,7 +1,0 @@
-﻿command,returncode,stdout,stderr
-D:\anaconda3\envs\myenv1\python.exe -c import sys; print(sys.executable),0,D:\anaconda3\envs\myenv1\python.exe,
-D:\anaconda3\envs\myenv1\python.exe -c import torch; print(torch.__version__); print(torch.version.cuda); print(torch.cuda.is_available()); print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'NO CUDA'),0,"2.11.0+cu126
-12.6
-True
-NVIDIA GeForce RTX 4060 Ti",
-D:\anaconda3\envs\myenv1\python.exe -c import workflow1; print(workflow1.__version__),0,0.1.0,

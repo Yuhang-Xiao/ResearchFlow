@@ -1,0 +1,32 @@
+# Example project-local Codex configuration.
+# Copy to `.codex/config.toml` for local use. The real config is ignored by Git.
+
+sandbox_mode = "workspace-write"
+
+[project]
+name = "workflow1"
+purpose = "general-purpose scientific workflow scaffold"
+
+[workflow]
+default_state_dir = "project_state"
+raw_data_dir = "data/01_raw"
+reports_dir = "reports"
+skills_dir = "skills"
+repo_scoped_skills_dir = ".agents/skills"
+references_dir = "references"
+
+[safety]
+analyze_data_by_default = false
+preserve_raw_data = true
+require_state_updates_for_durable_changes = true
+
+# Zotero MCP/API writeback is optional and must be configured locally.
+# Do not commit real library ids, API keys, or private env files.
+#
+# [mcp_servers.zotero]
+# command = "python"
+# args = ["tools/zotero_mcp_stdio_bridge.py"]
+# enabled = true
+# required = false
+# startup_timeout_sec = 20
+# tool_timeout_sec = 120

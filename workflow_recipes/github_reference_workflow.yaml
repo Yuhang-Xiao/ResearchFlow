@@ -1,0 +1,29 @@
+name: github_reference_workflow
+status: active
+language: zh-first
+run_package_required: true
+safe_defaults:
+- metadata_only_external_search
+- no_unknown_code_execution
+- no_zotero_db_write
+tool_priority:
+- codex_app_plugin_direct_call
+- callable_connector_visible_in_session
+- gh_cli_if_available
+- public_github_api_readonly_fallback
+capability_status_fields:
+- codex_plugin_installed
+- callable_in_session
+- cli_available
+- public_api_fallback
+notes:
+- Missing gh CLI is not plugin failure when Codex app GitHub plugin is installed.
+quality_gates:
+- artifact_explanation
+- evidence_mapping
+- experimental_boundary
+- approval_queue_for_high_risk_actions
+outputs:
+- markdown_report
+- csv_audit_table
+- artifact_explanation_index

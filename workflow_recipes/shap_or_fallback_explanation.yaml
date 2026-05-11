@@ -1,0 +1,13 @@
+name: shap_or_fallback_explanation
+version: 2026-05-06
+decision_tree:
+  - if: shap_installed_and_model_supported
+    then: run_global_and_local_shap
+  - if: shap_missing_or_unsupported
+    then: run_permutation_importance_pdp_or_ale_and_interpretable_control
+  - if: explanation_conflicts_with_model_behavior
+    then: create_repair_task_and_flag_claim_boundary
+outputs:
+  - shap_or_fallback_decision.csv
+  - explanation_figures_and_tables
+  - predictive_not_causal_note.md

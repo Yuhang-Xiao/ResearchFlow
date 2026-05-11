@@ -42,3 +42,22 @@ items:
   status: ready
   reason: Results section upgraded; Method/Introduction/Literature Review/Discussion
     can reuse new explanation/evidence workflow.
+- date: '2026-05-04 20:44:28'
+  item: external evidence mapping and model redo decision engine
+  status: local_stub_created
+  approval_required: false
+- date: '2026-05-04 23:29:53'
+  item: auto research product mode system architecture
+  status: applied_local_low_risk
+  approval_required: false
+  next_review: verify real data execution can consume product-mode recipes, not only dry-run routing
+- date: '2026-05-04 23:29:53'
+  item: SHAP dependency for explainability gate
+  status: approval_required
+  approval_required: true
+  reason: local audit found shap is not installed; install only after user approves dependency changes
+- date: '2026-05-04 23:29:53'
+  item: DOCX page rendering backend
+  status: approval_required
+  approval_required: true
+  reason: LibreOffice/soffice was not found; true page render QA needs approved renderer installation or configured backend

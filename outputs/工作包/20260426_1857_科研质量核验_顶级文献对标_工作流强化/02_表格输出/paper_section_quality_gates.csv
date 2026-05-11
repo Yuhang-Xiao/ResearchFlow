@@ -1,9 +1,0 @@
-﻿gate,required
-top_journal_benchmark_read,yes
-section_outline,yes
-evidence_map,yes
-citation_table,yes
-citation_verification,yes
-result_claim_guard,yes
-reviewer2_audit,yes
-docx_export_or_fallback,yes

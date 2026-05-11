@@ -1,4 +1,0 @@
-﻿step,action,status,notes
-1,scan_only,completed,No files deleted. Waiting for user to select paths from delete_candidates.csv.
-2,delete_selected_targets,pending_user_selection,Will only run after explicit user confirmation.
-3,update_indexes_then_continue_dqn,blocked_until_deletion_confirmation,DQN revised experiment must wait until deletion/index update is complete.

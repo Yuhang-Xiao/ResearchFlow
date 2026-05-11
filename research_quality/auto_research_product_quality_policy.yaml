@@ -1,0 +1,35 @@
+name: auto_research_product_quality_policy
+version: 2026-05-06
+hard_gates:
+  - input_contract_gate
+  - data_profile_gate
+  - target_structure_gate
+  - multi_task_modeling_gate
+  - metric_completeness_gate
+  - model_comparison_gate
+  - explainability_gate
+  - figure_table_product_gate
+  - literature_first_evidence_gate
+  - reference_integrity_gate
+  - result_claim_guard_gate
+  - full_paper_product_gate
+  - word_render_gate
+  - reproducibility_gate
+  - reviewer_2_gate
+  - high_journal_readiness_gate
+failure_statuses:
+  - fail
+  - missing
+  - unable_to_verify_without_reason
+repair_required_on_failure: true
+auto_repair_rounds:
+  - round_1_initial_execution
+  - round_2_quality_gate_repair
+  - round_3_word_and_paper_repair
+human_authorization_exceptions:
+  - Zotero_database_write
+  - API_key
+  - paid_full_text
+  - external_plugin_or_MCP_install
+  - large_dependency_or_model_download
+  - human_scientific_judgment_changes_conclusion

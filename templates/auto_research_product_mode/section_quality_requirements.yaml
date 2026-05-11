@@ -1,0 +1,30 @@
+version: 2026-05-06
+global_requirements:
+  language: Chinese-first unless the user specifies otherwise
+  citation_status_required: true
+  no_metadata_only_formal_claims: true
+  predictive_not_causal_boundary_required: true
+  evidence_table_required_per_section: true
+sections:
+  Title:
+    must_have: [research_object, method_or_task_signal]
+  Abstract:
+    must_have: [objective, data, methods, main_results, limitation_or_boundary]
+  Keywords:
+    must_have: [domain_terms, method_terms, task_terms]
+  Introduction:
+    must_have: [background, research_gap, objective, contributions, verified_citations]
+  Literature Review:
+    must_have: [domain_evidence, method_evidence, metric_or_reporting_evidence, read_status_table]
+  Method:
+    must_have: [data_source, unit_of_analysis, preprocessing, target_structure, model_comparison, metric_contract, explainability]
+  Results:
+    must_have: [data_profile, multi_model_results, complete_metrics, figures_tables, explainability, robustness]
+  Discussion:
+    must_have: [literature_dialogue, interpretation_boundary, limitations, future_work]
+  Conclusion:
+    must_have: [answer_to_research_question, supported_scope, practical_boundary]
+  References:
+    must_have: [verified_reference_metadata, DOI_or_URL_when_available]
+  Appendix:
+    must_have: [data_dictionary, full_metrics, model_settings, quality_gates, repair_logs]

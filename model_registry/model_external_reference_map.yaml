@@ -1,0 +1,21 @@
+version: 2026-05-07
+policy: GitHub/Hugging Face/OpenML/official docs are engineering references and cannot replace peer-reviewed academic evidence.
+tasks:
+  binary_classification: {engineering_references: [scikit_learn_examples, AutoGluon_TabularPredictor, PyCaret_classification, OpenML_classification_tasks]}
+  multiclass_classification: {engineering_references: [scikit_learn_examples, AutoGluon_TabularPredictor, OpenML_multiclass_tasks]}
+  imbalanced_classification: {engineering_references: [imbalanced_learn_examples, scikit_learn_class_weight]}
+  regression: {engineering_references: [scikit_learn_regression_examples, AutoGluon_regression, FLAML_regression]}
+  count_regression: {engineering_references: [scikit_learn_PoissonRegressor, statsmodels_glm]}
+  zero_inflated_count: {engineering_references: [statsmodels_zero_inflated_models, two_part_model_examples]}
+  extreme_event_prediction: {engineering_references: [quantile_regression_examples, OpenML_regression_benchmarks]}
+  time_series_forecasting: {engineering_references: [sktime, darts, statsforecast, prophet]}
+  panel_or_grouped_prediction: {engineering_references: [GroupKFold_examples, mixedlm_examples]}
+  spatial_generalization: {engineering_references: [spatial_cv_examples, geopandas_reference]}
+  causal_inference: {engineering_references: [DoWhy, EconML]}
+  survival_analysis: {engineering_references: [lifelines, scikit_survival]}
+  reinforcement_learning: {engineering_references: [stable_baselines3_reference_only, torch_dqn_tutorial_reference_only]}
+  optimization: {engineering_references: [scipy_optimize, OR_Tools_reference_only]}
+  Bayesian_modeling: {engineering_references: [PyMC_examples_reference_only]}
+  anomaly_detection: {engineering_references: [scikit_learn_anomaly_examples]}
+  clustering: {engineering_references: [scikit_learn_clustering_examples]}
+  ranking_or_prioritization: {engineering_references: [lightgbm_ranker_reference_only, xgboost_ranker_reference_only]}

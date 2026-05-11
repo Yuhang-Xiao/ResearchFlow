@@ -1,0 +1,35 @@
+name: auto_repair_loop
+version: 2026-05-07
+repair_decision_engine: workflow1.orchestration.repair_decision_engine.decide_repairs
+purpose: >
+  Force product-mode research tasks through at least three passes and repair
+  failed gates without handing ordinary omissions back to the user.
+rounds:
+  - id: round_1_initial_execution
+    objective: produce a complete first-pass package with explicit assumptions
+  - id: round_2_quality_gate_repair
+    objective: repair missing metrics, model comparisons, SHAP/fallback explanations, figures, tables, citations, and claim maps
+  - id: round_3_word_and_paper_repair
+    objective: repair full-paper completeness, DOCX rendering, references, appendix, manifest, and reproducibility artifacts
+repair_when:
+  - paper_structure_incomplete
+  - missing_model_comparison
+  - missing_required_metric_without_reason
+  - missing_shap_or_fallback_explanation
+  - missing_or_blank_figure_table
+  - missing_references_or_untraceable_citation
+  - unsupported_result_claim
+  - docx_render_or_encoding_failure
+  - missing_manifest_or_reproducibility_readme
+required_logs:
+  - redo_log.csv
+  - failed_gate_summary.md
+  - repaired_items.csv
+  - remaining_issues.csv
+stop_only_for:
+  - raw_data_unreadable
+  - missing_user_supplied_scientific_parameter
+  - Zotero_database_write
+  - API_key_or_paid_access
+  - large_dependency_or_external_service_installation
+  - human_scientific_judgment_needed

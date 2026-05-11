@@ -1,2 +1,0 @@
-﻿experiment_id,label,status,state_rows,episodes,device,gpu
-peanut_dqn_auto_20260426_1746,自动合成参数 DQN 实验版 / self-synthesized DQN experimental run,completed,1710,120,cuda,NVIDIA GeForce RTX 4060 Ti

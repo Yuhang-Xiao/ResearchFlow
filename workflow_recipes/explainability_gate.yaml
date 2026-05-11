@@ -1,0 +1,22 @@
+name: explainability_gate
+version: 2026-05-06
+hard_gate: true
+checks:
+  - shap_availability_check
+  - shap_model_compatibility_check
+  - interpretable_alternative_model_check
+  - permutation_importance_as_control
+  - pdp_or_ale_plan
+  - local_explanation_plan
+  - subgroup_error_analysis
+  - extreme_case_explanation
+rules:
+  - SHAP available -> run SHAP.
+  - SHAP unavailable -> record reason and run fallback explanation.
+  - Explanation artifacts must enter Results or Appendix.
+  - Separate predictive association from causal mechanism.
+outputs:
+  - shap_availability_audit.csv
+  - explainability_outputs/
+  - model_explanation_report.md
+failure_action: auto_repair_or_record_unavailable_reason

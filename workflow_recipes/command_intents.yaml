@@ -1,27 +1,41 @@
+version: 2026-05-07
 intents:
+  启动自动科研成品模式: auto_research_product_mode
+  从数据和目标生成完整论文: auto_research_product_mode
+  自动完成从数据到论文的全流程: auto_research_product_mode
+  自动审计并返工直到论文可微调: auto_research_product_mode
+  自动补齐模型、指标、SHAP、图表、文献和论文: auto_research_product_mode
+  自动生成高水平期刊风格论文: auto_research_product_mode
+  自动执行论文级质量门禁: auto_research_product_mode
+  自动生成 Word 并逐页渲染审计: auto_research_product_mode
+  自动完成 Zotero 文献证据链: auto_research_product_mode
+  自动生成可复现科研工作包: auto_research_product_mode
+  从模型库自动选择模型: model_selection_from_registry
+  自动更新模型库: model_registry_self_update
+  审计模型库是否完整: model_registry_quality_audit
+  自动参考 GitHub/HF/OpenML 更新工作流: external_model_workflow_scout
   优化当前工作流: workflow_self_improvement
-  让 Codex 自己寻找可升级的 skill: github_skill_scout
-  搜索 GitHub 改进 workflow: github_skill_scout
-  检查当前工作流缺什么: periodic_workflow_review
   执行工作流自我升级: workflow_self_improvement
-  列出需要我确认的外部插件: external_plugin_approval
-  更新自动科研能力: safe_workflow_upgrade
-  解释当前任务的所有输出: artifact_output_explanation
-  解释所有图表和表格: figure_table_explanation_and_chart_repair
-  为当前代码生成方法说明: code_method_explanation
-  为当前模型生成详细方法说明: model_setting_documentation
-  为当前模型结果生成详细解读: model_result_interpretation
-  补充模型文献依据并写入 Zotero: literature_grounded_modeling_zotero_sidecar
-  生成论文 Results 部分并导出 Word: paper_results_docx_export
-  生成论文 Method 部分并导出 Word: paper_method_docx_export
-  检查图表是否为空并修复: empty_chart_audit_and_repair
-  核验所有输出并生成解释索引: artifact_output_explanation
-  搜索并创建缺失的解释类 skill: explanation_skill_scout
-  生成高水平期刊风格论文 section: paper_section_quality_and_word_export
-  生成 artifact-to-evidence map: artifact_output_explanation
-  为每个输出目录生成本地解释: local_directory_explanation
-  为关键 artifact 生成同名解释文件: same_name_artifact_explanation
-  为 DQN 代码生成深度解释: dqn_code_deep_explanation
-  生成 DQN 代码到模型设置映射: dqn_code_to_model_setting_map
-  生成 DQN 代码到输出文件映射: dqn_code_to_outputs_map
-  检查解释是否只存在于总索引而没有就地解释: central_index_only_explanation_audit
+  继续上次任务: continue_previous_task
+  生成交接文件: update_conversation_handoff
+entry_contracts:
+  auto_research_product_mode:
+    required_sentence: 启动自动科研成品模式：数据文件是 XXX，研究目标是 XXX。
+    router: workflow1.one_line.route_goal
+    executable_entrypoint: workflow1.orchestration.auto_research_product_orchestrator.run_auto_research_product
+    recipe: workflow_recipes/auto_research_product_orchestrator.yaml
+    model_registry_recipe: workflow_recipes/model_selection_from_registry.yaml
+    gate_recipe: workflow_recipes/research_quality_gate_orchestrator.yaml
+    repair_recipe: workflow_recipes/auto_repair_loop.yaml
+safe_external_reference_intents:
+  GitHub: engineering_reference_only
+  HuggingFace: engineering_reference_only
+  OpenML: benchmark_reference_only
+  official_docs: engineering_reference_only
+authorization_required:
+  - dependency_installation
+  - API_key_use
+  - Zotero_database_write
+  - MCP_or_plugin_installation
+  - large_model_or_dataset_download
+  - running_unknown_third_party_code

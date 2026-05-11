@@ -1,0 +1,30 @@
+name: full_paper_product_gate
+version: 2026-05-06
+hard_gate: true
+purpose: Block product completion when the output is only a partial report.
+required_sections:
+  - Title
+  - Abstract
+  - Keywords
+  - Introduction
+  - Literature Review
+  - Method
+  - Results
+  - Discussion
+  - Conclusion
+  - References
+  - Appendix
+required_content:
+  - research_question
+  - data_description
+  - literature_review
+  - method_design
+  - multi_model_experiment
+  - complete_metrics
+  - explainability_analysis
+  - figures_and_tables
+  - literature_dialogue
+  - limitations
+  - future_work
+  - reproducibility_statement
+failure_action: auto_repair

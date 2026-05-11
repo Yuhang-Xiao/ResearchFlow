@@ -1,4 +1,4 @@
-"""One-line research dry-run routing.
+﻿"""One-line research dry-run routing.
 
 This module deliberately produces plans only. It does not read full datasets,
 clean data, train models, run DQN, or write Zotero databases.
@@ -68,6 +68,100 @@ def route_goal(goal: str) -> dict[str, Any]:
 
     text = goal.lower()
     details = _base_details(goal)
+
+    product_mode_triggers = [
+        "启动自动科研成品模式",
+        "从数据和目标生成完整论文",
+        "自动完成从数据到论文的全流程",
+        "自动审计并返工直到论文可微调",
+        "自动补齐模型、指标、shap、图表、文献和论文",
+        "自动补齐模型、指标、SHAP、图表、文献和论文",
+        "自动生成高水平期刊风格论文",
+        "自动执行论文级质量门禁",
+        "自动生成 word 并逐页渲染审计",
+        "自动生成 Word 并逐页渲染审计",
+        "自动完成 Zotero 文献证据链",
+        "自动生成可复现科研工作包",
+    ]
+    if any(trigger in goal for trigger in product_mode_triggers) or "auto research product" in text:
+        details.update(
+            matched_intent="auto_research_product_mode",
+            intent="auto_research_product_mode",
+            mode="product_dry_run",
+            selected_recipe="workflow_recipes/auto_research_product_orchestrator.yaml",
+            required_skills=[
+                "goal-driven-research-orchestrator",
+                "target-structure-inference-agent",
+                "multi-task-modeling-planner",
+                "metric-completeness-auditor",
+                "model-comparison-orchestrator",
+                "shap-explainability-runner",
+                "explainability-fallback-planner",
+                "figure-table-product-builder",
+                "literature-evidence-chain-builder",
+                "reference-integrity-checker",
+                "full-paper-product-writer",
+                "paper-completeness-auditor",
+                "academic-section-integrator",
+                "word-docx-render-auditor",
+                "auto-repair-loop-agent",
+                "high-journal-readiness-auditor",
+            ],
+            planned_stages=[
+                "create run package",
+                "parse data file + research goal + optional constraints",
+                "infer target, task type, unit of analysis, time/group/spatial structure, leakage risks, and evidence needs",
+                "build literature-first evidence chain and Zotero sidecar plan before modeling",
+                "build multi-task modeling plan from target structure",
+                "run baseline, advanced models, tuning, diagnostics, and required metrics by task type",
+                "run SHAP when available, plus fallback explanations, PDP/ALE plan, local explanations, subgroup and extreme-error analysis",
+                "build paper-grade figures/tables with source tables, captions, QA, and paper references",
+                "write complete paper sections and integrate them into a full paper product",
+                "export Word and render-audit structure, captions, references, placeholders, and encoding",
+                "run TRIPOD+AI/PROBAST+AI/FAIR/model-card/datasheet/reviewer-2/readiness gates",
+                "auto-repair failed gates for at least three rounds unless human authorization is required",
+                "package reproducibility artifacts, cards, manifest, logs, and final product verdict",
+            ],
+            quality_gates=[
+                "Full Paper Product Gate: Title, Abstract, Keywords, Introduction, Literature Review, Method, Results, Discussion, Conclusion, References, Appendix",
+                "Metric Completeness Gate: task-appropriate metrics present or explicitly marked not applicable with reason",
+                "Model Comparison Gate: simple baseline plus advanced/interpretable controls on the same split",
+                "Explainability Gate: SHAP if available, fallback reason if unavailable, and no causal overclaim",
+                "Figure/Table Product Gate: nonblank PNG/table source/caption/paper citation/local explanation",
+                "Literature Evidence Gate: full-text/abstract/metadata status explicit; metadata-only cannot support formal claims",
+                "Reference Integrity Gate: DOI/title/authors/year/venue/URL checked where possible",
+                "Word Product Gate: DOCX generated and render-audited",
+                "Auto Repair Gate: redo_log, failed_gate_summary, repaired_items, remaining_issues",
+                "Reproducibility Gate: code/config/log/manifest/data card/model card/experiment card/evidence card",
+            ],
+            expected_outputs=[
+                "complete research run package",
+                "full paper markdown and DOCX",
+                "model comparison and metric tables",
+                "SHAP or fallback explainability artifacts",
+                "paper-grade figures and tables",
+                "citation evidence map, BibTeX, RIS, Zotero sidecar",
+                "quality gate report and auto-repair logs",
+                "reproducibility README and research cards",
+            ],
+            executable_now=True,
+            auto_repair_rounds=[
+                "round_1_initial_execution",
+                "round_2_quality_gate_repair",
+                "round_3_word_and_paper_repair",
+            ],
+            approval_required=[
+                "Zotero database write",
+                "paid or institution-only full text",
+                "external plugin/MCP installation",
+                "API key use",
+                "large dependency installation",
+                "large external dataset/model download",
+                "running unknown third-party code",
+            ],
+            no_real_data_or_model_execution=True,
+        )
+        return details
 
     if "解释当前任务的所有输出" in goal or "输出解释" in goal or "artifact explanation" in text:
         details.update(
@@ -516,6 +610,288 @@ def route_goal(goal: str) -> dict[str, Any]:
         )
         return details
 
+    if "根据我的数据和一句话说明自动规划研究流程" in goal or "一句话说明自动规划研究流程" in goal:
+        details.update(
+            matched_intent="one_brief_to_research_workflow",
+            intent="one_brief_to_research_workflow",
+            mode="planning_dry_run",
+            selected_recipe="workflow_recipes/one_brief_to_research_workflow.yaml",
+            required_skills=[
+                "brief-to-research-planner",
+                "data-task-inferencer",
+                "method-candidate-generator",
+                "baseline-planner",
+                "evaluation-metric-planner",
+                "research-risk-planner",
+                "literature-auto-scout",
+            ],
+            planned_stages=[
+                "create task_understanding.md",
+                "profile data schema and quality before modeling",
+                "refine research question and task type",
+                "plan literature/GitHub/Hugging Face searches",
+                "plan methods, baselines, metrics, experiments, outputs, risks, Zotero, and paper sections",
+                "run dry-run before formal experiments",
+            ],
+            expected_outputs=[
+                "task_understanding.md",
+                "data_profile_report.md",
+                "candidate_method_plan.md",
+                "literature_search_plan.md",
+                "github_hf_reference_search_plan.md",
+                "experiment_plan.md",
+            ],
+            executable_now=True,
+        )
+        return details
+
+    if "自动查文献并生成模型依据" in goal or "自动文献检索" in goal:
+        details.update(
+            matched_intent="literature_auto_scout_and_model_evidence",
+            intent="literature_auto_scout_and_model_evidence",
+            mode="metadata_literature_dry_run",
+            selected_recipe="workflow_recipes/literature_auto_scout_workflow.yaml",
+            required_skills=[
+                "literature-auto-scout",
+                "openalex-literature-searcher",
+                "crossref-metadata-checker",
+                "semantic-scholar-scout",
+                "arxiv-method-scout",
+                "pubmed-risk-literature-scout",
+                "literature-evidence-classifier",
+                "model-component-literature-mapper",
+                "citation-integrity-checker",
+            ],
+            planned_stages=[
+                "search local references and Zotero sidecars first",
+                "query OpenAlex/Crossref/Semantic Scholar/arXiv/PubMed when relevant",
+                "build candidate and selected-core literature tables",
+                "classify evidence by use and read status",
+                "map model components to literature support",
+            ],
+            quality_gates=[
+                "metadata-only is never treated as full-text",
+                "citation failures cannot support formal claims",
+                "unsupported parameters are experimental assumptions",
+            ],
+            expected_outputs=[
+                "literature_candidate_pool.csv",
+                "literature_selected_core.csv",
+                "model_component_literature_map.csv",
+                "citation_integrity_check.csv",
+            ],
+            executable_now=True,
+        )
+        return details
+
+    if "自动查 GitHub 项目核验当前模型" in goal or "GitHub 项目核验" in goal:
+        details.update(
+            matched_intent="github_reference_model_audit",
+            intent="github_reference_model_audit",
+            mode="safe_github_metadata_dry_run",
+            selected_recipe="workflow_recipes/github_reference_workflow.yaml",
+            required_skills=[
+                "github-project-scout",
+                "github-repo-profiler",
+                "github-reproducibility-auditor",
+                "github-license-checker",
+                "github-safety-auditor",
+                "github-model-setting-mapper",
+            ],
+            planned_stages=[
+                "search GitHub metadata/README/docs only",
+                "check license, README, examples, tests, configs, baselines, and reproducibility notes",
+                "map engineering patterns to current model settings",
+                "place clone/run/install actions in approval queue",
+            ],
+            quality_gates=[
+                "do not clone-run unknown repositories",
+                "GitHub references are engineering evidence only",
+                "license and safety status recorded",
+            ],
+            expected_outputs=[
+                "github_candidate_projects.csv",
+                "github_project_quality_audit.csv",
+                "github_model_setting_comparison.csv",
+                "github_reference_project_review.md",
+            ],
+            executable_now=True,
+            approval_required=["clone/run external code", "install dependencies", "use API token"],
+        )
+        return details
+
+    if "自动查 Hugging Face 模型和数据集核验当前模型" in goal or "Hugging Face 模型和数据集" in goal:
+        details.update(
+            matched_intent="huggingface_reference_model_dataset_audit",
+            intent="huggingface_reference_model_dataset_audit",
+            mode="safe_hf_metadata_dry_run",
+            selected_recipe="workflow_recipes/huggingface_reference_workflow.yaml",
+            required_skills=[
+                "huggingface-model-scout",
+                "huggingface-dataset-scout",
+                "huggingface-space-scout",
+                "hf-model-card-reader",
+                "hf-dataset-card-reader",
+                "hf-license-checker",
+                "hf-model-dataset-mapper",
+            ],
+            planned_stages=[
+                "search HF models/datasets/Spaces metadata",
+                "inspect cards for intended use, limitations, license, training data, metrics",
+                "map card lessons to workflow data/model cards",
+                "block downloads or runtime actions until approval",
+            ],
+            quality_gates=[
+                "HF cards are engineering/card-writing references",
+                "large files are not downloaded without approval",
+                "license and use limitations recorded",
+            ],
+            expected_outputs=[
+                "hf_candidate_models.csv",
+                "hf_candidate_datasets.csv",
+                "hf_selected_references.csv",
+                "huggingface_reference_review.md",
+            ],
+            executable_now=True,
+            approval_required=["download large model/data", "run external Space", "use API token"],
+        )
+        return details
+
+    if "生成当前模型的外部证据映射" in goal or "外部证据映射" in goal:
+        details.update(
+            matched_intent="external_evidence_mapping",
+            intent="external_evidence_mapping",
+            mode="evidence_mapping_dry_run",
+            selected_recipe="workflow_recipes/external_evidence_mapping_workflow.yaml",
+            required_skills=[
+                "evidence-hierarchy-builder",
+                "evidence-conflict-detector",
+                "evidence-strength-scorer",
+                "experimental-assumption-marker",
+                "model-component-literature-mapper",
+                "github-model-setting-mapper",
+                "hf-model-dataset-mapper",
+            ],
+            planned_stages=[
+                "map model components to literature evidence",
+                "map model components to GitHub engineering references",
+                "map model components to HF cards and datasets",
+                "classify evidence levels and detect conflicts",
+                "mark evidence gaps and experimental assumptions",
+            ],
+            expected_outputs=[
+                "current_model_component_evidence_map.csv",
+                "current_model_component_github_map.csv",
+                "current_model_component_hf_map.csv",
+                "evidence_conflict_report.csv",
+            ],
+            executable_now=True,
+        )
+        return details
+
+    if "检查当前模型是否需要重做" in goal or "模型是否需要重做" in goal:
+        details.update(
+            matched_intent="model_setting_verification_and_redo",
+            intent="model_setting_verification_and_redo",
+            mode="redo_decision_dry_run",
+            selected_recipe="workflow_recipes/model_setting_verification_and_redo.yaml",
+            required_skills=[
+                "model-setting-verifier",
+                "data-leakage-detector",
+                "split-strategy-auditor",
+                "baseline-completeness-checker",
+                "metric-appropriateness-checker",
+                "calibration-auditor",
+                "robustness-check-planner",
+                "ablation-study-planner",
+                "retrain-decision-engine",
+            ],
+            planned_stages=[
+                "audit task fit, leakage, split, baselines, metrics, class imbalance, calibration, robustness, ablation, uncertainty, explainability, and subgroup/fairness needs",
+                "decide whether to retrain, redo charts, or rewrite interpretation",
+            ],
+            expected_outputs=[
+                "model_setting_verification_report.md",
+                "model_setting_issues.csv",
+                "retrain_decision_log.csv",
+                "retrain_or_redo_recommendation.md",
+            ],
+            executable_now=True,
+        )
+        return details
+
+    if "检查是否存在数据泄漏和错误切分" in goal or "数据泄漏" in goal or "错误切分" in goal:
+        details.update(
+            matched_intent="data_leakage_and_split_audit",
+            intent="data_leakage_and_split_audit",
+            mode="leakage_split_dry_run",
+            selected_recipe="workflow_recipes/model_setting_verification_and_redo.yaml",
+            required_skills=["data-leakage-detector", "split-strategy-auditor", "retrain-decision-engine"],
+            planned_stages=[
+                "identify unit of analysis, temporal/group fields, target leakage candidates, duplicate leakage, and split contract",
+                "recommend temporal, region/year/batch stratified, grouped, or nested validation when needed",
+            ],
+            expected_outputs=["data_leakage_audit.csv", "split_strategy_audit.csv", "retrain_decision_log.csv"],
+            executable_now=True,
+        )
+        return details
+
+    if "为当前任务生成 data card 和 model card" in goal or "data card 和 model card" in goal:
+        details.update(
+            matched_intent="research_data_model_card_generation",
+            intent="research_data_model_card_generation",
+            mode="card_generation_dry_run",
+            selected_recipe="workflow_recipes/research_card_generation.yaml",
+            required_skills=["research-data-card-builder", "research-model-card-builder", "research-evaluation-card-builder", "research-evidence-card-builder"],
+            planned_stages=[
+                "summarize data source, structure, labels, missingness, anomalies, bias, intended and out-of-scope use",
+                "summarize model inputs/outputs/baselines/parameters/metrics/limitations/evidence references",
+            ],
+            expected_outputs=["data_card.md", "model_card.md", "evaluation_card.md", "evidence_card.md"],
+            executable_now=True,
+        )
+        return details
+
+    if "为当前实验生成 experiment card" in goal or "experiment card" in text:
+        details.update(
+            matched_intent="research_experiment_card_generation",
+            intent="research_experiment_card_generation",
+            mode="experiment_card_dry_run",
+            selected_recipe="workflow_recipes/research_card_generation.yaml",
+            required_skills=["research-experiment-card-builder", "reproducibility-auditor", "model-setting-verifier"],
+            planned_stages=[
+                "record experiment goal, environment, code/data/config versions, seed, training process, failures, redo history, results, and quality gates",
+            ],
+            expected_outputs=["experiment_card.md"],
+            executable_now=True,
+        )
+        return details
+
+    if "把 GitHub、Hugging Face 和文献依据整合进论文写作" in goal or "整合进论文写作" in goal:
+        details.update(
+            matched_intent="external_references_to_paper_writing",
+            intent="external_references_to_paper_writing",
+            mode="paper_evidence_integration_dry_run",
+            selected_recipe="workflow_recipes/paper_section_generation.yaml",
+            required_skills=[
+                "paper-evidence-map-builder",
+                "academic-results-writer",
+                "academic-method-writer",
+                "academic-literature-review-writer",
+                "academic-discussion-writer",
+                "citation-integrity-checker",
+                "result-claim-guard",
+            ],
+            planned_stages=[
+                "use literature for theory/method/result interpretation",
+                "use GitHub/HF only for engineering/card/reproducibility references",
+                "build section evidence tables and experimental boundary statements",
+            ],
+            expected_outputs=["section_evidence_map.csv", "paper_section_draft.md", "citation_integrity_check.csv"],
+            executable_now=True,
+        )
+        return details
+
     if (
         "核验" in goal
         or "质量" in goal
@@ -832,37 +1208,6 @@ def route_goal(goal: str) -> dict[str, Any]:
         )
         return details
 
-    if "peanut" in text or "花生" in goal or "食品安全" in goal or "风险监管" in goal:
-        details.update(
-            matched_intent="peanut_food_safety_full_workflow",
-            intent="peanut_food_safety_full_workflow",
-            mode="guarded_dry_run",
-            required_skills=[
-                "goal-driven-research-orchestrator",
-                "upstream-output-auditor",
-                "concentration-cleaning-auditor",
-                "zotero-literature-auditor",
-                "document-governed-modeling",
-                "dqn-readiness-auditor",
-                "research-quality-orchestrator",
-            ],
-            planned_stages=[
-                "read PEANUT project memory and research plan",
-                "verify canonical cleaned/risk/belief outputs",
-                "audit concentration and MOE/EDI readiness",
-                "select allowed prototype/model-planning path",
-                "block formal DQN until parameter confirmation",
-                "plan visualization and Chinese report",
-            ],
-            data_assets={
-                "cleaned_table": _exists("data/03_primary/peanut_cleaned_analysis_ready.csv"),
-                "belief_mdp_moe_edi": _exists("data/04_feature/peanut_belief_mdp_state_features_with_moe_edi.csv"),
-                "dqn_parameter_table": _exists("project_state/dqn_parameter_confirmation_table.csv"),
-            },
-            executable_now=True,
-            approval_required=["formal DQN", "formal policy optimization", "unconfirmed external parameters"],
-        )
-        return details
 
     details.update(
         matched_intent="generic_full_research_workflow",

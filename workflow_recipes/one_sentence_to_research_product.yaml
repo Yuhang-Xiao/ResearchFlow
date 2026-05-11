@@ -1,0 +1,31 @@
+name: one_sentence_to_research_product
+version: 2026-05-07
+executable_entrypoint: workflow1.orchestration.auto_research_product_orchestrator.run_auto_research_product
+intent: auto_research_product_mode
+trigger_examples:
+  - 启动自动科研成品模式
+  - 从数据和目标生成完整论文
+  - 自动完成从数据到论文的全流程
+  - 自动审计并返工直到论文可微调
+  - 自动补齐模型、指标、SHAP、图表、文献和论文
+  - 自动生成高水平期刊风格论文
+  - 自动执行论文级质量门禁
+  - 自动生成 Word 并逐页渲染审计
+  - 自动完成 Zotero 文献证据链
+  - 自动生成可复现科研工作包
+input_contract:
+  minimal: "数据文件是 XXX，研究目标是 XXX"
+  optional_constraints: "例如：不使用外部 API；优先中文；不训练大型模型；目标期刊方向。"
+routing:
+  primary_recipe: workflow_recipes/auto_research_product_orchestrator.yaml
+  dry_run_router: src/workflow1/one_line.py
+  orchestration_contract: src/workflow1/orchestration/auto_research_product_orchestrator.py
+do_not_ask_next_step_when:
+  - data_file_is_identified
+  - research_goal_is_operational
+  - no_approval_required_action_is_needed
+ask_user_only_when:
+  - raw_data_missing_or_unreadable
+  - critical_target_or_unit_unidentifiable
+  - multiple_scientific_choices_change_conclusions
+  - API_key_paid_access_Zotero_write_or_plugin_install_required

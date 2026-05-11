@@ -2,9 +2,9 @@ task_families:
   generic_full_research_workflow:
     allowed_mode: guarded_dry_run
     formal_execution_requires_user_confirmation: true
-  peanut_food_safety_full_workflow:
+  domain_specific_risk_workflow:
     allowed_mode: guarded_dry_run
-    formal_dqn_status: blocked_until_parameter_confirmation
+    formal_optimization_status: blocked_until_parameter_confirmation
   model_selection_prototype_plan:
     allowed_mode: prototype_plan
     execution_in_acceptance_task: blocked

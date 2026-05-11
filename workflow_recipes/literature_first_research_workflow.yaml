@@ -1,0 +1,27 @@
+name: literature_first_research_workflow
+version: 2026-05-06
+purpose: Build the evidence chain before modeling and paper writing.
+evidence_families:
+  - research_background
+  - domain_literature
+  - method_literature
+  - metric_literature
+  - explainability_literature
+  - reporting_guidelines
+  - discussion_literature
+read_status_values:
+  - full-text
+  - abstract-only
+  - metadata-only
+  - not accessible
+rules:
+  - Metadata-only references cannot support formal claims.
+  - GitHub/Hugging Face/official docs are engineering references, not academic evidence.
+  - Zotero writeback is sidecar-only unless approved.
+outputs:
+  - literature_candidate_pool.csv
+  - literature_selected_core.csv
+  - section_citation_map.csv
+  - model_component_literature_map.csv
+  - references.bib
+  - references.ris

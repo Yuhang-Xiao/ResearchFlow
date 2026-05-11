@@ -1,0 +1,15 @@
+version: '2026-05-04'
+required_sections:
+- purpose
+- input_features_or_state
+- target_action_reward_constraints
+- transition_or_belief_update
+- parameters
+- training_process
+- evaluation_metrics
+- baselines
+- literature_evidence
+- github_hf_engineering_references
+- limitations
+- experimental_or_formal_status
+formal_dqn_requires_user_confirmation: true

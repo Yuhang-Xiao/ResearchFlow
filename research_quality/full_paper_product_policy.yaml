@@ -1,0 +1,21 @@
+name: full_paper_product_policy
+version: 2026-05-06
+required_sections:
+  - Title
+  - Abstract
+  - Keywords
+  - Introduction
+  - Literature Review
+  - Method
+  - Results
+  - Discussion
+  - Conclusion
+  - References
+  - Appendix
+required_evidence:
+  - section_evidence_map
+  - citation_evidence_table
+  - result_claim_to_artifact_map
+  - verified_reference_metadata
+  - reproducibility_statement
+failure_action: auto_repair

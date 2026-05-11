@@ -1,0 +1,9 @@
+name: automl_safe_candidate_workflow
+version: 2026-05-07
+purpose: Use AutoML only as a safe optional candidate/benchmark layer.
+rules:
+  - Do not auto-install AutoML dependencies.
+  - Do not run unknown external code.
+  - AutoML cannot bypass leakage, validation, explainability, or quality gates.
+  - Missing dependencies create dependency approval plans and local sklearn fallback.
+candidate_tools: [sklearn_pipeline_baseline, FLAML, AutoGluon, PyCaret, TPOT, H2O_reference_only, OpenML_reference_only]

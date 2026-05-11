@@ -1,0 +1,18 @@
+name: model_selection_from_registry
+version: 2026-05-07
+purpose: Infer task type and select baseline, model families, metrics, validation, explainability, figures, literature needs, and repair strategies from model_registry.
+steps:
+  - profile_data
+  - infer_target_type
+  - load_model_registry
+  - select_models
+  - select_metrics
+  - select_validation_strategy
+  - select_explainability
+  - select_figure_table_plan
+  - select_literature_needs
+  - select_model_repair_strategies
+outputs:
+  - ResearchPlan
+  - ModelDecision
+  - action_queue

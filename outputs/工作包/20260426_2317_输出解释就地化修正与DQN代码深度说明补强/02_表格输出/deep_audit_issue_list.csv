@@ -1,7 +1,0 @@
-﻿问题类型,文件路径,严重程度,是否影响阅读,是否影响论文结果,是否需要修复,建议修复方式,是否需要新增 skill,是否需要更新 AGENTS
-表格近似为空,outputs/工作包/20260426_1746_全流程验收与DQN自动参数训练/02_表格输出/dqn_state_feature_missing_summary.csv,high,是,可能,是,补充字段、来源、行列数和无法生成原因；必要时重新生成。,否,是
-全 0 图表语义不足,outputs/工作包/20260426_2056_推荐缓存删除与DQN修正版训练/03_图表输出/dqn_revised_constraint_summary.png,medium,是,否，但影响解释,是,生成解释性 PNG：说明全 0 表示当前约束设定下没有违约，不是缺失数据。,是,是
-长期解释文件缺失,最新 DQN 包缺少 figure_explanations.md,medium,是,可能,是,在本轮任务包生成解释索引，并固化为 workflow 规则。,是,是
-长期解释文件缺失,最新 DQN 包缺少 table_explanations.md,medium,是,可能,是,在本轮任务包生成解释索引，并固化为 workflow 规则。,是,是
-长期解释文件缺失,最新 DQN 包缺少 model_output_explanations.md,medium,是,可能,是,在本轮任务包生成解释索引，并固化为 workflow 规则。,是,是
-长期解释文件缺失,最新 DQN 包缺少 code_explanations.md,medium,是,可能,是,在本轮任务包生成解释索引，并固化为 workflow 规则。,是,是

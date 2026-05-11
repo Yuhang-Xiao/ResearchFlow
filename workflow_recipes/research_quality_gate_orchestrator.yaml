@@ -1,0 +1,28 @@
+name: research_quality_gate_orchestrator
+version: 2026-05-07
+executable_gates_package: src/workflow1/quality_gates/
+purpose: Run hard gates before a research package can be called complete.
+gate_order:
+  - data_generation_and_lineage_gate
+  - target_structure_and_leakage_gate
+  - multi_task_modeling_gate
+  - metric_completeness_gate
+  - model_comparison_and_baseline_fairness_gate
+  - explainability_gate
+  - figure_table_product_gate
+  - literature_and_reference_integrity_gate
+  - result_claim_guard_gate
+  - full_paper_product_gate
+  - word_render_gate
+  - reproducibility_gate
+  - reviewer_2_and_high_journal_readiness_gate
+blocking_rule: >
+  Any fail/missing/unable_to_verify_without_reason status blocks final product
+  verdict and creates an auto-repair task unless approval or human scientific
+  judgment is required.
+output_contract:
+  - quality_gate_results.csv
+  - failed_gate_summary.md
+  - reviewer2_audit.md
+  - high_journal_readiness_audit.md
+  - result_claim_guard_findings.csv

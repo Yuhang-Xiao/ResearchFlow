@@ -1,0 +1,17 @@
+name: reference_integrity_gate
+version: 2026-05-06
+hard_gate: true
+fields_to_verify:
+  - DOI
+  - title
+  - authors
+  - year
+  - journal_or_conference
+  - URL
+  - read_status
+rules:
+  - Citation failures cannot support formal claims.
+  - Abstract-only and metadata-only status must be visible in paper evidence tables.
+outputs:
+  - reference_integrity_check.csv
+  - citation_failure_log.md

@@ -1,0 +1,20 @@
+version: 2026-05-07
+tasks:
+  binary_classification: {required_figures: [target_distribution, confusion_matrix, roc_curve, pr_curve, calibration_curve], required_tables: [model_comparison_metrics, threshold_table, feature_importance], qa_requirements: [source_data, nonblank_png, caption, paper_reference]}
+  multiclass_classification: {required_figures: [class_distribution, confusion_matrix, per_class_f1], required_tables: [model_comparison_metrics, per_class_metrics, feature_importance], qa_requirements: [source_data, caption]}
+  imbalanced_classification: {required_figures: [minority_class_distribution, pr_curve, confusion_matrix], required_tables: [imbalance_strategy_table, model_comparison_metrics], qa_requirements: [source_data, caption]}
+  regression: {required_figures: [target_distribution, actual_vs_predicted, residual_plot, feature_importance], required_tables: [model_comparison_metrics, residual_diagnostics, extreme_error_cases], qa_requirements: [source_data, nonblank_png, caption]}
+  count_regression: {required_figures: [count_distribution, actual_vs_predicted, residual_plot], required_tables: [model_comparison_metrics, zero_error_table], qa_requirements: [source_data, caption]}
+  zero_inflated_count: {required_figures: [zero_positive_distribution, positive_value_distribution, residual_plot], required_tables: [two_part_model_metrics, zero_positive_metrics, positive_value_metrics], qa_requirements: [source_data, caption]}
+  extreme_event_prediction: {required_figures: [tail_distribution, top_decile_error, actual_vs_predicted], required_tables: [tail_metric_table, extreme_case_table, model_comparison_metrics], qa_requirements: [source_data, caption]}
+  time_series_forecasting: {required_figures: [time_series_plot, backtest_forecast_plot, residual_over_time], required_tables: [backtest_metrics, forecast_horizon_metrics], qa_requirements: [source_data, caption]}
+  panel_or_grouped_prediction: {required_figures: [group_error_plot, group_distribution], required_tables: [group_metric_table, model_comparison_metrics], qa_requirements: [source_data, caption]}
+  spatial_generalization: {required_figures: [region_error_plot, leave_region_out_metrics], required_tables: [region_metric_table, spatial_holdout_table], qa_requirements: [source_data, caption]}
+  causal_inference: {required_figures: [balance_plot, effect_forest_plot], required_tables: [balance_table, effect_estimate_table], qa_requirements: [source_data, citation]}
+  survival_analysis: {required_figures: [survival_curve, calibration_plot], required_tables: [event_table, model_comparison_metrics], qa_requirements: [source_data, caption]}
+  reinforcement_learning: {required_figures: [reward_curve, constraint_violation_curve, policy_action_distribution], required_tables: [baseline_comparison_table, reward_constraint_audit], qa_requirements: [source_data, caption]}
+  optimization: {required_figures: [objective_tradeoff_plot, constraint_usage_plot], required_tables: [feasibility_table, baseline_gap_table], qa_requirements: [source_data, caption]}
+  Bayesian_modeling: {required_figures: [posterior_distribution, posterior_predictive_check], required_tables: [credible_interval_table, prior_sensitivity_table], qa_requirements: [source_data, caption]}
+  anomaly_detection: {required_figures: [anomaly_score_distribution, top_anomaly_profiles], required_tables: [top_anomaly_cases, feature_contribution_table], qa_requirements: [source_data, caption]}
+  clustering: {required_figures: [cluster_projection, cluster_size_distribution], required_tables: [cluster_profile_table, stability_table], qa_requirements: [source_data, caption]}
+  ranking_or_prioritization: {required_figures: [lift_curve, top_k_capture_plot], required_tables: [top_k_table, ranking_metric_table], qa_requirements: [source_data, caption]}

@@ -1,5 +1,0 @@
-﻿item,action,problem_solved,status
-artifact-explanation-generator,新增本地 skill,每个 artifact 生成目的/来源/阅读/局限/evidence map,done
-model-setting-documenter,新增本地 skill,统一所有模型的设置说明,done
-result-interpretation-writer,新增本地 skill,模型结果解读和 experimental 边界,done
-code-explanation-auditor,新增本地 skill,代码用途、输入输出、依赖、流程与复现性,done

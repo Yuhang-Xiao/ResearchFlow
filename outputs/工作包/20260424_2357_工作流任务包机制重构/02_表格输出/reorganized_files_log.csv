@@ -1,5 +1,0 @@
-﻿源文件路径,目标文件路径,操作,说明,是否canonical副本,时间
-scripts/run_package_restructure.py,outputs/工作包/20260424_2357_工作流任务包机制重构/08_代码快照/run_package_restructure.py,copy,code snapshot for this restructuring task,False,2026-04-24T23:57:48
-scripts/organize_workspace.py,outputs/工作包/20260424_2357_工作流任务包机制重构/08_代码快照/organize_workspace.py,copy,related workspace organizer snapshot,False,2026-04-24T23:57:48
-outputs/_index/output_index.md,outputs/工作包/20260424_2244_全工作目录整理与规范化/04_报告输出/output_index_20260424_235655.md,copy,historical package: 全工作目录整理与规范化,False,2026-04-24T23:57:49
-outputs/_index/latest_outputs.yaml,outputs/工作包/20260424_2244_全工作目录整理与规范化/06_配置参数/latest_outputs_20260424_235655.yaml,copy,historical package: 全工作目录整理与规范化,False,2026-04-24T23:57:49

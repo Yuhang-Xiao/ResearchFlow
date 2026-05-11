@@ -43,6 +43,9 @@ def route_stage(
     reports_dir: str | Path = "reports",
     goal: str | None = None,
     safe_only: bool = False,
+    backup_to: str | Path | None = None,
+    apply_cleanup: bool = False,
+    keep_synthetic_example: bool = True,
 ) -> PipelineResult:
     """Route to a workflow stage."""
 
@@ -73,6 +76,9 @@ def route_stage(
         "list-approval-queue",
         "skills-doctor",
         "dry-run",
+        "auto-research-product",
+        "github-release-cleanup-scan",
+        "github-release-cleanup",
     }
     if stage not in known_stages:
         return PipelineResult(
@@ -102,6 +108,26 @@ def route_stage(
         "dry-run",
     }:
         return run_self_improvement_stage(stage=stage, goal=goal, safe_only=safe_only)
+    if stage == "auto-research-product":
+        from workflow1.orchestration.auto_research_product_orchestrator import run_auto_research_product
+
+        if not goal:
+            return PipelineResult(name=stage, status="missing_goal", details={"message": "--goal is required"})
+        data_file = os.environ.get("WORKFLOW1_DATA_FILE") or str(raw_dir)
+        output_dir = os.environ.get("WORKFLOW1_OUTPUT_DIR") or str(reports_dir)
+        return PipelineResult(name=stage, status="ok", details=run_auto_research_product(goal=goal, data_file=data_file, output_dir=output_dir))
+    if stage in {"github-release-cleanup-scan", "github-release-cleanup"}:
+        from workflow1.tools.github_release_cleaner import CleanupOptions, result_to_dict, run_release_cleanup
+
+        result = run_release_cleanup(
+            CleanupOptions(
+                repo_root=Path("."),
+                backup_to=Path(backup_to) if backup_to else None,
+                apply=bool(apply_cleanup and stage == "github-release-cleanup"),
+                keep_synthetic_example=keep_synthetic_example,
+            )
+        )
+        return PipelineResult(name=stage, status=result.status, details=result_to_dict(result))
     if stage == "intake":
         from workflow1.pipelines.intake import run as run_intake
 
@@ -140,6 +166,9 @@ def run(
     reports_dir: str | Path | None = None,
     goal: str | None = None,
     safe_only: bool = False,
+    backup_to: str | Path | None = None,
+    apply_cleanup: bool = False,
+    keep_synthetic_example: bool = True,
 ) -> WorkflowRunSummary:
     """Run the lightweight workflow entry point without business logic."""
 
@@ -150,7 +179,16 @@ def run(
     resolved_reports_dir = reports_dir or os.environ.get("WORKFLOW1_REPORTS_DIR") or workflow_config.get("reports_dir", "reports")
     logger.info("Loaded config: %s", bool(config))
     logger.info("Routing stage: %s", stage)
-    result = route_stage(stage, raw_dir=resolved_raw_dir, reports_dir=resolved_reports_dir, goal=goal, safe_only=safe_only)
+    result = route_stage(
+        stage,
+        raw_dir=resolved_raw_dir,
+        reports_dir=resolved_reports_dir,
+        goal=goal,
+        safe_only=safe_only,
+        backup_to=backup_to,
+        apply_cleanup=apply_cleanup,
+        keep_synthetic_example=keep_synthetic_example,
+    )
     if result.status == "not_implemented":
         logger.info("Stage is registered but not implemented yet: %s", stage)
     elif result.status == "unknown_stage":
@@ -206,6 +244,22 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Only apply or preview low-risk local workflow upgrades.",
     )
+    parser.add_argument(
+        "--backup-to",
+        default=None,
+        help="Backup directory for github-release-cleanup. Must be outside the repository.",
+    )
+    parser.add_argument(
+        "--apply",
+        action="store_true",
+        help="Apply github-release-cleanup after backing up files.",
+    )
+    parser.add_argument(
+        "--keep-synthetic-example",
+        action="store_true",
+        default=True,
+        help="Keep examples/synthetic_research_demo.csv during GitHub cleanup.",
+    )
     return parser
 
 
@@ -231,6 +285,7 @@ def run_self_improvement_stage(stage: str, goal: str | None = None, safe_only: b
         details.update({"skill_count": len(skill_paths), "sample": skill_paths[:20], "status": "ok"})
     elif stage == "dry-run":
         from workflow1.one_line import route_goal
+        from workflow1.orchestration import build_product_orchestration_dry_run
 
         plan = route_goal(goal or "")
         details.update(
@@ -241,6 +296,8 @@ def run_self_improvement_stage(stage: str, goal: str | None = None, safe_only: b
                 "one_line_plan": plan,
             }
         )
+        if plan.get("intent") == "auto_research_product_mode":
+            details["orchestrator_contract"] = build_product_orchestration_dry_run(goal or "")
     return PipelineResult(name=stage, status="ok", details=details)
 
 
@@ -258,6 +315,9 @@ def main(argv: list[str] | None = None) -> int:
         reports_dir=args.reports_dir,
         goal=args.goal,
         safe_only=args.safe_only,
+        backup_to=args.backup_to,
+        apply_cleanup=args.apply,
+        keep_synthetic_example=args.keep_synthetic_example,
     )
     print(asdict(summary))
     return 0 if summary.status in {"not_implemented", "unknown_stage"} else 0

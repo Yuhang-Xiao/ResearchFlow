@@ -1,0 +1,18 @@
+name: method_scout_workflow
+version: 2026-05-08
+purpose: Automatically scout candidate methods from task structure, literature needs, model registry, and safe external workflow references.
+rules:
+  - Do not wait for the user to name a model.
+  - Candidate methods must include baseline, interpretable/statistical controls, task-specific methods, modern ML, optional sequence/deep/spatial/AutoML candidates when structurally relevant.
+  - Every candidate must record literature topics, engineering references, dependency status, training decision, and not-trained reason when skipped.
+  - GitHub/Hugging Face can inform engineering patterns but cannot replace peer-reviewed literature for paper claims.
+  - Unknown third-party code must not be cloned and run automatically.
+outputs:
+  - model_candidate_matrix.csv
+  - model_method_literature_map.csv
+  - dependency_approval_plan.md
+  - external_workflow_scout_report.csv
+hard_gates:
+  - method_scout_gate
+  - model_candidate_coverage_gate
+  - model_setting_literature_gate

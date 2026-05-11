@@ -1,0 +1,6 @@
+version: 2026-05-07
+methods:
+  repeated_split: {purpose: split stability, applies_to: [tabular_ml]}
+  group_holdout: {purpose: group generalization, applies_to: [panel_or_grouped_prediction, spatial_generalization]}
+  temporal_backtest: {purpose: future performance, applies_to: [time_series_forecasting]}
+  sensitivity_analysis: {purpose: assumptions and thresholds, applies_to: [causal_inference, optimization, Bayesian_modeling]}

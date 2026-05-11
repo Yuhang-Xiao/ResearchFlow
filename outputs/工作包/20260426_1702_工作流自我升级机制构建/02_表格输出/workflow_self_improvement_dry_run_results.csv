@@ -1,6 +1,0 @@
-﻿"command","status","summary"
-"python -m workflow1 --stage skills-doctor","ok","52 skill files found across skills and .agents/skills"
-"python -m workflow1 --stage workflow-scout","ok","Generated seed candidates and scout queries"
-"python -m workflow1 --stage workflow-upgrade-plan","ok","Generated safe/local plan and approval-required Zotero MCP entry"
-"python -m workflow1 --stage dry-run --goal ""优化当前工作流""","ok","Routed to workflow_self_improvement with no real data/model execution"
-"python -m workflow1 --stage dry-run --goal ""启动当前数据的自动科研流程""","ok","Routed to general_research_launch_preview with no real data/model execution"

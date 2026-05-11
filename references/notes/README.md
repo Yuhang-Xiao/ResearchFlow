@@ -1,3 +1,3 @@
 # references/notes
 
-研究计划、会议记录、用户提供说明和无法归入文献/标准的参考材料。
+Local notes and private references. Ignored by Git by default.

@@ -1,0 +1,21 @@
+name: multi_task_modeling_planner
+version: 2026-05-06
+purpose: Infer whether one research goal requires multiple modeling tasks.
+target_structure_rules:
+  continuous: [regression]
+  binary_or_event: [binary_classification]
+  ordinal_or_risk_level: [multiclass_or_ordinal_classification]
+  zero_inflated_long_tail_count:
+    - regression
+    - event_occurrence_classification
+    - risk_level_classification
+    - extreme_event_prediction
+  clear_time_structure: [time_extrapolation_validation]
+  clear_group_structure: [group_validation]
+  clear_spatial_structure: [spatial_or_region_generalization]
+  imbalanced_target: [imbalance_strategy, PR_AUC, F1, Recall, Balanced_Accuracy]
+output_contract:
+  - target_structure_inference.csv
+  - multi_task_modeling_plan.md
+  - metric_contract_by_task.csv
+failure_action: auto_repair_or_block_if_target_unidentifiable

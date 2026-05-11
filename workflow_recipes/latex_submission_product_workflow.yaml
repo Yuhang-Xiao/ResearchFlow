@@ -1,0 +1,29 @@
+name: latex_submission_product_workflow
+version: 2026-05-08
+purpose: Generate a complete LaTeX submission package with citations, cross-references, figures, tables, bibliography, and compiled PDF.
+default_template: generic_article
+template_policy:
+  - Use the generic article template unless the user specifies a target journal.
+  - Do not download a journal template without an explicit target-journal request.
+  - Compile with latexmk -xelatex when TeX Live is available.
+required_outputs:
+  - paper/main.tex
+  - paper/references.bib
+  - paper/main.pdf
+  - paper/sections/*.tex
+  - paper/figures/*.png
+  - paper/tables/*.tex
+  - paper/latex_build_log.txt
+  - paper/latex_crossref_audit.csv
+  - paper/citation_weaving_audit.csv
+rules:
+  - The paper must contain Title, Abstract, Keywords, Introduction, Literature Review, Methods, Results, Discussion, Conclusion, References, and Appendix.
+  - All main figures and tables must have labels and body references.
+  - Formal claims must have citations or data/model artifact evidence.
+  - Metadata-only references cannot support strong scientific claims.
+  - Failed LaTeX compilation triggers 1-3 auto-repair rounds.
+hard_gates:
+  - latex_compile_gate
+  - latex_crossref_gate
+  - citation_weaving_gate
+  - bibtex_integrity_gate

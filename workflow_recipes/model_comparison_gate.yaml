@@ -1,0 +1,15 @@
+name: model_comparison_gate
+version: 2026-05-06
+hard_gate: true
+minimum_requirements:
+  - simple_baseline
+  - interpretable_control
+  - advanced_model_when_data_supports_it
+  - same_split_budget_constraint_metric_contract
+  - baseline_fairness_audit
+  - model_setting_document
+outputs:
+  - model_comparison_metrics.csv
+  - model_comparison_audit.md
+  - baseline_fairness_findings.csv
+failure_action: auto_repair

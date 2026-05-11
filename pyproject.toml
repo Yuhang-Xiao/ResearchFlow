@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "workflow1"
 version = "0.1.0"
 description = "General-purpose scientific workflow scaffold for Codex-assisted research tasks."
-readme = "AGENTS.md"
+readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "pandas",
@@ -24,4 +24,3 @@ workflow1 = "workflow1.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
-

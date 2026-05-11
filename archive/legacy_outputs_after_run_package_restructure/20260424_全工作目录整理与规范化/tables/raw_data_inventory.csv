@@ -1,8 +1,0 @@
-﻿文件路径,文件名,扩展名,所属目录,文件大小,修改时间,文件类型,初步分类,是否可能是原始数据,是否可能是canonical_latest,是否可能是历史产物,是否可能是临时文件,是否可能影响后续pipeline
-data/01_raw/Concentration_and_Consumption pEANUT.xlsx,Concentration_and_Consumption pEANUT.xlsx,.xlsx,data/01_raw,25842,2025-11-01T21:34:38,spreadsheet,原始数据,True,False,False,False,False
-data/01_raw/FINAL_SiChuan_2023_ALL_DATA.xlsx,FINAL_SiChuan_2023_ALL_DATA.xlsx,.xlsx,data/01_raw,17081452,2026-04-10T12:27:50,spreadsheet,原始数据,True,False,False,False,False
-data/01_raw/PEANUT2023-20241.xlsx,PEANUT2023-20241.xlsx,.xlsx,data/01_raw,9820417,2025-10-31T13:59:34,spreadsheet,原始数据,True,False,False,False,False
-data/01_raw/PEANUTwithProb0627.xlsx,PEANUTwithProb0627.xlsx,.xlsx,data/01_raw,19662864,2025-08-07T10:00:06,spreadsheet,原始数据,True,False,False,False,False
-data/01_raw/population_long_clean.xlsx,population_long_clean.xlsx,.xlsx,data/01_raw,14692,2025-11-23T19:18:38,spreadsheet,原始数据,True,False,False,False,False
-data/01_raw/raw_data_inventory.csv,raw_data_inventory.csv,.csv,data/01_raw,1383,2026-04-24T22:43:23,table,原始数据,True,False,False,False,False
-data/01_raw/README.md,README.md,.md,data/01_raw,177,2026-04-24T22:34:57,markdown,原始数据,True,False,False,False,False

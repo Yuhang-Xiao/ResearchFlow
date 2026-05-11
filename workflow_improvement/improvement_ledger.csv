@@ -8,3 +8,6 @@
 ,outputs/工作包/20260426_2249_DQN输出复核_解释体系与论文输出升级,,,applied,external plugins only; no third-party install executed,,2026-04-26,output_explanation_and_reporting_upgrade,safe_local_workflow_upgrade
 ,outputs/工作包/20260426_2252_DQN输出复核_解释体系与论文输出升级,,,applied,external plugins only; no third-party install executed,,2026-04-26,output_explanation_and_reporting_upgrade,safe_local_workflow_upgrade
 ,outputs/工作包/20260426_2254_DQN输出复核_解释体系与论文输出升级,,,applied,external plugins only; no third-party install executed,,2026-04-26,output_explanation_and_reporting_upgrade,safe_local_workflow_upgrade
+2026-05-04 20:44:28,DQN输出复核_解释体系补强_GitHubHF文献核验_论文级报告升级,low_local_metadata_only,completed,outputs/工作包/20260504_2044_DQN输出复核_解释体系补强_GitHubHF文献核验_论文级报告升级
+2026-05-04 23:29:53,outputs/工作包/20260504_2329_workflow1_自动科研成品模式_系统级改造,auto_research_product_mode_system_upgrade,low,applied,False,"Added orchestrator recipes, product gates, skills, templates, command intents, tool audit, and dry-run validation."
+2026-05-06T13:22:00,auto_research_product_system_upgrade,local_safe_upgrade,?? orchestration package; ?? recipes/skills/templates/AGENTS; dry-run passed,no external install,passed

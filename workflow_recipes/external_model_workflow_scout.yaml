@@ -1,0 +1,12 @@
+name: external_model_workflow_scout
+version: 2026-05-07
+purpose: Search official docs, GitHub, Hugging Face, OpenML, and high-quality workflows as read-only engineering references.
+safety:
+  - GitHub/HF/OpenML cannot replace peer-reviewed literature.
+  - Do not clone and run unknown code.
+  - Do not download large models or datasets.
+  - Record license and risk before adaptation.
+outputs:
+  - candidate_pool
+  - license_audit
+  - safe_adaptation_plan

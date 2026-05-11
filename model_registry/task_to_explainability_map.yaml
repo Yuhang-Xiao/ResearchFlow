@@ -1,0 +1,20 @@
+version: 2026-05-07
+tasks:
+  binary_classification: {required_methods: [SHAP, permutation_importance, calibration_curve], fallback_methods: [permutation_importance, pdp_or_ale, local_case_explanation]}
+  multiclass_classification: {required_methods: [SHAP_or_per_class_importance, confusion_matrix_review], fallback_methods: [permutation_importance, per_class_error_analysis]}
+  imbalanced_classification: {required_methods: [threshold_error_analysis, minority_case_review], fallback_methods: [permutation_importance, local_case_explanation]}
+  regression: {required_methods: [SHAP, residual_analysis, feature_importance], fallback_methods: [permutation_importance, pdp_or_ale, extreme_case_explanation]}
+  count_regression: {required_methods: [zero_positive_error_analysis, residual_analysis], fallback_methods: [permutation_importance, group_error_analysis]}
+  zero_inflated_count: {required_methods: [two_part_explanation, zero_positive_error_analysis], fallback_methods: [permutation_importance, threshold_case_explanation]}
+  extreme_event_prediction: {required_methods: [tail_case_explanation, subgroup_error_analysis], fallback_methods: [permutation_importance, quantile_slice_analysis]}
+  time_series_forecasting: {required_methods: [lag_feature_importance, backtest_error_decomposition], fallback_methods: [seasonality_trend_residual_review]}
+  panel_or_grouped_prediction: {required_methods: [group_error_analysis, feature_importance], fallback_methods: [worst_group_case_review]}
+  spatial_generalization: {required_methods: [region_error_analysis, spatial_holdout_review], fallback_methods: [leave_region_out_importance]}
+  causal_inference: {required_methods: [identification_assumption_table, balance_explanation], fallback_methods: [sensitivity_analysis]}
+  survival_analysis: {required_methods: [hazard_ratio_table, calibration], fallback_methods: [risk_group_curve]}
+  reinforcement_learning: {required_methods: [policy_action_distribution, reward_component_audit], fallback_methods: [state_action_case_review]}
+  optimization: {required_methods: [constraint_binding_analysis, objective_tradeoff_table], fallback_methods: [scenario_sensitivity]}
+  Bayesian_modeling: {required_methods: [posterior_interval_explanation, posterior_predictive_check], fallback_methods: [prior_sensitivity]}
+  anomaly_detection: {required_methods: [top_anomaly_case_review, feature_contribution], fallback_methods: [robust_zscore_breakdown]}
+  clustering: {required_methods: [cluster_profile_table, representative_cases], fallback_methods: [feature_centroid_review]}
+  ranking_or_prioritization: {required_methods: [rank_feature_contribution, top_k_case_review], fallback_methods: [rule_based_score_breakdown]}

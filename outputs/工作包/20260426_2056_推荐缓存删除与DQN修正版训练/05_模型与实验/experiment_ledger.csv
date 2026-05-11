@@ -1,2 +1,0 @@
-﻿experiment_id,created_at,label,status,run_package,policy_csv,model_path,formal_or_experimental,episodes,gpu
-peanut_dqn_revised_20260426_2056,2026-04-26T20:56:13,DQN修正版 experimental run / revised DQN experimental run; not formal policy conclusion,completed,outputs/工作包/20260426_2056_推荐缓存删除与DQN修正版训练,outputs/工作包/20260426_2056_推荐缓存删除与DQN修正版训练/01_数据输出/dqn_revised_policy.csv,outputs/工作包/20260426_2056_推荐缓存删除与DQN修正版训练/05_模型与实验/dqn_revised_model.pt,experimental,281,NVIDIA GeForce RTX 4060 Ti

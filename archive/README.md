@@ -1,3 +1,3 @@
 # archive
 
-项目级历史和非主流程归档。不要在这里删除唯一文件；删除重复文件必须有日志。
+Local historical archive. Ignored by Git.

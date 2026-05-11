@@ -1,0 +1,18 @@
+auto_research_product_mode:
+  version: 2026-05-06
+  default_entry: 启动自动科研成品模式：数据文件是 XXX，研究目标是 XXX。
+  orchestrator: workflow_recipes/auto_research_product_orchestrator.yaml
+  orchestration_code: src/workflow1/orchestration/auto_research_product_orchestrator.py
+  quality_policy: research_quality/auto_research_product_quality_policy.yaml
+  templates: templates/auto_research_product_mode/
+  mandatory_model_chain:
+    - target_structure_inference
+    - multi_task_modeling_plan
+    - baseline_and_interpretable_control
+    - advanced_candidate_when_supported
+    - metric_completeness
+    - explainability_gate
+  final_verdicts:
+    - ready_for_user_micro_edit
+    - needs_auto_repair
+    - needs_user_authorization_or_scientific_input

@@ -1,0 +1,20 @@
+version: 2026-05-07
+tasks:
+  binary_classification: {primary: stratified_train_test_or_cv, leakage_checks: [target_proxy_scan, duplicate_entity_check]}
+  multiclass_classification: {primary: stratified_train_test_or_cv, leakage_checks: [target_proxy_scan]}
+  imbalanced_classification: {primary: stratified_cv_with_minority_preservation, leakage_checks: [resampling_inside_pipeline]}
+  regression: {primary: train_test_or_kfold, leakage_checks: [target_proxy_scan, duplicate_entity_check]}
+  count_regression: {primary: kfold_or_time_split_if_dates, leakage_checks: [future_feature_scan]}
+  zero_inflated_count: {primary: stratify_zero_positive_then_regression_split, leakage_checks: [zero_indicator_proxy_scan]}
+  extreme_event_prediction: {primary: tail_preserving_split, leakage_checks: [threshold_defined_after_split]}
+  time_series_forecasting: {primary: chronological_split_or_rolling_origin, leakage_checks: [no_future_features, no_random_split]}
+  panel_or_grouped_prediction: {primary: GroupKFold_or_leave_group_out, leakage_checks: [same_group_train_test_overlap]}
+  spatial_generalization: {primary: leave_region_out, leakage_checks: [region_leakage_scan]}
+  causal_inference: {primary: design_based_split_or_full_sample_balance, leakage_checks: [post_treatment_feature_scan]}
+  survival_analysis: {primary: time_to_event_split_with_censoring_check, leakage_checks: [event_after_feature_time]}
+  reinforcement_learning: {primary: document_governed_train_eval_split, leakage_checks: [unconfirmed_transition_or_reward_blocker]}
+  optimization: {primary: scenario_validation, leakage_checks: [constraint_source_check]}
+  Bayesian_modeling: {primary: posterior_predictive_validation, leakage_checks: [prior_data_overlap_check]}
+  anomaly_detection: {primary: temporal_or_random_holdout_for_score_stability, leakage_checks: [label_absence_declared]}
+  clustering: {primary: stability_resampling, leakage_checks: [label_not_used_in_clustering]}
+  ranking_or_prioritization: {primary: temporal_or_grouped_top_k_validation, leakage_checks: [outcome_after_ranking_time]}

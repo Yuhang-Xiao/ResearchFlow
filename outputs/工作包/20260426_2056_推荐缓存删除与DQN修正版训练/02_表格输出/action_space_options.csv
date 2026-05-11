@@ -1,4 +1,0 @@
-﻿action_space,definition,dimension,trainability,combination_explosion,needs_advanced_method,this_run_recommendation
-粗粒度档位,"[0,1,3,5,10] 每个状态选择一个加码档位",5,高,低,否,采用
-中等粒度 top-k 分配,每期 top-k 风险单元在 5 个档位中分配,"约每期 5^k；若 k=10，则 9,765,625",中等，需限制 top-k 或分层决策,中到高,可用 hierarchical RL / factorized action / knapsack 后处理,作为后续升级，不作为本轮训练主空间
-高维二元动作空间,每个状态单元抽/不抽，再由预算计算总量,2^1710，状态数 1710,低,极高,需要 combinatorial optimization、factorized action 或 constrained/hierarchical RL,暂不强行训练

@@ -1,28 +1,6 @@
 # Current Focus
 
-当前重点：已完成 DQN 输出 deep audit、解释体系补强、论文 Results DOCX 升级、文献/Zotero 侧车和长期 workflow 规则固化。最新任务包：`outputs/工作包/20260426_2254_DQN输出复核_解释体系与论文输出升级`。
+The public repository is in framework-template mode.
 
-
-## 输出解释就地化修正
-
-最新修正包：`outputs/工作包/20260426_2317_输出解释就地化修正与DQN代码深度说明补强`。解释已从总索引补充到各结果目录，并新增 DQN 代码深度说明和 code-to-method/code-to-output 映射。
-
-
-## 输出精简与存档
-
-已精简过度解释文件、清理缓存和失败中间包，并生成学术化带图表 Word。任务包：`outputs/工作包/20260426_2332_输出解释精简_项目存档与Word学术升级`。
-
-
-## 输出精简与存档
-
-已精简过度解释文件、清理缓存和失败中间包，并生成学术化带图表 Word。任务包：`outputs/工作包/20260426_2334_输出解释精简_项目存档与Word学术升级`。
-
-
-## 输出精简与存档
-
-已精简过度解释文件、清理缓存和失败中间包，并生成学术化带图表 Word。任务包：`outputs/工作包/20260426_2335_输出解释精简_项目存档与Word学术升级`。
-
-
-## 输出精简与存档
-
-已精简过度解释文件、清理缓存和失败中间包，并生成学术化带图表 Word。任务包：`outputs/工作包/20260426_2336_输出解释精简_项目存档与Word学术升级`。
+Place local data and research materials outside Git-tracked outputs before
+starting a real research task.

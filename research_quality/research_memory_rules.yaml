@@ -1,0 +1,8 @@
+version: 2026-05-07
+rules:
+  - user_supplies_data_and_goal_not_model
+  - registry_drives_task_model_metric_validation_explainability_selection
+  - gate_failures_generate_action_queue_repairs
+  - external_engineering_references_do_not_replace_literature
+  - optional_dependencies_require_authorization_plan
+  - word_generation_requires_render_and_completeness_audit

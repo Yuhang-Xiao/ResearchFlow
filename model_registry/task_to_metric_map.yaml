@@ -1,0 +1,20 @@
+version: 2026-05-07
+tasks:
+  binary_classification: {required_metrics: [accuracy, precision, recall, f1, macro_f1, weighted_f1, balanced_accuracy, mcc, roc_auc, pr_auc, confusion_matrix], optional_metrics: [calibration_brier, threshold_sensitivity]}
+  multiclass_classification: {required_metrics: [accuracy, macro_f1, weighted_f1, balanced_accuracy, mcc, confusion_matrix], optional_metrics: [one_vs_rest_roc_auc, per_class_recall]}
+  imbalanced_classification: {required_metrics: [precision, recall, f1, macro_f1, balanced_accuracy, mcc, pr_auc, confusion_matrix], optional_metrics: [cost_sensitive_score, recall_at_precision]}
+  regression: {required_metrics: [mae, rmse, r2, rmsle, median_ae, residual_analysis, extreme_value_error], optional_metrics: [mape, pinball_loss]}
+  count_regression: {required_metrics: [mae, rmse, r2, rmsle, median_ae, residual_analysis, zero_error_rate], optional_metrics: [poisson_deviance]}
+  zero_inflated_count: {required_metrics: [mae, rmse, rmsle, median_ae, zero_classification_f1, positive_value_mae, residual_analysis], optional_metrics: [tweedie_deviance]}
+  extreme_event_prediction: {required_metrics: [mae, rmse, r2, tail_mae, top_decile_recall, extreme_value_error], optional_metrics: [pinball_loss, pr_auc_for_threshold_task]}
+  time_series_forecasting: {required_metrics: [mae, rmse, mape_or_smape, rolling_origin_backtest], optional_metrics: [mase, coverage]}
+  panel_or_grouped_prediction: {required_metrics: [overall_metric, group_metric_table, group_generalization_gap], optional_metrics: [worst_group_metric]}
+  spatial_generalization: {required_metrics: [leave_region_out_metric, region_error_table, spatial_generalization_gap], optional_metrics: [moran_residual_check]}
+  causal_inference: {required_metrics: [balance_diagnostics, effect_estimate, confidence_interval, sensitivity_analysis], optional_metrics: [placebo_test]}
+  survival_analysis: {required_metrics: [c_index, time_dependent_auc, calibration, event_count], optional_metrics: [brier_score]}
+  reinforcement_learning: {required_metrics: [expected_return, constraint_violation_rate, coverage, convergence_trace, baseline_comparison], optional_metrics: [regret]}
+  optimization: {required_metrics: [objective_value, constraint_violation, baseline_gap, feasibility_status], optional_metrics: [runtime]}
+  Bayesian_modeling: {required_metrics: [posterior_mean, credible_interval, posterior_predictive_check, calibration], optional_metrics: [waic, loo]}
+  anomaly_detection: {required_metrics: [anomaly_score_distribution, top_case_review, stability_check], optional_metrics: [precision_at_k_if_labels]}
+  clustering: {required_metrics: [cluster_count, silhouette, cluster_profile_table, stability_check], optional_metrics: [davies_bouldin]}
+  ranking_or_prioritization: {required_metrics: [precision_at_k, recall_at_k, lift, calibration_or_risk_monotonicity], optional_metrics: [ndcg]}

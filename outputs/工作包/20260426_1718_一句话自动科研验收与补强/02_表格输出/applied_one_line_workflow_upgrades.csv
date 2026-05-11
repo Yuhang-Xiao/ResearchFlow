@@ -1,5 +1,0 @@
-﻿"upgrade","file","risk","status"
-"Structured one-line dry-run router","src/workflow1/one_line.py","low","applied"
-"CLI dry-run plan integration","src/workflow1/cli.py","low","applied"
-"One-line dry-run recipe","workflow_recipes/one_line_research_dry_run.yaml","low","applied"
-"One-line task family registry","model_registry/one_line_task_family_registry.yaml","low","applied"

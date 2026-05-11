@@ -1,0 +1,20 @@
+version: 2026-05-07
+tasks:
+  binary_classification: {patterns: [class_leakage, threshold_overclaiming, missing_pr_auc]}
+  multiclass_classification: {patterns: [rare_class_ignored, macro_metrics_missing]}
+  imbalanced_classification: {patterns: [accuracy_only, resampling_before_split]}
+  regression: {patterns: [target_skew_ignored, residuals_missing]}
+  count_regression: {patterns: [negative_predictions, zero_pattern_ignored]}
+  zero_inflated_count: {patterns: [single_regression_only, zero_positive_split_missing]}
+  extreme_event_prediction: {patterns: [mean_metric_hides_tail_failure, no_extreme_case_review]}
+  time_series_forecasting: {patterns: [random_split_leakage, future_features]}
+  panel_or_grouped_prediction: {patterns: [same_group_leakage, group_metrics_missing]}
+  spatial_generalization: {patterns: [random_region_leakage, no_leave_region_out]}
+  causal_inference: {patterns: [predictive_result_called_causal, post_treatment_features]}
+  survival_analysis: {patterns: [censoring_ignored, event_time_leakage]}
+  reinforcement_learning: {patterns: [unconfirmed_reward, no_baseline_policy, constraint_violations_unreported]}
+  optimization: {patterns: [infeasible_solution, constraints_not_audited]}
+  Bayesian_modeling: {patterns: [prior_unreported, posterior_check_missing]}
+  anomaly_detection: {patterns: [top_cases_not_reviewed, unstable_scores]}
+  clustering: {patterns: [cluster_count_unjustified, no_stability_check]}
+  ranking_or_prioritization: {patterns: [top_k_not_validated, fairness_or_constraint_gap]}

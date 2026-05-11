@@ -1,0 +1,5 @@
+version: 2026-05-07
+methods:
+  class_weight: {safe_default: true, local_implementation: class_weight_balanced}
+  resampling_inside_pipeline: {safe_default: false, optional_dependency: imbalanced-learn, warning: never_resample_before_split}
+  threshold_tuning: {safe_default: true, local_implementation: validation_threshold_table}

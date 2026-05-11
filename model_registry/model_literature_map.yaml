@@ -1,0 +1,20 @@
+version: 2026-05-07
+tasks:
+  binary_classification: {needed_topics: [classification_metrics, calibration, interpretable_ml], seed_references: [scikit_learn_user_guide, shap_paper]}
+  multiclass_classification: {needed_topics: [multiclass_metrics, error_analysis], seed_references: [scikit_learn_user_guide]}
+  imbalanced_classification: {needed_topics: [imbalanced_learning, pr_auc, resampling], seed_references: [imbalanced_learn_docs]}
+  regression: {needed_topics: [regression_metrics, residual_diagnostics, interpretable_ml], seed_references: [scikit_learn_user_guide]}
+  count_regression: {needed_topics: [poisson_regression, negative_binomial_or_overdispersion, count_data_metrics, zero_inflation_check, predictive_count_metrics], seed_references: [glm_textbook_or_paper, count_regression_literature]}
+  zero_inflated_count: {needed_topics: [zero_inflated_models, hurdle_models, two_part_models, sparse_count_prediction, tail_error_analysis], seed_references: [zero_inflated_count_literature, hurdle_model_literature]}
+  extreme_event_prediction: {needed_topics: [tail_modeling, extreme_event_prediction, quantile_loss, top_k_ranking_metrics, rare_event_validation], seed_references: [extreme_event_ml_literature, quantile_regression_literature]}
+  time_series_forecasting: {needed_topics: [forecasting_backtesting, rolling_origin_validation, seasonal_naive_baselines, lag_feature_forecasting, deep_sequence_forecasting, temporal_transformers], seed_references: [forecasting_principles, deep_time_series_forecasting_literature]}
+  panel_or_grouped_prediction: {needed_topics: [grouped_validation, mixed_effects, leave_group_out_validation, spatial_cross_validation, panel_forecasting], seed_references: [grouped_cv_literature, spatial_cv_literature, panel_data_literature]}
+  spatial_generalization: {needed_topics: [spatial_cross_validation, regional_generalization], seed_references: [spatial_cv_literature]}
+  causal_inference: {needed_topics: [causal_identification, propensity_score, doubly_robust], seed_references: [causal_inference_textbook]}
+  survival_analysis: {needed_topics: [survival_metrics, censoring], seed_references: [cox_model_literature]}
+  reinforcement_learning: {needed_topics: [dqn, constrained_rl, off_policy_evaluation], seed_references: [dqn_paper, safe_rl_literature]}
+  optimization: {needed_topics: [operations_research, constrained_optimization], seed_references: [optimization_textbook]}
+  Bayesian_modeling: {needed_topics: [bayesian_workflow, posterior_predictive_check], seed_references: [bayesian_workflow_literature]}
+  anomaly_detection: {needed_topics: [unsupervised_anomaly_detection, isolation_forest], seed_references: [isolation_forest_paper]}
+  clustering: {needed_topics: [cluster_validation, stability], seed_references: [clustering_validation_literature]}
+  ranking_or_prioritization: {needed_topics: [learning_to_rank, prioritization_metrics, top_k_evaluation], seed_references: [learning_to_rank_literature]}

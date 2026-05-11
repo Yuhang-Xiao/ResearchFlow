@@ -1,0 +1,39 @@
+name: zotero_writeback_workflow
+version: 2026-05-07
+status: active
+language: zh-first
+run_package_required: true
+safe_defaults:
+- metadata_only_external_search
+- no_unknown_code_execution
+- no_zotero_db_write
+- mcp_api_write_only_after_user_authorization
+- no_plaintext_api_key_in_repo
+write_modes:
+  preferred: zotero_mcp_api
+  fallback:
+    - sidecar_bibtex_ris_csv
+    - manual_zotero_import
+required_before_write:
+  - Zotero Desktop running when using local API
+  - workflow1 .codex/config.toml contains mcp_servers.zotero
+  - ZOTERO_API_KEY configured in environment when API key is required
+  - target library and collection confirmed
+  - writeback plan generated and validated
+  - duplicate/citation-key check completed
+  - child-note content checked for Chinese mojibake
+quality_gates:
+- artifact_explanation
+- evidence_mapping
+- experimental_boundary
+- approval_queue_for_high_risk_actions
+- zotero_mcp_config_check
+- zotero_writeback_plan_validation
+- post_write_readback_verification
+outputs:
+- markdown_report
+- csv_audit_table
+- artifact_explanation_index
+- zotero_writeback_plan.csv
+- zotero_api_write_log.md
+- zotero_readback_verification.json

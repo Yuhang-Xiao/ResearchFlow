@@ -1,0 +1,32 @@
+name: paper_product_generation_orchestrator
+version: 2026-05-06
+purpose: Build a complete paper, not a stage report.
+required_sections:
+  - Title
+  - Abstract
+  - Keywords
+  - Introduction
+  - Literature Review
+  - Method
+  - Results
+  - Discussion
+  - Conclusion
+  - References
+  - Appendix
+section_inputs:
+  Introduction: [research_question, background_literature, gap_statement]
+  Literature Review: [domain_literature, method_literature, reporting_guidelines]
+  Method: [data_card, model_setting_document, metric_contract, literature_method_map]
+  Results: [model_comparison_tables, figures, explainability_outputs, evidence_map]
+  Discussion: [result_interpretation, literature_dialogue, limitations, future_work]
+paper_gates:
+  - full_paper_product_gate
+  - paper_section_citation_map_gate
+  - result_claim_guard_gate
+  - word_render_gate
+outputs:
+  - full_paper.md
+  - full_paper.docx
+  - section_evidence_map.csv
+  - citation_evidence_table.csv
+  - paper_completeness_checklist.csv

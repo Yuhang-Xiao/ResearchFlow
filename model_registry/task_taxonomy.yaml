@@ -1,0 +1,94 @@
+version: 2026-05-07
+tasks:
+  binary_classification:
+    scenario: 二分类风险、是否发生、是否超标、是否合格。
+    auto_detection_rules: [target_nunique_equals_2, goal_mentions_classification_or_risk]
+    recommended_baseline: [dummy_majority, logistic_regression]
+    recommended_model_families: [linear_model, tree_ensemble, gradient_boosting]
+    method_writing_notes: 说明目标定义、类别比例、分层或时间切分、baseline 和高级模型比较。
+    results_writing_notes: 报告混淆矩阵、ROC/PR 曲线、阈值选择和校准。
+  multiclass_classification:
+    scenario: 多类别标签、等级、品类或风险等级预测。
+    auto_detection_rules: [categorical_target_with_3_to_30_classes]
+    recommended_baseline: [dummy_majority, multinomial_logistic_regression]
+    recommended_model_families: [linear_model, tree_ensemble, gradient_boosting]
+  imbalanced_classification:
+    scenario: 少数类、稀有事件、极端风险识别。
+    auto_detection_rules: [classification_target_with_minority_ratio_below_0_2]
+    recommended_baseline: [dummy_majority, class_weighted_logistic_regression]
+    recommended_model_families: [linear_model, balanced_ensemble, gradient_boosting]
+  regression:
+    scenario: 连续数值预测。
+    auto_detection_rules: [numeric_continuous_target]
+    recommended_baseline: [dummy_median, ridge_regression]
+    recommended_model_families: [linear_model, tree_ensemble, gradient_boosting]
+  count_regression:
+    scenario: 非负整数计数目标。
+    auto_detection_rules: [nonnegative_integer_target, zero_rate_below_0_3]
+    recommended_baseline: [dummy_median, poisson_glm]
+    recommended_model_families: [generalized_linear_model, tree_ensemble, gradient_boosting]
+  zero_inflated_count:
+    scenario: 大量零值的非负计数或长尾发生数。
+    auto_detection_rules: [nonnegative_integer_target, zero_rate_at_least_0_3]
+    recommended_baseline: [two_part_baseline, poisson_glm]
+    recommended_model_families: [two_part_model, generalized_linear_model, tree_ensemble]
+  extreme_event_prediction:
+    scenario: 长尾高值、极端风险、稀有高损失事件。
+    auto_detection_rules: [goal_mentions_extreme_or_tail, skewed_numeric_target]
+    recommended_baseline: [quantile_baseline, threshold_binary_baseline]
+    recommended_model_families: [quantile_regression, tree_ensemble, gradient_boosting]
+  time_series_forecasting:
+    scenario: 按时间预测未来值或趋势。
+    auto_detection_rules: [datetime_column_present, goal_mentions_forecast]
+    recommended_baseline: [seasonal_naive, rolling_mean]
+    recommended_model_families: [classical_forecasting, machine_learning_forecaster, gradient_boosting]
+  panel_or_grouped_prediction:
+    scenario: 同时存在时间/样点/地区/主体分组。
+    auto_detection_rules: [group_column_present]
+    recommended_baseline: [group_mean_baseline, pooled_linear_model]
+    recommended_model_families: [mixed_effects, tree_ensemble, group_aware_ml]
+  spatial_generalization:
+    scenario: 跨地区、空间外推、留区验证。
+    auto_detection_rules: [location_or_region_columns_present]
+    recommended_baseline: [region_mean_baseline, pooled_linear_model]
+    recommended_model_families: [spatial_features_ml, tree_ensemble, hierarchical_model]
+  causal_inference:
+    scenario: 处理/干预效果估计。
+    auto_detection_rules: [goal_mentions_effect_or_causal]
+    recommended_baseline: [covariate_balance_table, regression_adjustment]
+    recommended_model_families: [propensity_score, doubly_robust, causal_forest]
+  survival_analysis:
+    scenario: 时间到事件、失效、复发、寿命分析。
+    auto_detection_rules: [duration_and_event_columns_present]
+    recommended_baseline: [kaplan_meier, cox_ph]
+    recommended_model_families: [cox_model, survival_forest, parametric_survival]
+  reinforcement_learning:
+    scenario: 序贯决策、预算/约束下策略优化。
+    auto_detection_rules: [goal_mentions_dqn_pomdp_policy]
+    recommended_baseline: [random_policy, heuristic_policy, historical_policy]
+    recommended_model_families: [q_learning, dqn, constrained_rl]
+  optimization:
+    scenario: 资源分配、组合优化、约束求解。
+    auto_detection_rules: [goal_mentions_budget_capacity_or_optimize]
+    recommended_baseline: [greedy_heuristic, status_quo]
+    recommended_model_families: [linear_programming, mixed_integer_programming, heuristic_search]
+  Bayesian_modeling:
+    scenario: 小样本、不确定性、层级/先验建模。
+    auto_detection_rules: [goal_mentions_uncertainty_or_bayesian]
+    recommended_baseline: [empirical_rate, beta_binomial]
+    recommended_model_families: [bayesian_glm, hierarchical_bayes, bayesian_time_series]
+  anomaly_detection:
+    scenario: 无标签异常、离群样本和质量异常。
+    auto_detection_rules: [no_target_and_goal_mentions_anomaly]
+    recommended_baseline: [robust_zscore, isolation_forest]
+    recommended_model_families: [density_model, isolation_forest, one_class_svm]
+  clustering:
+    scenario: 无监督分群、模式发现。
+    auto_detection_rules: [no_target_and_goal_mentions_cluster]
+    recommended_baseline: [kmeans, hierarchical_clustering]
+    recommended_model_families: [partition_clustering, density_clustering, mixture_model]
+  ranking_or_prioritization:
+    scenario: 风险排序、优先抽检、资源优先级。
+    auto_detection_rules: [goal_mentions_ranking_or_prioritization]
+    recommended_baseline: [score_sorting, risk_rule_baseline]
+    recommended_model_families: [learning_to_rank, calibrated_risk_model, constrained_ranking]

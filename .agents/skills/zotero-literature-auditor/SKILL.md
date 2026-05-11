@@ -1,6 +1,6 @@
 ---
 name: zotero-literature-auditor
-description: Audit Zotero library notes and PDFs before using literature for DQN, POMDP, belief-MDP, risk monitoring, MOE/EDI, or food safety modeling.
+description: Audit Zotero library notes and PDFs before using literature for modeling, simulation, optimization, risk monitoring, or formal reporting.
 ---
 
 # Zotero Literature Auditor

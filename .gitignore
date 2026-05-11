@@ -1,0 +1,95 @@
+# Python caches/build products
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Local environments
+.venv/
+venv/
+env/
+.env
+.env.*
+
+# Codex/local secrets
+.codex/config.toml
+.codex/zotero_mcp.env
+.codex/*.secret.toml
+.codex/*.secrets.toml
+*.secret
+*.secrets
+
+# Real data and generated data layers
+data/01_raw/*
+data/02_intermediate/*
+data/03_primary/*
+data/04_feature/*
+data/05_model_input/*
+data/99_archive/*
+!data/**/README.md
+!data/**/.gitkeep
+
+# Generated outputs
+outputs/工作包/*
+outputs/_待复核/*
+outputs/_index/*
+!outputs/**/README.md
+!outputs/**/.gitkeep
+
+# Local reports and experiments
+reports/figures/*
+reports/tables/*
+reports/quarto/*
+reports/**/*.csv
+reports/**/*.xlsx
+reports/**/*.docx
+reports/**/*.pdf
+reports/**/*.png
+reports/**/*.svg
+reports/**/*.html
+experiments/**/*
+!experiments/**/README.md
+!experiments/**/.gitkeep
+
+# Local references and corpus
+references/notes/*
+references/archive/*
+references/project_plan/*
+references/processed_summaries/*
+research_corpus/*
+!references/**/README.md
+!references/**/.gitkeep
+!research_corpus/README.md
+!research_corpus/.gitkeep
+
+# Local external caches and archives
+external_cache/*
+archive/*
+!external_cache/README.md
+!external_cache/.gitkeep
+!archive/README.md
+!archive/.gitkeep
+
+# Model and artifact files
+*.pt
+*.pth
+*.pkl
+*.pickle
+*.joblib
+*.onnx
+*.zip
+*.jsonl
+*.xlsx
+*.xls
+*.xlsm
+*.docx
+*.pdf
+
+# Keep public synthetic examples
+!examples/*.csv

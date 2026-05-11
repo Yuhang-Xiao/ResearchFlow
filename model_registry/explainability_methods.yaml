@@ -1,0 +1,7 @@
+version: 2026-05-07
+methods:
+  shap: {priority: 1, optional_dependency: shap, rule: run_if_installed_else_record_dependency_plan}
+  permutation_importance: {priority: 2, local_implementation: sklearn.inspection.permutation_importance}
+  pdp_or_ale: {priority: 3, local_implementation: partial_dependence_if_available}
+  local_case_explanation: {priority: 4, local_implementation: prediction_case_table}
+  subgroup_error_analysis: {priority: 5, local_implementation: group_metric_table}

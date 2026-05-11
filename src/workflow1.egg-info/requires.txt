@@ -1,8 +1,0 @@
-pandas
-numpy
-openpyxl
-scikit-learn
-matplotlib
-PyYAML
-python-docx
-pypdf

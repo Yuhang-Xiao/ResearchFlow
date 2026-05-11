@@ -40,7 +40,7 @@ Stop and ask the user only when:
 - Different cleaning choices would materially change scientific conclusions and require user selection.
 - The available repair would create clearly unreliable results.
 - Memory or compute limits cannot be solved by chunking, streaming, sampling, or degraded outputs.
-- An unresolved upstream concentration, AFB1 label, count panel, or belief-state defect would affect downstream modeling conclusions.
+- An unresolved upstream concentration, target label, count panel, or state-feature defect would affect downstream modeling conclusions.
 
 ## Auto-Repair Priority Strategy
 
